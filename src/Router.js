@@ -3,10 +3,18 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Register from './pages/Register';
 import Setting from './pages/Setting';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+    body {
+        margin: 0px;
+    }
+`;
 
 class Router extends React.Component{
     render (){
         return(<>
+        <GlobalStyle/>
         <BrowserRouter>
             <Switch>
                 <Route exact path="/">
