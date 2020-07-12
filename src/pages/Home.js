@@ -157,7 +157,7 @@ class Home extends React.Component{
                     </CheckBoxSection>
                     <ButtonSection>
                         <LoginButton>Login</LoginButton>
-                    </ButtonSection>
+                    </ButtonSection>    
                     <GoregiSection>
                         <GoRegister>Go to Register</GoRegister>
                     </GoregiSection>

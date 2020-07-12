@@ -20,10 +20,10 @@ class Router extends React.Component {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="regi">
+          <Route exact path="/regi">
             <Register />
           </Route>
-          <Route exact path="Setting">
+          <Route exact path="/Setting">
             <Setting />
           </Route>
         </Switch>
