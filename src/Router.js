@@ -23,7 +23,7 @@ class Router extends React.Component {
           <Route exact path="/regi">
             <Register />
           </Route>
-          <Route exact path="/Setting">
+          <Route exact path="/set">
             <Setting />
           </Route>
         </Switch>

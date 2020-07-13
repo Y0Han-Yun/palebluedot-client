@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {withRouter} from 'react-router-dom';
-
 
 const Container = styled.div`
     background: lightblue;
@@ -10,8 +8,7 @@ const Container = styled.div`
     margin: 0px;
     border: 0px;
     padding: 0px;
-    display: flex;
-`;
+    display: flex;`;
 const SideNav = styled.nav`
     background: lightpink;
     width : 20%;
@@ -147,16 +144,17 @@ const LogOutWrapper =styled.div`
     align-items: center;
 `;
 const LogOut =styled.div``;
-class Setting extends React.Component{
+
+class Navigaion extends React.Component{
     render(){
         return(<>
-             <Container>
+            <Container>
                 <SideNav>
                     <LogoWrapper>
                       <Logo>Logo</Logo>
                     </LogoWrapper>
                     <TitleWrapper>
-                      <Title>Title</Title> 
+                      <Title> 여기는 제목</Title> 
                     </TitleWrapper>
                     <SubTitleWrapper>
                       <SubTitle>Create Invoice</SubTitle>
@@ -164,7 +162,7 @@ class Setting extends React.Component{
                       <SubTitle>Bin</SubTitle>  
                     </SubTitleWrapper>
                     <TitleWrapper>
-                      <Title>Title</Title> 
+                      <Title> 여기는 제목</Title> 
                     </TitleWrapper>
                     <SubTitleWrapper>
                       <SubTitle>Create Invoice</SubTitle>
@@ -174,27 +172,27 @@ class Setting extends React.Component{
                 </SideNav>
                 <TopNav>
                     <LeftSide>
-                      <LocationTitle>
-                        <div>Title</div>
-                      </LocationTitle>
-                      <ArrowWrapper>
-                        <div> > </div>
-                      </ArrowWrapper>
-                      <LocationSubTitle>
-                        <div>Create Invoice</div> 
-                      </LocationSubTitle>
+                        <LocationTitle>
+                          <div>여기는 제목</div>
+                        </LocationTitle>
+                        <ArrowWrapper>
+                          <div> > </div>
+                        </ArrowWrapper>
+                        <LocationSubTitle>
+                          <div>Create</div> 
+                        </LocationSubTitle>
                     </LeftSide>
                     <RightSide>
-                      <UserNameWrapper>
-                        <UserName>User Name</UserName>
-                      </UserNameWrapper>
-                      <LogOutWrapper>
-                        <LogOut>Logout</LogOut>
-                      </LogOutWrapper>
+                        <UserNameWrapper>
+                            <UserName>Yo Han Yoon</UserName>
+                        </UserNameWrapper>
+                        <LogOutWrapper>
+                            <LogOut>Logout</LogOut>
+                        </LogOutWrapper>
                     </RightSide>
                 </TopNav>
             </Container>
         </>);
     }
 }
-export default withRouter(Setting);
+export default Navigaion;
