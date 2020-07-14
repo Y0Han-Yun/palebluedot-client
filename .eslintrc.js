@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": ["react-app", "plugin:react/recommended", "eslint:recommended"],
+  "extends": ["react-app", "eslint:recommended"],
   "rules": {
     "indent": ["error", 2],
     "semi": ["error", "always"],
