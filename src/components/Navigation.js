@@ -165,7 +165,7 @@ const LogOut = styled.div``;
 
 class Navigaion extends React.Component {
 
-  render() {
+  render () {
     return (<>
       <Container>
         <SideNav>

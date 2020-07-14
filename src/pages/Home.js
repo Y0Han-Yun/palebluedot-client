@@ -153,7 +153,7 @@ const Description = styled.p``;
 
 class Home extends React.Component {
 
-  render() {
+  render () {
     return (<>
       <Container>
         <LeftSide>
