@@ -4,13 +4,6 @@ import styled from 'styled-components';
 
 const StyledComponent = styled.button``;
 
-Button.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ]).isRequired
-};
-
 class Button extends React.Component {
 
   render () {
@@ -18,5 +11,12 @@ class Button extends React.Component {
   }
 
 }
+
+Button.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired
+};
 
 export default Button;
