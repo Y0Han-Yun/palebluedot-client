@@ -4,25 +4,27 @@ import { withRouter } from 'react-router-dom';
 
 const Container = styled.div`
   background: lightblue;
-  width : 1440px;
-  height : 790px;
+  width: 1440px;
+  height: 790px;
   margin: 0px;
   border: 0px;
   padding: 0px;
   display: flex;
 `;
+
 const SideNav = styled.nav`
   background: lightpink;
-  width : 20%;
-  height : 790px;
+  width: 20%;
+  height: 790px;
   margin: 0px;
   border: 0px;
   padding: 0px;
 `;
-const LogoWrapper= styled.div`
+
+const LogoWrapper = styled.div`
   background: lightgray;
-  width : 100%;
-  height : 20%;
+  width: 100%;
+  height: 20%;
   margin: 0px;
   border: 0px;
   padding: 0px;
@@ -30,37 +32,42 @@ const LogoWrapper= styled.div`
   justify-content: center;
   align-items: center;
 `;
-const Logo= styled.div``;
-const TitleWrapper= styled.div`
-  width : 100%;
-  height : 10%;
+
+const Logo = styled.div``;
+
+const TitleWrapper = styled.div`
+  width: 100%;
+  height: 10%;
   margin: 0px;
   border: 0px;
   padding: 0px;
   display: flex;
   align-items: center;
 `;
-const Title= styled.div`
-  width : 100%;
-  height : 100%;
+
+const Title = styled.div`
+  width: 100%;
+  height: 100%;
   margin: 0 0 0 15px;
   border: 0px;
   padding: 0px;
   display: flex;
   align-items: center;
 `;
-const SubTitleWrapper= styled.div`
-  width : 100%;
-  height : 20%;
+
+const SubTitleWrapper = styled.div`
+  width: 100%;
+  height: 20%;
   margin: 0px;
   border: 0px;
   padding: 0px;
   justify-content: center;
   align-items: center;
 `;
-const SubTitle= styled.div`
-  width : 100%;
-  height : 30%;
+
+const SubTitle = styled.div`
+  width: 100%;
+  height: 30%;
   margin: 0px;
   border: 0px;
   padding: 0px;
@@ -68,25 +75,28 @@ const SubTitle= styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 const TopNav = styled.div`
   background: lightyellow;
-  width : 80%;
-  height : 10%;
+  width: 80%;
+  height: 10%;
   margin: 0px;
   border: 0px;
   padding: 0px;
   display: flex;
 `;
-const LeftSide =styled.div`
-  width : 50%;
-  height : 100%;
+
+const LeftSide = styled.div`
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
 `;
-const LocationTitle =styled.div`
+
+const LocationTitle = styled.div`
   background: lightgreen;
-  width : 20%;
-  height : 100%;
+  width: 20%;
+  height: 100%;
   margin: 0px;
   border: 0px;
   padding: 0px;
@@ -94,10 +104,11 @@ const LocationTitle =styled.div`
   justify-content: center;
   align-items: center;
 `;
-const ArrowWrapper =styled.div`
+
+const ArrowWrapper = styled.div`
   background: lightyellow;
-  width : 10%;
-  height : 100%;
+  width: 10%;
+  height: 100%;
   margin: 0px;
   border: 0px;
   padding: 0px;
@@ -105,10 +116,11 @@ const ArrowWrapper =styled.div`
   justify-content: center;
   align-items: center;
 `;
-const LocationSubTitle =styled.div`
+
+const LocationSubTitle = styled.div`
   background: lightgreen;
-  width : 20%;
-  height : 100%;
+  width: 20%;
+  height: 100%;
   margin: 0px;
   border: 0px;
   padding: 0px;
@@ -116,16 +128,18 @@ const LocationSubTitle =styled.div`
   justify-content: center;
   align-items: center;
 `;
-const RightSide =styled.div`
-  width : 50%;
-  height : 100%;
+
+const RightSide = styled.div`
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: flex-end;
 `;
-const UserNameWrapper =styled.div`
+
+const UserNameWrapper = styled.div`
   ackground: lightgreen;
-  width : 40%;
-  height : 100%;
+  width: 40%;
+  height: 100%;
   margin: 0px;
   border: 0px;
   padding: 0px;
@@ -133,11 +147,13 @@ const UserNameWrapper =styled.div`
   justify-content: center;
   align-items: center;  
 `;
-const UserName =styled.div``;
-const LogOutWrapper =styled.div`
+
+const UserName = styled.div``;
+
+const LogOutWrapper = styled.div`
   background: lightgreen;
-  width : 20%;
-  height : 100%;
+  width: 20%;
+  height: 100%;
   margin: 0px;
   border: 0px;
   padding: 0px;
@@ -145,9 +161,11 @@ const LogOutWrapper =styled.div`
   justify-content: center;
   align-items: center;
 `;
-const LogOut =styled.div``;
+
+const LogOut = styled.div``;
 
 class Setting extends React.Component {
+
   render () {
     return (<>
       <Container>
@@ -156,20 +174,20 @@ class Setting extends React.Component {
             <Logo>Logo</Logo>
           </LogoWrapper>
           <TitleWrapper>
-            <Title>Title</Title> 
+            <Title>Title</Title>
           </TitleWrapper>
           <SubTitleWrapper>
             <SubTitle>Create Invoice</SubTitle>
             <SubTitle>Customer</SubTitle>
-            <SubTitle>Bin</SubTitle>  
+            <SubTitle>Bin</SubTitle>
           </SubTitleWrapper>
           <TitleWrapper>
-            <Title>Title</Title> 
+            <Title>Title</Title>
           </TitleWrapper>
           <SubTitleWrapper>
             <SubTitle>Create Invoice</SubTitle>
             <SubTitle>Customer</SubTitle>
-            <SubTitle>Bin</SubTitle>  
+            <SubTitle>Bin</SubTitle>
           </SubTitleWrapper>
         </SideNav>
         <TopNav>
@@ -181,7 +199,7 @@ class Setting extends React.Component {
               <div> &#62; </div>
             </ArrowWrapper>
             <LocationSubTitle>
-              <div>Create Invoice</div> 
+              <div>Create Invoice</div>
             </LocationSubTitle>
           </LeftSide>
           <RightSide>
@@ -196,5 +214,7 @@ class Setting extends React.Component {
       </Container>
     </>);
   }
+
 }
+
 export default withRouter(Setting);
