@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Navigation from '../components/Navigation';
 
 const Container = styled.div`
-  
   width: 1440px;
   height: 900px;
   margin: 0px;
@@ -53,8 +52,10 @@ const LogoDateWrapper = styled.div`
   padding: 0px;
   display: flex;
   justify-content: space-around;
+
 `;
 const Logo = styled.div`
+  backgound-color: powderblue;
   width: 50%;
   height: 100%;
   margin: 0px;
@@ -102,15 +103,16 @@ const TopOfTable = styled.div`
   height: 22px;
   margin: 0px;
   border: 0px;
-  padding: 0px;
+  padding: 20px 0px 20px 0px;
   display: flex;
-  border-bottom: 1px solid #444444;
+  border-top: 1px solid #E3E5E6;
+  border-bottom: 1px solid #E3E5E6;
   border-collapse: collapse;
 `;
 const RefDescriptionWrapper = styled.div`
-  width: 50%;
+  width: 40%;
   height: 100%;
-  margin: 0px;
+  margin-left: 34px;
   border: 0px;
   padding: 0px;
   display: flex;
@@ -130,7 +132,7 @@ const Description = styled.div`
   padding: 0px;
 `;
 const QTYUnitPriceAmountOptionWrapper = styled.div`
-  width: 50%;
+  width: 60%;
   height: 100%;
   margin: 0px;
   border: 0px;
@@ -145,11 +147,11 @@ const Option = styled.div``;
 const BottomOfTable = styled.div``;
 const Table = styled.div`
   width: 100%;
-  height: 44px;
+  height: 39px;
   margin: 0px;
   border: 0px;
   padding: 0px;
-  border-bottom: 1px solid #444444;
+  border-bottom: 1px solid #E3E5E6;
   border-collapse: collapse;
 `;
 const EtcTotalWrapper = styled.div`
