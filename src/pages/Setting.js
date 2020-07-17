@@ -52,7 +52,6 @@ const LogoDateWrapper = styled.div`
   padding: 0px;
   display: flex;
   justify-content: space-around;
-
 `;
 const Logo = styled.div`
   border: 1px solid #E3E5E6;
