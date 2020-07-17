@@ -55,7 +55,8 @@ const LogoDateWrapper = styled.div`
 
 `;
 const Logo = styled.div`
-  backgound-color: powderblue;
+  border: 1px solid #E3E5E6;
+  
   width: 50%;
   height: 100%;
   margin: 0px;
@@ -163,43 +164,77 @@ const EtcTotalWrapper = styled.div`
   display: flex;
 `;
 const Etc = styled.div`
-  width: 50%;
-  height: 20%;
+  width: 60%;
+  height: 100%;
   margin: 0px;
   border: 0px;
   padding: 0px;
 `;
 const Total = styled.div`
+  width: 40%;
+  height: 100%;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  justify-content: flex-end;
+`;
+const SubWrapper = styled.div`
+  width: 100%;
+  margin: 0px; //Amount 가격과 같은 라인에 배치
+  border: 0px;
+  padding: 0px;
+  display: flex;
+`;
+const SubPrice = styled.div`
   width: 50%;
-  height: 20%;
+  margin: 0px 0px 40px 0px;
+  border: 0px;
+  padding: 0px;
+`;
+const SubTotal = styled.div`
+  width: 50%;
+  margin: 0px 0px 40px 0px;
+  border: 0px;
+  padding: 0px;
+  display: flex;
+`;
+const GSTWrapper = styled.div`
+  width: 100%;
   margin: 0px;
   border: 0px;
   padding: 0px;
   display: flex;
 `;
-const SubTotalGSTGrossTotalWrapper = styled.div`
+const GST = styled.div`
   width: 50%;
-  height: 100%;
-  margin: 0px;
+  margin: 0px 0px 40px 0px;
   border: 0px;
   padding: 0px;
-  justify-content: flex-end;
 `;
-const SubTotal = styled.div``;
-const GST = styled.div``;
-const GrossTotal = styled.div``;
-
-const SubPriceGSTPriceGrossPriceWrapper = styled.div`
+const GSTPrice = styled.div`
   width: 50%;
-  height: 100%;
-  margin: 0px;
+  margin: 0px 0px 40px 0px;
   border: 0px;
   padding: 0px;
-  justify-content: flex-end;
 `;
-const SubPrice = styled.div``;
-const GSTPrice = styled.div``;
-const GrossPrice = styled.div``;
+const TotalWrapper = styled.div`
+  display: flex;
+  background-color: #e3e5e6;
+  border: 0px;
+  padding: 0px;
+`;
+const GrossTotal = styled.div`
+  width: 50%;
+  margin: 20px 0px 20px 0px;
+  border: 0px;
+  padding: 0px;
+`;
+const GrossPrice = styled.div`
+  width: 50%;
+  margin: 20px 0px 20px 0px;
+  border: 0px;
+  padding: 0px;
+`;
 
 const BankDetailWrapper = styled.div``;
 const InvoiceClosing = styled.div``;
@@ -265,16 +300,18 @@ class Setting extends React.Component {
                   <p>여기는 기타 항목이 추가됩니다.</p>
                 </Etc>
                 <Total>
-                  <SubTotalGSTGrossTotalWrapper>
+                  <SubWrapper>
                     <SubTotal>SubTotal</SubTotal>
-                    <GST>GST</GST>
-                    <GrossTotal>Total</GrossTotal>
-                  </SubTotalGSTGrossTotalWrapper>
-                  <SubPriceGSTPriceGrossPriceWrapper>
                     <SubPrice>$1,200</SubPrice>
-                    <GSTPrice>$120</GSTPrice>
+                  </SubWrapper>
+                  <GSTWrapper>
+                    <GST>GST</GST>
+                    <GSTPrice>$120</GSTPrice>             
+                  </GSTWrapper>
+                  <TotalWrapper>
+                    <GrossTotal>Total</GrossTotal>
                     <GrossPrice>$1,320</GrossPrice>
-                  </SubPriceGSTPriceGrossPriceWrapper>
+                  </TotalWrapper>
                 </Total>
               </EtcTotalWrapper>
               <BankDetailWrapper></BankDetailWrapper>
