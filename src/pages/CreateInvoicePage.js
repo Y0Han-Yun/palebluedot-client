@@ -238,7 +238,7 @@ const GrossPrice = styled.div`
 const BankDetailWrapper = styled.div``;
 const InvoiceClosing = styled.div``;
 
-class Setting extends React.Component {
+class CreateInvoicePage extends React.Component {
 
   render () {
     return (<>
@@ -305,7 +305,7 @@ class Setting extends React.Component {
                   </SubWrapper>
                   <GSTWrapper>
                     <GST>GST</GST>
-                    <GSTPrice>$120</GSTPrice>             
+                    <GSTPrice>$120</GSTPrice>
                   </GSTWrapper>
                   <TotalWrapper>
                     <GrossTotal>Total</GrossTotal>
@@ -324,4 +324,4 @@ class Setting extends React.Component {
 
 }
 
-export default withRouter(Setting);
+export default withRouter(CreateInvoicePage);

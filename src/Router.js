@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 import React from 'react';
 import Home from './pages/Home';
 import Register from './pages/Register';
-import Setting from './pages/Setting';
+import CreateInvoicePage from './pages/CreateInvoicePage';
+import Customer from './pages/Customer';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -24,8 +25,11 @@ class Router extends React.Component {
           <Route exact path="/regi">
             <Register />
           </Route>
-          <Route exact path="/set">
-            <Setting />
+          <Route exact path="/creinvo">
+            <CreateInvoicePage />
+          </Route>
+          <Route exact path="/customer">
+            <Customer />
           </Route>
         </Switch>
       </BrowserRouter>
