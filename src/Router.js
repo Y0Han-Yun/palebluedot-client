@@ -8,6 +8,9 @@ import Customer from './pages/Customer';
 import Bin from './pages/Bin';
 
 const GlobalStyle = createGlobalStyle`
+  html {
+    font-size: 16px;
+  }
   body {
     margin: 0px;
   }
