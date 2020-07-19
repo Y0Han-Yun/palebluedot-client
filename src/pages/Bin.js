@@ -18,26 +18,26 @@ const SetPage = styled.div`
   border: 0px;
   padding: 0px;
 `;
-const TableLine = styled.div`
+const BinLine = styled.div`
   width: 1102px; // width 1152px - 양쪽 margin값 160px = 992px
   height: 100%;
   margin: 25px;
   border: 1px solid gray;
 `;
 
-class Customer extends React.Component {
+class Bin extends React.Component {
   render () {
     return (<>
       <Navigation/>
       <Container>
         <SetPage>
-          <TableLine>
+          <BinLine>
             
-          </TableLine>
+          </BinLine>
         </SetPage>
       </Container>
     </>);
   }
 }
 
-export default withRouter(Customer);
+export default withRouter(Bin);

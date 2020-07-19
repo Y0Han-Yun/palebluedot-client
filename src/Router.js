@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Register from './pages/Register';
 import CreateInvoicePage from './pages/CreateInvoicePage';
 import Customer from './pages/Customer';
+import Bin from './pages/Bin';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -30,6 +31,9 @@ class Router extends React.Component {
           </Route>
           <Route exact path="/customer">
             <Customer />
+          </Route>
+          <Route exact path="/bin">
+            <Bin />
           </Route>
         </Switch>
       </BrowserRouter>
