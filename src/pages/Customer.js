@@ -26,18 +26,20 @@ const TableLine = styled.div`
 `;
 
 class Customer extends React.Component {
+
   render () {
     return (<>
       <Navigation/>
       <Container>
         <SetPage>
           <TableLine>
-            
+
           </TableLine>
         </SetPage>
       </Container>
     </>);
   }
+
 }
 
 export default withRouter(Customer);

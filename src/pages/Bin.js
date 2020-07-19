@@ -26,18 +26,20 @@ const BinLine = styled.div`
 `;
 
 class Bin extends React.Component {
+
   render () {
     return (<>
       <Navigation/>
       <Container>
         <SetPage>
           <BinLine>
-            
+
           </BinLine>
         </SetPage>
       </Container>
     </>);
   }
+
 }
 
 export default withRouter(Bin);
