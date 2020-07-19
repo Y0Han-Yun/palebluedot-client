@@ -5,7 +5,7 @@ class LoginForm extends React.Component {
 
   render () {
     return (<>
-      <Text>Logo</Text>
+      <Text lg>Logo</Text>
       <Input type="text" placeholder="Email" />
       <Input type="password" placeholder="Password" />
       <Input type="checkbox" />

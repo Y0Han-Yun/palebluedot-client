@@ -9,7 +9,13 @@ const StyledComponent = styled.a`
 class Link extends React.Component {
 
   render () {
-    return <StyledComponent><Text sm>{this.props.children}</Text></StyledComponent>;
+    return (
+      <StyledComponent>
+        <Text sm>
+          {this.props.children}
+        </Text>
+      </StyledComponent>
+    );
   }
 
 }

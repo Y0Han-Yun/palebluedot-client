@@ -1,31 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
+import { styleString } from './Text';
+
+const width = props => {
+  if (props.type === 'checkbox') return '';
+  return 'width: 100%;';
+};
 
 const StyledComponent = styled.input`
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  color: #333333;
-  font-weight: 300;
-  line-height: 1.8rem;
-  letter-spacing: 0.05rem;
-  word-spacing: 0.1rem;
-
-  box-sizing: border-box;
-
-  ${props => {
-    if (props.type === 'checkbox') {
-      return '';
-    }
-    return 'width: 100%;';
-  }}
-
+  ${props => styleString(props)}
+  ${props => width(props)}
   padding: 0.5rem 1rem;
 `;
 
 class Input extends React.Component {
 
   render () {
-    return <StyledComponent type={this.props.type} placeholder={this.props.placeholder}/>;
+    const styledProps = {};
+    return (
+      <StyledComponent
+        styledProps={styledProps}
+        type={this.props.type}
+        placeholder={this.props.placeholder}/>
+    );
   }
 
 }
