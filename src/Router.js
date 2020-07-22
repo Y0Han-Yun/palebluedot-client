@@ -1,5 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
+import { font } from './config/theme';
 import React from 'react';
 import Home from './pages/Home';
 import Register from './pages/Register';
@@ -9,7 +10,7 @@ import Bin from './pages/Bin';
 
 const GlobalStyle = createGlobalStyle`
   html {
-    font-size: 16px;
+    font-size: ${font.size.root};
   }
   body {
     margin: 0px;
