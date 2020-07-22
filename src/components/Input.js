@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { styleString } from './Text';
+import { textStyledTemplate } from './Text';
 
 const width = props => {
   if (props.type === 'checkbox') return '';
@@ -8,7 +8,7 @@ const width = props => {
 };
 
 const StyledComponent = styled.input`
-  ${props => styleString(props)}
+  ${props => textStyledTemplate(props)}
   ${props => width(props)}
   padding: 0.5rem 1rem;
 `;

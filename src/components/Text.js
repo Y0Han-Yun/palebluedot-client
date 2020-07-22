@@ -1,29 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
+import { font } from '../config/theme';
 
 const fontSize = props => {
-  if (props.styledProps.sm) return '0.8';
-  else if (props.styledProps.lg) return '1.5';
-  return '1';
+  if (props.styledProps.sm) return font.size.sm;
+  else if (props.styledProps.md) return font.size.md;
+  return font.size.normal;
 };
 
 const color = props => {
-  if (props.styledProps.white) return 'FFFFFF';
-  else return '333333';
+  if (props.styledProps.white) return font.color.darkMode;
+  else return font.color.lightMode;
 };
 
-const styleString = props => `
-  font-family: 'Open Sans', sans-serif;
-  font-size: ${fontSize(props)}rem;
-  color: #${color(props)};
-  font-weight: 300;
-  line-height: 1.8rem;
-  letter-spacing: 0.05rem;
-  word-spacing: 0.1rem;
+const textStyledTemplate = props => `
+  font-family: ${font.family.sans};
+  font-size: ${fontSize(props)};
+  color: ${color(props)};
+  font-weight: ${font.weight.light};
+  line-height: ${font.lineHeight.normal};
+  letter-spacing: ${font.letterSpacing.normal};
+  word-spacing: ${font.wordSpacing.normal};
 `;
 
 const StyledComponent = styled.span`
-  ${props => styleString(props)}
+  ${props => textStyledTemplate(props)}
 `;
 
 class Text extends React.Component {
@@ -32,7 +33,7 @@ class Text extends React.Component {
     const styledProps = {
       white: this.props.white,
       sm: this.props.sm,
-      lg: this.props.lg
+      md: this.props.md
     };
     return (
       <StyledComponent styledProps={styledProps}>
@@ -43,4 +44,4 @@ class Text extends React.Component {
 
 }
 
-export { Text as default, styleString };
+export { Text as default, textStyledTemplate };
