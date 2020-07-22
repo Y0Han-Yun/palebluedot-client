@@ -1,15 +1,15 @@
 import React from 'react';
 import LoginForm from './LoginForm';
-import { Padding } from '../../components';
+import CenterLayout from '../../Layout/CenterLayout';
 
 class Home extends React.Component {
 
   render () {
-    return (<>
-      <Padding>
+    return (
+      <CenterLayout>
         <LoginForm/>
-      </Padding>
-    </>);
+      </CenterLayout>
+    );
   }
 
 }

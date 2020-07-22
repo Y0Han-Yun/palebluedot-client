@@ -11,6 +11,7 @@ const StyledComponent = styled.input`
   ${props => textStyledTemplate(props)}
   ${props => width(props)}
   padding: 0.5rem 1rem;
+  box-sizing: border-box;
 `;
 
 class Input extends React.Component {
