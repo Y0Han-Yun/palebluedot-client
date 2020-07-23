@@ -2,6 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Router from './Router';
 
-console.log('123');
+console.log('hi');
 
 ReactDOM.render(<Router/>, document.getElementById('root'));
