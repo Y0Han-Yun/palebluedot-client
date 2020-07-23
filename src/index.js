@@ -4,4 +4,4 @@ import Router from './Router';
 
 console.log('hi');
 
-ReactDOM.render(<Router/>, document.getElementById('root'));
+ReactDOM.render(<Router/>, document.querySelector('#root'));
