@@ -6,6 +6,10 @@ const StyledComponent = styled.a`
   cursor: pointer;
 `;
 
+//const MenuItem = ({ children, to }) => (
+//  <Link to={to}>{children}</Link>
+//);
+
 class Link extends React.Component {
 
   render () {
