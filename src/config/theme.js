@@ -1,3 +1,10 @@
+const media = {
+  xs: '500px',
+  sm: '700px',
+  md: '900px',
+  lg: '1200px'
+};
+
 const font = {
   family: {
     sans: "'Open Sans', sans-serif",
@@ -29,6 +36,15 @@ const font = {
   }
 };
 
-const theme = { font };
+const spacing = {
+  'full': '100%',
+  '0': '0rem',
+  '1': '0.25rem',
+  '2': '0.5rem',
+  '3': '0.75rem',
+  '4': '1rem'
+};
 
-export { theme as default, font };
+const theme = { font, media, spacing };
+
+export { theme as default, font, media, spacing };
