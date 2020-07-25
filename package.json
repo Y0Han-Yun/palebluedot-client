@@ -15,7 +15,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:fix": "eslint src/**/*.js --fix",
-    "git": "run () { git pull origin master && git add . && git commit -m \"$1\" && git push origin master; }; run"
+    "git": "run () {  git add . && git commit -m \"$1\" && git pull origin master && git push origin master; }; run"
   },
   "eslintConfig": {
     "extends": "react-app"
