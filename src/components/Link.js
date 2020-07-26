@@ -3,12 +3,8 @@ import styled from 'styled-components';
 import Text from './Text';
 
 const StyledComponent = styled.a`
-  cursor: pointer;
+  cursor: pointer;  
 `;
-
-//const MenuItem = ({ children, to }) => (
-//  <Link to={to}>{children}</Link>
-//);
 
 class Link extends React.Component {
 
