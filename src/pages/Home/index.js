@@ -9,8 +9,8 @@ class Home extends React.Component {
     return (<>
       <CenterLayout>
         <LoginForm/>
+        <Link>여기를 누르세요</Link>
       </CenterLayout>
-      <Link>여기를 누르세요</Link>
     </>);
   }
 }
