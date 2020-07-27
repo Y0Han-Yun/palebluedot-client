@@ -8,9 +8,19 @@ const StyledComponent = styled.a`
 
 class Link extends React.Component {
 
+  constructor(props){
+    super(props)
+    this.handleLinkClick = this.handleLinkClick.bind(this);
+  }
+
+  handleLinkClick(){
+    this.props.history.push('/regi');
+  }
+
+
   render () {
     return (
-      <StyledComponent>
+      <StyledComponent onClick={this.handleLinkClick}>
         <Text sm>
           {this.props.children}
         </Text>
