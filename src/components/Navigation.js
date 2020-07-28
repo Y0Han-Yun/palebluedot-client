@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 const StyledComponent = styled.div`
   position: fixed;
   width: 1440px;
