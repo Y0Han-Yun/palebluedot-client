@@ -9,7 +9,10 @@ class Home extends React.Component {
     return (<>
       <CenterLayout>
         <LoginForm/>
-        <Link>여기를 누르세요</Link>
+        <Link>Register</Link>
+        <Link>Bin</Link>
+        <Link>Customer</Link>
+        <Link>Create Invoice</Link>
       </CenterLayout>
     </>);
   }
