@@ -1,4 +1,4 @@
-import { Text, Input, Link, Button } from '../../components';
+import { Text, Input, Button } from '../../components';
 import { media, spacing } from '../../config/theme';
 import React from 'react';
 import styled from 'styled-components';
@@ -38,7 +38,7 @@ class LoginForm extends React.Component {
   render () {
     return (<>
       <Wrapper>
-        <Text md>Logo</Text>
+        <Text md>Sign In</Text>
         <Input type="text" placeholder="Email" />
         <Input type="password" placeholder="Password" />
         <div>
@@ -47,8 +47,7 @@ class LoginForm extends React.Component {
             <Text>Remember me</Text>
           </CheckboxWapper>
           <TestWrapper>
-            <Button>Login</Button>
-            <Link>Go to register</Link>
+            <Button >Login</Button>
           </TestWrapper>
         </div>
       </Wrapper>

@@ -8,7 +8,7 @@ const StyledComponent = styled.div`
   overflow-y: scroll;
   .flex {
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 13rem;
     display: flex;
     flex-direction: column;
     align-items: center;

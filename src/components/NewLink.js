@@ -19,7 +19,7 @@ class NewLink extends React.Component {
     this.props.history.push(to);
   }
 
-  render() {
+  render () {
     return (
       <StyledComponent onClick={this.handleLinkClick}>
         <Text sm>
