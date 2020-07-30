@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import { font } from './config/theme';
 import React from 'react';
 import Home from './pages/Home';
-import Register from './pages/Register';
+import Register from './pages/Register/Register';
 import CreateInvoicePage from './pages/CreateInvoicePage';
 import Customer from './pages/Customer';
 import Bin from './pages/Bin';

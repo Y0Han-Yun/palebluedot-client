@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text, NewLink,Button } from '../components';
+import { Text, NewLink, Button } from '../components';
 
 const TopWarpper = styled.div`
   width: 100%;
@@ -59,23 +59,17 @@ class Navigaion extends React.Component {
         <LinkWarpper>
           <LinkLeftSection/>
           <LinkRightSection>
-            <NewLink to='regi'><Button>Register</Button></NewLink>
-            <NewLink to='creinvo'><Button>Invoice</Button></NewLink>
-          </LinkRightSection>   
+            <NewLink to="regi"><Button>Register</Button></NewLink>
+            <NewLink to="creinvo"><Button>Invoice</Button></NewLink>
+          </LinkRightSection>
         </LinkWarpper>
       </TopWarpper>
       <SideWarpper>
-        <ul>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-
-        </ul>
+        <Text>asdasdqwe</Text>
       </SideWarpper>
     </>);
   }
+
 }
 
 export default Navigaion;
