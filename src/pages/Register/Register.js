@@ -4,6 +4,7 @@ import CenterLayout from '../../Layout/CenterLayout';
 import RegisterForm from './RegisterForm';
 
 
+
 class Register extends React.Component{
   render () {
     return (<>

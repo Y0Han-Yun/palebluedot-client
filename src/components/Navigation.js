@@ -38,12 +38,12 @@ const LinkRightSection = styled.div`
   justify-content: space-evenly;
   display: flex;
 `;
-const SideWarpper = styled.div`
-  display: flex;
-  width :242.75px;
-  height: 720px;
-  background-color: #40444E;
-`;
+// const SideWarpper = styled.div`
+//   display: flex;
+//   width :242.75px;
+//   height: 720px;
+//   background-color: #40444E;
+// `;
 
 class Navigaion extends React.Component {
 
@@ -64,9 +64,9 @@ class Navigaion extends React.Component {
           </LinkRightSection>
         </LinkWarpper>
       </TopWarpper>
-      <SideWarpper>
+      {/* <SideWarpper>
         <Text>asdasdqwe</Text>
-      </SideWarpper>
+      </SideWarpper> */}
     </>);
   }
 

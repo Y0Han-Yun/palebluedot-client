@@ -5,12 +5,14 @@ import Text from './Text';
 const backgroundColor = props => {
   if (props.styledProps.primary) return 'background-color: #333333;';
   else if (props.styledProps.secondary) return 'background-color: #FFFFFF;';
+  else if (props.styledProps.tertiary) return 'width: 100%;';
   return '';
 };
 
 const StyledComponent = styled.button`
   cursor: pointer;
   padding: 0.25rem 1.5rem;
+  width: 100%;
   ${props => backgroundColor(props)}
 `;
 
@@ -19,7 +21,8 @@ class Button extends React.Component {
   render () {
     const styledProps = {
       primary: this.props.primary,
-      secondary: this.props.secondary
+      secondary: this.props.secondary,
+      tertiary: this.props.tertiary
     };
     return (
       <StyledComponent styledProps={styledProps}>

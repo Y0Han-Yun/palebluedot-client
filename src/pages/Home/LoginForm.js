@@ -1,7 +1,8 @@
-import { Text, Input, Button } from '../../components';
+import { Text, Input, Button, NewLink } from '../../components';
 import { media, spacing } from '../../config/theme';
 import React from 'react';
 import styled from 'styled-components';
+
 
 const Wrapper = styled.div`
   span {
@@ -10,6 +11,7 @@ const Wrapper = styled.div`
   * {
     margin-bottom: ${spacing['2']};
   }
+  
 `;
 
 const TestWrapper = styled.div`
@@ -31,7 +33,18 @@ const CheckboxWapper = styled.div`
   span {
     display: inline;
   }
+  width: 50%;
 `;
+
+const LinkWarpper = styled.div`
+display: flex;
+`;
+const RegiLinkWarpper = styled.div`
+  width: 50%;
+  justify-content: flex-end;
+  display: flex;
+`;
+
 
 class LoginForm extends React.Component {
 
@@ -42,12 +55,17 @@ class LoginForm extends React.Component {
         <Input type="text" placeholder="Email" />
         <Input type="password" placeholder="Password" />
         <div>
-          <CheckboxWapper>
-            <Input type="checkbox" />
-            <Text>Remember me</Text>
-          </CheckboxWapper>
+          <LinkWarpper>       
+            <CheckboxWapper>
+              <Input type="checkbox" />
+              <Text>Remember me</Text>
+            </CheckboxWapper>
+            <RegiLinkWarpper>
+              <NewLink to='/regi'><Text>Register</Text></NewLink>
+            </RegiLinkWarpper>
+          </LinkWarpper>
           <TestWrapper>
-            <Button >Login</Button>
+            <Button>Login</Button>
           </TestWrapper>
         </div>
       </Wrapper>

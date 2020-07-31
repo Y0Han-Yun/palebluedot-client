@@ -1,7 +1,7 @@
 import { withRouter } from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
-import { Text, Input, Button } from '../../components';
+import { Text, Input, Button, NewLink } from '../../components';
 import { media, spacing } from '../../config/theme';
 
 const Wrapper = styled.div`
@@ -27,11 +27,9 @@ const TestWrapper = styled.div`
     }
   }
 `;
-
-const CheckboxWapper = styled.div`
-  span {
-    display: inline;
-  }
+const RegiLinkWarpper = styled.div`
+  justify-content: flex-end;
+  display: flex;
 `;
 
 class RegisterForm extends React.Component{
@@ -42,12 +40,11 @@ class RegisterForm extends React.Component{
         <Input type="text" placeholder="Email" />
         <Input type="password" placeholder="Password" />
         <div>
-          <CheckboxWapper>
-            <Input type="checkbox" />
-            <Text>Remember me</Text>
-          </CheckboxWapper>
+          <RegiLinkWarpper>
+              <NewLink to='/'><Text>Sign in</Text></NewLink>
+          </RegiLinkWarpper>
           <TestWrapper>
-            <Button >Register</Button>
+            <Button tertiary>Register</Button>
           </TestWrapper>
         </div>
       </Wrapper>
