@@ -39,6 +39,7 @@ class RegisterForm extends React.Component{
         <Text md>Register</Text>
         <Input type="text" placeholder="Email" />
         <Input type="password" placeholder="Password" />
+        <Input type="password" placeholder="Confirm" />
         <div>
           <RegiLinkWarpper>
               <NewLink to='/'><Text>Sign in</Text></NewLink>
