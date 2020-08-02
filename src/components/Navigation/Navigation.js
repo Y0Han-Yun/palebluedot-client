@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import Text from '../Text';
 import NewLink from '../NewLink';
 import { withRouter } from 'react-router-dom';
-import BurgrtNav from './BurgerNav';
-import LeftNav from './LeftNav';
+
 
 
 const TopWarpper = styled.nav`
@@ -67,7 +66,7 @@ class Navigaion extends React.Component {
           </LinkRightSection>
         </LinkWarpper>
       </TopWarpper>
-      <BurgrtNav/><LeftNav/>
+    
     </>);
   }
 

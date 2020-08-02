@@ -5,7 +5,7 @@ import Text from './Text';
 const backgroundColor = props => {
   if (props.styledProps.primary) return 'background-color: #333333;';
   else if (props.styledProps.secondary) return 'background-color: #FFFFFF;';
-  else if (props.styledProps.tertiary) return'background-color: #5593E1;'
+  else if (props.styledProps.tertiary) return 'background-color: #5593E1;';
   return '';
 };
 
