@@ -13,7 +13,11 @@ const StyledComponent = styled.div`
     flex-direction: column;
     align-items: center;
     .constrain {
+<<<<<<< HEAD
       width: 410px;
+=======
+      width: 300px;
+>>>>>>> 54b6727bef50348e98907e9ba7c4d53746dcb8dc
       padding: 0rem 1rem;
     }
   }
