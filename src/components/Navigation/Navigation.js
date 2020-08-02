@@ -1,15 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text, NewLink, Button } from '../components';
+import Text from '../Text';
+import NewLink from '../NewLink';
+import { withRouter } from 'react-router-dom';
+import BurgrtNav from './BurgerNav';
+import LeftNav from './LeftNav';
 
-const TopWarpper = styled.div`
+
+const TopWarpper = styled.nav`
   width: 100%;
-  height: 81px;
+  height: 65px;
   display: flex;
   align-items: center;
-  background-color: #40444E;
+  background-color: #EFEFEF;
+  border-bottom: 2px solid #f1f1f1;
+  @media (max-width: 500px) {
+  
+    }
 `;
-
 const LogoWarpper = styled.div`
   width :50%;
   justify-content: center;
@@ -20,7 +28,7 @@ const LogoLeftSection = styled.div`
   width :50%;
   justify-content: center;
   display: flex;
-  background-color: powderblue;
+  background-color: #AAAAAA;
 `;
 const LogoRightSection = styled.div`
   width :50%;
@@ -38,12 +46,6 @@ const LinkRightSection = styled.div`
   justify-content: space-evenly;
   display: flex;
 `;
-// const SideWarpper = styled.div`
-//   display: flex;
-//   width :242.75px;
-//   height: 720px;
-//   background-color: #40444E;
-// `;
 
 class Navigaion extends React.Component {
 
@@ -58,18 +60,17 @@ class Navigaion extends React.Component {
         </LogoWarpper>
         <LinkWarpper>
           <LinkLeftSection/>
-          <LinkRightSection>
-            <NewLink to="regi"><Button>Register</Button></NewLink>
-            <NewLink to="creinvo"><Button>Invoice</Button></NewLink>
+          <LinkRightSection>  
+            <NewLink to="regi"><Text sm>SignOut</Text></NewLink>
+            <NewLink to="regi"><Text sm>Register</Text></NewLink>
+            <NewLink to="creinvo"><Text sm>Invoice</Text></NewLink>
           </LinkRightSection>
         </LinkWarpper>
       </TopWarpper>
-      {/* <SideWarpper>
-        <Text>asdasdqwe</Text>
-      </SideWarpper> */}
+      <BurgrtNav/><LeftNav/>
     </>);
   }
 
 }
 
-export default Navigaion;
+export default withRouter(Navigaion);

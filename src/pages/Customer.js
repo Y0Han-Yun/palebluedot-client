@@ -1,7 +1,6 @@
 import { withRouter } from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
-import Navigation from '../components/Navigation';
 
 const Container = styled.div`
   width: 1440px;
@@ -29,7 +28,6 @@ class Customer extends React.Component {
 
   render () {
     return (<>
-      <Navigation/>
       <Container>
         <SetPage>
           <TableLine>
