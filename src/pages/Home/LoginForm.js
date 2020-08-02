@@ -13,7 +13,6 @@ const Wrapper = styled.div`
   }
   
 `;
-
 const TestWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -28,19 +27,23 @@ const TestWrapper = styled.div`
     }
   }
 `;
-
+const LinkWarpper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`;
 const CheckboxWapper = styled.div`
   span {
     display: inline;
   }
   width: 50%;
 `;
-
-const LinkWarpper = styled.div`
-display: flex;
+const ForgotPasswordWarpper =styled.div`
+  width: 35%;
+  display: flex;
 `;
 const RegiLinkWarpper = styled.div`
-  width: 50%;
+  width: 20%;
   justify-content: flex-end;
   display: flex;
 `;
@@ -60,6 +63,9 @@ class LoginForm extends React.Component {
               <Input type="checkbox" />
               <Text>Remember me</Text>
             </CheckboxWapper>
+            <ForgotPasswordWarpper>
+              <NewLink to="/forgot">Forgot Password</NewLink>
+            </ForgotPasswordWarpper>
             <RegiLinkWarpper>
               <NewLink to='/regi'><Text>Register</Text></NewLink>
             </RegiLinkWarpper>

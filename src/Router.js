@@ -4,6 +4,7 @@ import { font } from './config/theme';
 import React from 'react';
 import Home from './pages/Home';
 import Register from './pages/Register/Register';
+import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import CreateInvoicePage from './pages/CreateInvoicePage';
 import Customer from './pages/Customer';
 import Bin from './pages/Bin';
@@ -38,6 +39,9 @@ class Router extends React.Component {
           </Route>
           <Route exact path="/bin">
             <Bin />
+          </Route>
+          <Route exact path="/forgot">
+            <ForgotPassword />
           </Route>
         </Switch>
       </BrowserRouter>

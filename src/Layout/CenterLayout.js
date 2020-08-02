@@ -13,7 +13,7 @@ const StyledComponent = styled.div`
     flex-direction: column;
     align-items: center;
     .constrain {
-      max-width: 700px;
+      width: 410px;
       padding: 0rem 1rem;
     }
   }

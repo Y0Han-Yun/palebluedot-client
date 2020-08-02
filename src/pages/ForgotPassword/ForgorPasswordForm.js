@@ -32,17 +32,15 @@ const RegiLinkWarpper = styled.div`
   display: flex;
 `;
 
-class RegisterForm extends React.Component{
+class ForgotPasswordForm extends React.Component{
   render () {
     return (<>
       <Wrapper>
-        <Text md>Register</Text>
-        <Input type="text" placeholder="Email" />
-        <Input type="password" placeholder="Password" />
-        <Input type="password" placeholder="Confirm Password" />
+        <Text md>Forgot your password?</Text>
+        <Input type="text" placeholder="Email address" />
         <div>
           <RegiLinkWarpper>
-              <NewLink to='/'><Text>Sign in</Text></NewLink>
+              <NewLink to='/regi'><Text>Register</Text></NewLink>
           </RegiLinkWarpper>
           <TestWrapper>
             <Button >Register</Button>
@@ -53,4 +51,4 @@ class RegisterForm extends React.Component{
   }
 }
 
-export default withRouter(RegisterForm);
+export default withRouter(ForgotPasswordForm);
