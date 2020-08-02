@@ -18,7 +18,8 @@ const font = {
     root: '16px',
     sm: '0.8rem',
     normal: '1rem',
-    md: '1.5rem'
+    md: '1.5rem',
+    lg: '2rem'
   },
   weight: {
     light: '300',
