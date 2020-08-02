@@ -13,9 +13,11 @@ const TopWarpper = styled.nav`
   align-items: center;
   background-color: #EFEFEF;
   border-bottom: 2px solid #f1f1f1;
-  @media (max-width: 500px) {
   
-    }
+  @media (max-width: 500px;) {
+    background-color: lightgreen;
+    color: red;
+  }
 `;
 const LogoWarpper = styled.div`
   width :50%;
@@ -66,7 +68,6 @@ class Navigaion extends React.Component {
           </LinkRightSection>
         </LinkWarpper>
       </TopWarpper>
-    
     </>);
   }
 
