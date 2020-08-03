@@ -15,9 +15,9 @@ class CreateInvoicePage extends React.Component {
 
   render () {
     return (<>
-     <Container>
-      <Navigation/>
-    </Container>
+      <Container>
+        <Navigation/>
+      </Container>
     </>);
   }
 

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Text from '../Text';
 import NewLink from '../NewLink';
 import { withRouter } from 'react-router-dom';
+import BurgerIcon from '../Navigation/BurgerIcon';
 
 
 
@@ -14,9 +15,9 @@ const TopWarpper = styled.nav`
   background-color: #EFEFEF;
   border-bottom: 2px solid #f1f1f1;
   
-  @media (max-width: 500px;) {
-    background-color: lightgreen;
-    color: red;
+  @media (max-width: 500px) {
+    background-color : black;
+
   }
 `;
 const LogoWarpper = styled.div`
@@ -29,7 +30,6 @@ const LogoLeftSection = styled.div`
   width :50%;
   justify-content: center;
   display: flex;
-  background-color: #AAAAAA;
 `;
 const LogoRightSection = styled.div`
   width :50%;
@@ -55,11 +55,12 @@ class Navigaion extends React.Component {
       <TopWarpper>
         <LogoWarpper>
           <LogoLeftSection>
-            <Text md white>Logo</Text>
+            <Text md>Logo</Text>
           </LogoLeftSection>
           <LogoRightSection/>
         </LogoWarpper>
         <LinkWarpper>
+        <BurgerIcon/>
           <LinkLeftSection/>
           <LinkRightSection>  
             <NewLink to="regi"><Text sm>SignOut</Text></NewLink>
@@ -68,6 +69,7 @@ class Navigaion extends React.Component {
           </LinkRightSection>
         </LinkWarpper>
       </TopWarpper>
+     
     </>);
   }
 
