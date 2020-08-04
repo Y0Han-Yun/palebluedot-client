@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { withRouter } from 'react-router-dom';
 import Navigation from '../components/Navigation/Navigation';
 
-
 const Container = styled.div`
   width: 1440px;
   height: 790px;
@@ -22,6 +21,7 @@ class CreateInvoicePage extends React.Component {
       </Container>
     </>);
   }
+
 }
 
 export default withRouter(CreateInvoicePage);

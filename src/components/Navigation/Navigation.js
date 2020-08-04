@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import Text from '../Text';
 import NewLink from '../NewLink';
 import { withRouter } from 'react-router-dom';
-import BurgerMenu from './BurgerMenu';
+import BurgerIcon from './BurgerMenu';
+import PageLayer from './PageLayer';
+import BurgerMenu from './PageLayer';
 
 
 
-const TopWarpper = styled.nav`
+const Warpper = styled.nav`
   width: 100%;
   height: 65px;
   display: flex;
@@ -52,7 +54,7 @@ class Navigaion extends React.Component {
 
   render () {
     return (<>
-      <TopWarpper>
+      <Warpper>
         <LogoWarpper>
           <LogoLeftSection>
             <Text md>Logo</Text>
@@ -65,11 +67,14 @@ class Navigaion extends React.Component {
             <NewLink to="regi"><Text sm>SignOut</Text></NewLink>
             <NewLink to="regi"><Text sm>Register</Text></NewLink>
             <NewLink to="creinvo"><Text sm>Invoice</Text></NewLink>
-            <NewLink to="bin"><Text white>Bin</Text></NewLink>
+            <NewLink to="bin"><Text sm>Bin</Text></NewLink>
           </LinkRightSection>
         </LinkWarpper>
-      </TopWarpper>
-      <BurgerMenu/>
+      </Warpper>
+      <PageLayer>
+        <BurgerIcon />
+        <BurgerMenu />
+      </PageLayer>
     </>);
   }
 

@@ -8,6 +8,7 @@ const StyledComponent = styled.div`
   background-color: black;
   opacity: .8; 
   z-index: -1;
+  position: absolute;
 `;
 
 class PageLayer extends React.Component {
