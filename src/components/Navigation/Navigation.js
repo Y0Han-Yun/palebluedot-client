@@ -4,7 +4,7 @@ import Text from '../Text';
 import NewLink from '../NewLink';
 import { withRouter } from 'react-router-dom';
 import BurgerIcon from '../Navigation/BurgerIcon';
-
+import PageLayer from '../Navigation/PageLayer';
 
 
 const TopWarpper = styled.nav`
@@ -69,7 +69,7 @@ class Navigaion extends React.Component {
           </LinkRightSection>
         </LinkWarpper>
       </TopWarpper>
-     
+      <PageLayer/>
     </>);
   }
 

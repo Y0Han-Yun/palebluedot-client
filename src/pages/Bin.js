@@ -18,7 +18,6 @@ class Bin extends React.Component {
     return (<>
       <Navigation/>
       <Container>
-
       </Container>
     </>);
   }

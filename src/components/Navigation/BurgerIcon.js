@@ -7,13 +7,12 @@ const Warpper = styled.div`
   cursor:pointer;
 `;
 const Burgerline = styled.div`
-  background:#ffffff;
-  margin:6px 0px 6px 0px;
-  width:56px;
-  height:7px; 
-  border-radius:2px;
-  box-shadow:0 1px 3px rgba(0,0,0,.5);
-  background-color: black;
+  background-color: #ffffff;
+  margin: 6px 0px 6px 0px;
+  width: 56px;
+  height: 7px; 
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.5);
   }
 `;
 
