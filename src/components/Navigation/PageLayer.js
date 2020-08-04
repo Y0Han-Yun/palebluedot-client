@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import BurgerIcon from './BurgerIcon';
-import BurgerMenu from './BurgerMenu';
 
 
 const StyledComponent = styled.div`
@@ -15,10 +13,7 @@ const StyledComponent = styled.div`
 class PageLayer extends React.Component {
   render () {
     return (<>
-      <StyledComponent>
-        <BurgerIcon/>
-        <BurgerMenu/>
-      </StyledComponent>
+      <StyledComponent/>
     </>);
   }
 }

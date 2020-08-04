@@ -5,6 +5,7 @@ const Warpper = styled.div`
   width:56px;
   height:35px;
   cursor:pointer;
+  padding: 10px 0 16px 20px;
 `;
 const Burgerline = styled.div`
   background-color: #ffffff;

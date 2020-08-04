@@ -16,8 +16,8 @@ class Bin extends React.Component {
 
   render () {
     return (<>
-      <Navigation/>
       <Container>
+        <Navigation/>
       </Container>
     </>);
   }

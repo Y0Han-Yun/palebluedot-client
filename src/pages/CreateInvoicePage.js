@@ -1,7 +1,7 @@
-import { withRouter } from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
-import PageLayer from '../components/Navigation/PageLayer';
+import { withRouter } from 'react-router-dom';
+import Navigation from '../components/Navigation/Navigation';
 
 
 const Container = styled.div`
@@ -12,16 +12,16 @@ const Container = styled.div`
   padding: 0px;
   display: flex;
 `;
+
 class CreateInvoicePage extends React.Component {
 
   render () {
     return (<>
       <Container>
-        <PageLayer/>
+        <Navigation/>
       </Container>
     </>);
   }
-
 }
 
 export default withRouter(CreateInvoicePage);

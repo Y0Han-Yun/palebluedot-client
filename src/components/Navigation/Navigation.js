@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Text from '../Text';
 import NewLink from '../NewLink';
 import { withRouter } from 'react-router-dom';
-import BurgerIcon from '../Navigation/BurgerIcon';
-import PageLayer from '../Navigation/PageLayer';
+import BurgerMenu from './BurgerMenu';
+
 
 
 const TopWarpper = styled.nav`
@@ -60,16 +60,16 @@ class Navigaion extends React.Component {
           <LogoRightSection/>
         </LogoWarpper>
         <LinkWarpper>
-        <BurgerIcon/>
           <LinkLeftSection/>
           <LinkRightSection>  
             <NewLink to="regi"><Text sm>SignOut</Text></NewLink>
             <NewLink to="regi"><Text sm>Register</Text></NewLink>
             <NewLink to="creinvo"><Text sm>Invoice</Text></NewLink>
+            <NewLink to="bin"><Text white>Bin</Text></NewLink>
           </LinkRightSection>
         </LinkWarpper>
       </TopWarpper>
-      <PageLayer/>
+      <BurgerMenu/>
     </>);
   }
 
