@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import Text from '../Text';
 import NewLink from '../NewLink';
 import { withRouter } from 'react-router-dom';
-import BurgerIcon from './BurgerMenu';
-import PageLayer from './PageLayer';
-import BurgerMenu from './PageLayer';
+import BurgerIcon from './BurgerIcon';
+import BurgerMenu from './BurgerMenu';
 
 
 
@@ -49,7 +48,12 @@ const LinkRightSection = styled.div`
   justify-content: space-evenly;
   display: flex;
 `;
+const BurgerWarpper = styled.div`
+  background-color: #EFEFEF;
+  width:400px;
+  height:790px;
 
+`;
 class Navigaion extends React.Component {
 
   render () {
@@ -71,10 +75,10 @@ class Navigaion extends React.Component {
           </LinkRightSection>
         </LinkWarpper>
       </Warpper>
-      <PageLayer>
+      <BurgerWarpper>
         <BurgerIcon />
         <BurgerMenu />
-      </PageLayer>
+      </BurgerWarpper>
     </>);
   }
 

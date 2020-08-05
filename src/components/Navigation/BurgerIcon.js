@@ -2,11 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Warpper = styled.div`
+  width:380px;
+  height:46px;
+  cursor:pointer;
+  margin: 32px 0 45px 20px;
+   
+  background-color: #EFEFEF;
+  display:flex;
+  justify-content: flex-end;
+`;
+
+const BurgerWarpper = styled.div`
   width:56px;
   height:35px;
-  cursor:pointer;
-  padding: 10px 0 16px 20px;
+  margin: 0px;
 `;
+
 const Burgerline = styled.div`
   background-color: #ffffff;
   margin: 6px 0px 6px 0px;
@@ -37,11 +48,13 @@ class BurgerIcon extends React.Component {
 
   render () {
     return (<>
-      <Warpper onMouseOver={this.handleChangeColor} onClick={this.handleBurgerIconClick}>
+    <Warpper>
+      <BurgerWarpper onMouseOver={this.handleChangeColor} onClick={this.handleBurgerIconClick}>
         <Burgerline></Burgerline>
         <Burgerline></Burgerline>
         <Burgerline></Burgerline>
-      </Warpper>
+      </BurgerWarpper>
+    </Warpper>
     </>);
   }
 }
