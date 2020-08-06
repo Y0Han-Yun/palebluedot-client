@@ -5,8 +5,7 @@ const Warpper = styled.div`
   width:380px;
   height:46px;
   cursor:pointer;
-  margin: 32px 0 45px 20px;
-   
+  margin: 32px 0 45px 20px; 
   background-color: #EFEFEF;
   display:flex;
   justify-content: flex-end;
@@ -15,7 +14,7 @@ const Warpper = styled.div`
 const BurgerWarpper = styled.div`
   width:56px;
   height:35px;
-  margin: 0px;
+  margin-right: 55px;
 `;
 
 const Burgerline = styled.div`

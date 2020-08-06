@@ -8,13 +8,12 @@ import NewLink from '../NewLink';
 const Warpper = styled.div`
   width:400px;
   height:700px;
-  
-  background-color: #EFEFEF;;
+  background-color: #EFEFEF;
 `;
 const Menu = styled.div`
-  width:350px;
+  width:300px;
   height:70px;
-  margin: 10px 20px 10px 20px;
+  margin: 10px 0px 10px 100px;
 `;
 
 class BurgerMenu extends React.Component {
@@ -25,6 +24,8 @@ class BurgerMenu extends React.Component {
           <Menu><NewLink to="regi"><Text>Register</Text></NewLink></Menu>
           <Menu><NewLink to="creinvo"><Text>Invoice</Text></NewLink></Menu>
           <Menu><NewLink to="bin"><Text>Bin</Text></NewLink></Menu>
+          <Menu><NewLink to="bin"><Text>About us</Text></NewLink></Menu>
+          <Menu><NewLink to="bin"><Text>Contact us</Text></NewLink></Menu>
         </Warpper>
     </>);
   }
