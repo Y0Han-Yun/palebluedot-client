@@ -6,7 +6,6 @@ import { withRouter } from 'react-router-dom';
 import BurgerNavigation from './BurgerNavigation';
 
 
-
 const Warpper = styled.nav`
   width: 100%;
   height: 65px;
