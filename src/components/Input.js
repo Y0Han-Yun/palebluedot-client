@@ -11,7 +11,12 @@ const StyledComponent = styled.input`
   ${props => textStyledTemplate(props)}
   ${props => width(props)}
   padding: 0.5rem 1rem;
+  padding-top: 53px;
   box-sizing: border-box;
+  border-width: 0 0 1px;
+  background: transparent;
+  outline: none;
+  color: white; 
 `;
 
 class Input extends React.Component {

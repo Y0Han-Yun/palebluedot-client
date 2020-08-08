@@ -13,6 +13,13 @@ const StyledComponent = styled.button`
   cursor: pointer;
   padding: 0.25rem 1.5rem;
   ${props => backgroundColor(props)}
+  border-radius: 15px;
+  border-width: 0px;
+  outline: none;
+  :hover {
+    background-color: #037FF3;
+    color: white;
+  }
 `;
 
 class Button extends React.Component {

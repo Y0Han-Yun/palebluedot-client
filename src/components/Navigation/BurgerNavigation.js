@@ -1,10 +1,23 @@
 import React from 'react';
+import BurgerIcon from './BurgerIcon';
+import BurgerMenu from './BurgerMenu';
+import styled from 'styled-components';
 
-class BurgerMenuListItem extends React.Component {
+const BurgerWarpper = styled.div`
+  background-color: #EFEFEF;
+  width:400px;
+  height:790px;
+`;
+
+class BurgerNavigation extends React.Component {
   render () {
     return (<>
+      <BurgerWarpper>
+        <BurgerIcon />
+        <BurgerMenu />
+      </BurgerWarpper>
     </>);
   }
 }
 
-export default BurgerMenuListItem;
+export default BurgerNavigation;
