@@ -22,9 +22,9 @@ const font = {
     lg: '2rem'
   },
   weight: {
-    light: '300',
-    normal: '400',
-    bold: '700'
+    light: '300px',
+    normal: '400px',
+    bold: '700px'
   },
   lineHeight: {
     normal: '1.8rem'

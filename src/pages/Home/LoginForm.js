@@ -98,6 +98,12 @@ const Introduction = styled.div`
   margin: 0px;
   border: 0px;
   padding: 0px;
+  
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 class LoginForm extends React.Component {
@@ -108,14 +114,20 @@ class LoginForm extends React.Component {
         <SignInBox>
           <IntroductionWrapper>         
             <Introduction>
-              <Logo />
-              <Text lg white>Pale Blue Dot</Text><br/>
-              <Text sm white>본 서비스는 종이의 사용량을 줄이는 목적으로 만들어진</Text><br/>
-              <Text sm white>온라인 인보이싱 서비스 입니다.</Text><br/>
-              <Text md white>서비스 설명</Text><br/>
-              <Text sm white>1. 고객 저장이 가능</Text><br/>
-              <Text sm white>2. 인보이승 예약발송이 가능</Text><br/>
-              <Text sm white>3. 인보이스 히스토리 저장</Text><br/>
+              <div>
+                <Logo />
+              </div>
+              <div>
+              <Text lg white normal>Pale Blue Dot</Text><br/>
+              </div>
+              <div>
+                <Text white>본 서비스는 종이의 사용량을 줄이는 목적으로 만들어진</Text><br/>
+                <Text white>온라인 인보이싱 서비스 입니다.</Text><br/>
+                <Text md white>서비스 설명</Text><br/>
+                <Text white>1. 고객 저장이 가능</Text><br/>
+                <Text white>2. 인보이승 예약발송이 가능</Text><br/>
+                <Text white>3. 인보이스 히스토리 저장</Text><br/>
+              </div>
             </Introduction>
           </IntroductionWrapper>
           <SignInWrapper>
