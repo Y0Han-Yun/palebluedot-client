@@ -60,7 +60,7 @@ const ButtonWrapper = styled.div`
   span {
     margin-bottom: ${spacing['0']};
   }
-  padding-top: 113px;
+  padding-top: 100px;
 `;
 const LinkWarpper = styled.div`
   display: flex;
@@ -100,6 +100,10 @@ const Introduction = styled.div`
   border: 0px;
   padding: 0px;
 `;
+const LogoWrapper = styled.div`
+  width: 20%;
+  height: 20%;
+`;
 
 class LoginForm extends React.Component {
 
@@ -109,8 +113,8 @@ class LoginForm extends React.Component {
         <SignInBox>
           <IntroductionWrapper>         
             <Introduction>
-            <Logo /><br/>
-            <Text lg white>Pale Blue Dot</Text><br/>
+              <LogoWrapper><Logo /></LogoWrapper>
+              <Text lg white>Pale Blue Dot</Text><br/>
               <Text sm white>본 서비스는 종이의 사용량을 줄이는 목적으로 만들어진</Text><br/>
               <Text sm white>온라인 인보이싱 서비스 입니다.</Text><br/>
               <Text md white>서비스 설명</Text><br/>
