@@ -10,6 +10,7 @@ const width = props => {
 const StyledComponent = styled.input`
   ${props => textStyledTemplate(props)}
   ${props => width(props)}
+
   padding: 0.5rem 1rem;
   padding-top: 53px;
   box-sizing: border-box;

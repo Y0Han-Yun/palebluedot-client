@@ -2,8 +2,7 @@ import { Text, Input, Button, NewLink } from '../../components';
 import { spacing } from '../../config/theme';
 import React from 'react';
 import styled from 'styled-components';
-import Logo from '../../components/Logo';
-
+import Logo from '../../components/Logo'
 
 const Wrapper = styled.div`
   width: 1440px;
@@ -100,10 +99,6 @@ const Introduction = styled.div`
   border: 0px;
   padding: 0px;
 `;
-const LogoWrapper = styled.div`
-  width: 20%;
-  height: 20%;
-`;
 
 class LoginForm extends React.Component {
 
@@ -113,7 +108,7 @@ class LoginForm extends React.Component {
         <SignInBox>
           <IntroductionWrapper>         
             <Introduction>
-              <LogoWrapper><Logo /></LogoWrapper>
+              <Logo />
               <Text lg white>Pale Blue Dot</Text><br/>
               <Text sm white>본 서비스는 종이의 사용량을 줄이는 목적으로 만들어진</Text><br/>
               <Text sm white>온라인 인보이싱 서비스 입니다.</Text><br/>
