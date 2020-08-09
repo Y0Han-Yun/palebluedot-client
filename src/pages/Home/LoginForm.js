@@ -3,7 +3,6 @@ import { spacing } from '../../config/theme';
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../../components/Logo'
-import LogInOutLayout from '../../Layout/LogInOutLayout';
 
 const Wrapper = styled.div`
   width: 1440px;
@@ -24,14 +23,14 @@ const Wrapper = styled.div`
   }
 `;
 
-// const SignInBox = styled.div`
-//   width: 85%;
-//   height: 90%;
-//   display: flex;
-//   margin: 0px;
-//   box-shadow: 4px 6px 13px 1px rgba(0,0,0,0.42);
-//   border-radius: 20px;
-// `;
+const SignInBox = styled.div`
+  width: 85%;
+  height: 90%;
+  display: flex;
+  margin: 0px;
+  box-shadow: 4px 6px 13px 1px rgba(0,0,0,0.42);
+  border-radius: 20px;
+`;
 const SignInWrapper = styled.div`
   width: 45%;
   height: 100%;
@@ -113,7 +112,7 @@ class LoginForm extends React.Component {
   render () {
     return (<>
       <Wrapper>
-        <LogInOutLayout>
+        <SignInBox>
           <IntroductionWrapper>         
             <Introduction>
               <div>
@@ -153,7 +152,7 @@ class LoginForm extends React.Component {
               </div>
             </SignIn>
           </SignInWrapper>
-        </LogInOutLayout>
+        </SignInBox>
       </Wrapper>
     </>);
   }

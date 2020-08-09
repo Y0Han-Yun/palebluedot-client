@@ -11,11 +11,13 @@ const StyledComponent = styled.div`
 `;
 
 class LogInOutLayout extends React.Component {
+
   render () {
     return (<>
       <StyledComponent />
     </>);
   }
+
 }
 
 export default LogInOutLayout;
