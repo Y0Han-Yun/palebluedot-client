@@ -17,7 +17,7 @@ const StyledComponent = styled.button`
   border-width: 0px;
   outline: none;
   :hover {
-    background-color: #037FF3;
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
     color: white;
   }
 `;

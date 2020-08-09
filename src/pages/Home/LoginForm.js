@@ -3,6 +3,7 @@ import { spacing } from '../../config/theme';
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../../components/Logo'
+import LogInOutLayout from '../../Layout/LogInOutLayout';
 
 const Wrapper = styled.div`
   width: 1440px;
@@ -13,7 +14,8 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3a9efc;
+  background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+  
   // span {
   //   display: block;
   // }
@@ -22,14 +24,14 @@ const Wrapper = styled.div`
   }
 `;
 
-const SignInBox = styled.div`
-  width: 85%;
-  height: 90%;
-  display: flex;
-  margin: 0px;
-  box-shadow: 4px 6px 13px 1px rgba(0,0,0,0.42);
-  border-radius: 20px;
-`;
+// const SignInBox = styled.div`
+//   width: 85%;
+//   height: 90%;
+//   display: flex;
+//   margin: 0px;
+//   box-shadow: 4px 6px 13px 1px rgba(0,0,0,0.42);
+//   border-radius: 20px;
+// `;
 const SignInWrapper = styled.div`
   width: 45%;
   height: 100%;
@@ -86,7 +88,7 @@ const IntroductionWrapper = styled.div`
   width: 55%;
   height: 100%;
   margin: 0px;
-  background-color: #037FF3;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,22 +113,17 @@ class LoginForm extends React.Component {
   render () {
     return (<>
       <Wrapper>
-        <SignInBox>
+        <LogInOutLayout>
           <IntroductionWrapper>         
             <Introduction>
               <div>
                 <Logo />
               </div>
               <div>
-              <Text lg white normal>Pale Blue Dot</Text><br/>
+              <Text lg normal>Pale Blue Dot</Text><br/>
               </div>
               <div>
-                <Text white>본 서비스는 종이의 사용량을 줄이는 목적으로 만들어진</Text><br/>
-                <Text white>온라인 인보이싱 서비스 입니다.</Text><br/>
-                <Text md white>서비스 설명</Text><br/>
-                <Text white>1. 고객 저장이 가능</Text><br/>
-                <Text white>2. 인보이승 예약발송이 가능</Text><br/>
-                <Text white>3. 인보이스 히스토리 저장</Text><br/>
+                <Text sm >The paperless invoice</Text>                     
               </div>
             </Introduction>
           </IntroductionWrapper>
@@ -156,7 +153,7 @@ class LoginForm extends React.Component {
               </div>
             </SignIn>
           </SignInWrapper>
-        </SignInBox>
+        </LogInOutLayout>
       </Wrapper>
     </>);
   }
