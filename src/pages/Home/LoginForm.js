@@ -15,6 +15,9 @@ const Wrapper = styled.div`
   align-items: center;
   background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
   
+  // @media (max-width: 500px) {
+  //   background-color : black;
+  // }
   // span {
   //   display: block;
   // }

@@ -46,6 +46,12 @@ const spacing = {
   '4': '1rem'
 };
 
-const theme = { font, media, spacing };
+const logo = {
+  main : '200',
+  navi : '100',
+  buger :'200'
+};
 
-export { theme as default, font, media, spacing };
+const theme = { font, media, spacing, logo };
+
+export { theme as default, font, media, spacing, logo };

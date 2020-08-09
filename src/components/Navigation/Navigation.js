@@ -11,10 +11,10 @@ const Warpper = styled.nav`
   height: 65px;
   display: flex;
   align-items: center;
-  background-color: #EFEFEF;
+  background: linear-gradient(to right, #3a7bd5, #3a6073);
   border-bottom: 2px solid #f1f1f1;
   @media (max-width: 500px) {
-    background-color : black;
+    background: linear-gradient(to right, #3a7bd5, #3a6073);
   }
 `;
 const LogoWarpper = styled.div`
@@ -52,17 +52,17 @@ class Navigaion extends React.Component {
       <Warpper>
         <LogoWarpper>
           <LogoLeftSection>
-            <Text md>Logo</Text>
+            <Text md white>Pale Blue Dot</Text>
           </LogoLeftSection>
           <LogoRightSection/>
         </LogoWarpper>
         <LinkWarpper>
           <LinkLeftSection/>
           <LinkRightSection>  
-            <NewLink to="regi"><Text sm>SignOut</Text></NewLink>
-            <NewLink to="regi"><Text sm>Register</Text></NewLink>
-            <NewLink to="creinvo"><Text sm>Invoice</Text></NewLink>
-            <NewLink to="bin"><Text sm>Bin</Text></NewLink>
+            <NewLink to="regi"><Text sm white>SignOut</Text></NewLink>
+            <NewLink to="regi"><Text sm white>Register</Text></NewLink>
+            <NewLink to="creinvo"><Text sm white>Invoice</Text></NewLink>
+            <NewLink to="bin"><Text sm white>Bin</Text></NewLink>
           </LinkRightSection>
         </LinkWarpper>
       </Warpper>

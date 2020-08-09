@@ -6,7 +6,6 @@ const Warpper = styled.div`
   height:46px;
   cursor:pointer;
   margin: 32px 0 45px 20px; 
-  background-color: #EFEFEF;
   display:flex;
   justify-content: flex-end;
 `;

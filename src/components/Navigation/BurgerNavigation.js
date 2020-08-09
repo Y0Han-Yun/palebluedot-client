@@ -4,7 +4,7 @@ import BurgerMenu from './BurgerMenu';
 import styled from 'styled-components';
 
 const BurgerWarpper = styled.div`
-  background-color: #EFEFEF;
+  background: linear-gradient(to bottom, #3a7bd5, #3a6073);
   width:400px;
   height:790px;
 `;

@@ -5,7 +5,7 @@ class Logo extends React.Component {
 
   render () {
     return (<>
-      <FcGlobe size="100"/>
+      <FcGlobe size='100'/>
     </>);
   }
 
