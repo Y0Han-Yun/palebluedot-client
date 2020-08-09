@@ -119,7 +119,7 @@ class RegisterForm extends React.Component {
                 <Logo />
               </div>
               <div>
-              <Text lg normal>Pale Blue Dot</Text><br/>
+                <Text lg normal>Pale Blue Dot</Text><br/>
               </div>
               <div>
                 <Text sm >The paperless invoice</Text>                     

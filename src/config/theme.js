@@ -47,9 +47,9 @@ const spacing = {
 };
 
 const logo = {
-  main : '200',
-  navi : '100',
-  buger :'200'
+  main: '200',
+  navi: '100',
+  buger: '200'
 };
 
 const theme = { font, media, spacing, logo };
