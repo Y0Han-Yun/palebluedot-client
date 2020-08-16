@@ -7,6 +7,7 @@ const BurgerWarpper = styled.div`
   background: linear-gradient(to bottom, #3a7bd5, #3a6073);
   width:400px;
   height:790px;
+  transition: left .3s ease-in-out;
 `;
 
 class BurgerNavigation extends React.Component {

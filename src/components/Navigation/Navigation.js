@@ -4,7 +4,6 @@ import Text from '../Text';
 import NewLink from '../NewLink';
 import { withRouter } from 'react-router-dom';
 import BurgerNavigation from './BurgerNavigation';
-import Logo from '../Logo';
 
 const Warpper = styled.nav`
   width: 100%;
@@ -45,14 +44,13 @@ const LinkRightSection = styled.div`
   display: flex;
 `;
 
-class Navigaion extends React.Component {
+class Navigation extends React.Component {
 
   render () {
     return (<>
       <Warpper>
         <LogoWarpper>
           <LogoLeftSection>
-            <Logo />
             <Text md white>Pale Blue Dot</Text>
           </LogoLeftSection>
           <LogoRightSection/>
@@ -73,4 +71,4 @@ class Navigaion extends React.Component {
 
 }
 
-export default withRouter(Navigaion);
+export default withRouter(Navigation);

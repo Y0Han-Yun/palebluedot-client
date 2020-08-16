@@ -30,14 +30,12 @@ class BurgerIcon extends React.Component {
 
   constructor(props) {
     super(props)
-    this.handleChangeColor=this.handleChangeColor.bind(this);
     this.handleBurgerIconClick=this.handleBurgerIconClick.bind(this);
     this.state = {
       id: ''
     };
   };
 
-  handleChangeColor() {};
 
   handleBurgerIconClick() {
     alert('Burger!');
@@ -47,7 +45,7 @@ class BurgerIcon extends React.Component {
   render () {
     return (<>
     <Warpper>
-      <BurgerWarpper onMouseOver={this.handleChangeColor} onClick={this.handleBurgerIconClick}>
+      <BurgerWarpper onClick={this.handleBurgerIconClick}>
         <Burgerline></Burgerline>
         <Burgerline></Burgerline>
         <Burgerline></Burgerline>

@@ -2,6 +2,7 @@ import React from 'react';
 import { FcGlobe } from 'react-icons/fc';
 
 class Logo extends React.Component {
+
   render () {
     const styledProps = {
       primary: this.props.primary,

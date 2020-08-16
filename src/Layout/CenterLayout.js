@@ -14,7 +14,7 @@ const StyledComponent = styled.div`
     align-items: center;
     .constrain {
       width: 410px;
-      padding: 0rem 1rem;
+      padding: 0rem 1rem
     }
   }
 `;
