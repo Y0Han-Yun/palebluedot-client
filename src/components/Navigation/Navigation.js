@@ -46,12 +46,20 @@ const LinkRightSection = styled.div`
 
 class Navigation extends React.Component {
 
+  constructor(props){
+    super(props)
+    this.bugerOpen = this.bugerOpen.bind(this);
+  };
+
+  bugerOpen(){
+   return alert('hello!');
+  };
   render () {
     return (<>
       <Warpper>
         <LogoWarpper>
-          <LogoLeftSection>
-            <Text md white>Pale Blue Dot</Text>
+          <LogoLeftSection onClick={this.bugerOpen}>
+            <Text md white >Pale Blue Dot</Text>
           </LogoLeftSection>
           <LogoRightSection/>
         </LogoWarpper>

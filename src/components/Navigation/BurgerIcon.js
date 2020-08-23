@@ -28,24 +28,13 @@ const Burgerline = styled.div`
 
 class BurgerIcon extends React.Component {
 
-  constructor(props) {
-    super(props)
-    this.handleBurgerIconClick=this.handleBurgerIconClick.bind(this);
-    this.state = {
-      id: ''
-    };
-  };
-
-
-  handleBurgerIconClick() {
-    alert('Burger!');
-  };
+  
 
 
   render () {
     return (<>
     <Warpper>
-      <BurgerWarpper onClick={this.handleBurgerIconClick}>
+      <BurgerWarpper >
         <Burgerline></Burgerline>
         <Burgerline></Burgerline>
         <Burgerline></Burgerline>
