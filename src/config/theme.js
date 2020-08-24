@@ -33,7 +33,7 @@ const font = {
     normal: '0.05rem'
   },
   wordSpacing: {
-    normal: '0.1rem'  
+    normal: '0.1rem'
   }
 };
 
