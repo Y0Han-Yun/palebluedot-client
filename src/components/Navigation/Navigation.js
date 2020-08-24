@@ -12,14 +12,12 @@ const Warpper = styled.nav`
   align-items: center;
   background: linear-gradient(to right, #3a7bd5, #3a6073);
   border-bottom: 2px solid #f1f1f1;
-  @media (min-width: 500px) {
-    .background-color: #3a6073;
+  @media screen and(min-width: 500px) {
+    .background-color: red;
 
     .Text {
-      color: fuchsia;
+      color: yellow;
     }
-
-
   }
 `;
 const LogoWarpper = styled.div`

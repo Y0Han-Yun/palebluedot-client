@@ -1,5 +1,5 @@
-import { Text, Input, Button, NewLink } from '../../components';
-import { spacing } from '../../config/theme';
+import { Text, Input, Button, NewLink} from '../../components';
+import { spacing} from '../../config/theme';
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../../components/Logo'
@@ -15,12 +15,13 @@ const Wrapper = styled.div`
   align-items: center;
   background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
   
-  // @media (max-width: 500px) {
-  //   background-color : black;
-  // }
-  // span {
-  //   display: block;
-  // }
+  @media (min-width: 500px) {
+    color : black;
+    display: block;
+  }
+  span {
+    display: block;
+  }
   * {
     margin-bottom: ${spacing['2']};
   }
