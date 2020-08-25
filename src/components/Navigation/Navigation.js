@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Text from '../Text';
+import Text from '../Text'
 import NewLink from '../NewLink';
 import { withRouter } from 'react-router-dom';
 import BurgerNavigation from './BurgerNavigation';
@@ -11,13 +11,11 @@ const Warpper = styled.nav`
   display: flex;
   align-items: center;
   background: linear-gradient(to right, #3a7bd5, #3a6073);
-  border-bottom: 2px solid #f1f1f1;
-  @media screen and(min-width: 500px) {
-    .background-color: red;
+  border-bottom: 2px solid #f1f1f1
 
-    .Text {
-      color: yellow;
-    }
+  @media (min-width: 500px) {
+    background-color : red;
+    
   }
 `;
 const LogoWarpper = styled.div`
