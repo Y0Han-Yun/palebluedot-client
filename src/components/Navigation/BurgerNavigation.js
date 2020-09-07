@@ -17,22 +17,34 @@ class BurgerNavigation extends React.Component {
 
   constructor(props) {
     super(props)
-    this.BurgerIconClick = this.BurgerIconClick.bind(this);
-    this.ToggleMenu=this.ToggleMenu.bind(this);
+    this.handleMouseDown = this.handleMouseDown.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
     this.state = {
+      visible: false,
       id: ''
     };
   };
 
-  BurgerIconClick() {
-    alert('여기는 다른 페이지 입니다!');
+
+  handleMouseDown(e){
+    this.toggleMenu();
+    console.log("clicked");
+    e.stopPropagation();
+    
   };
+
+  toggleMenu(){
+    this.setState({
+      visible: this.state.visible
+    });
+  };
+
 
   render () {
     return (<>
       <BurgerWarpper>
-        <BurgerIcon onClick={this.BurgerIconClick} />
-        <BurgerMenu />
+        <BurgerIcon onClick={this.handleMouseDown} />
+        <BurgerMenu onClick={this.handleMouseDown} menuVisible={this.state.visible}/>
       </BurgerWarpper>
     </>);
   }

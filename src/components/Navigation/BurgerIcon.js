@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Warpper = styled.div`
-  width:380px;
+  width:132px;
   height:46px;
   cursor:pointer;
-  margin: 32px 0 45px 20px; 
+  margin: 10px; 
   display:flex;
   justify-content: flex-end;
 `;
@@ -14,6 +14,13 @@ const BurgerWarpper = styled.div`
   width:56px;
   height:35px;
   margin-right: 55px;
+
+  hover {
+    background-color: #96D9FF;
+    cursor: pointer;
+    border-color: #003557;
+    transform: scale(1.2, 1.2);
+  }
 `;
 
 const Burgerline = styled.div`
@@ -28,15 +35,10 @@ const Burgerline = styled.div`
 
 class BurgerIcon extends React.Component {
 
-
-  ToggleMenu(){
-    alert("Hello!");
-  };
-
   render () {
     return (<>
     <Warpper>
-      <BurgerWarpper onClick={this.ToggleMenu}>
+      <BurgerWarpper onClick={this.props.handleMouseDown}>
         <Burgerline></Burgerline>
         <Burgerline></Burgerline>
         <Burgerline></Burgerline>
