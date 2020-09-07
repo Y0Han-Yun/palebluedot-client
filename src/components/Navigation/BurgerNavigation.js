@@ -18,6 +18,7 @@ class BurgerNavigation extends React.Component {
   constructor(props) {
     super(props)
     this.BurgerIconClick = this.BurgerIconClick.bind(this);
+    this.ToggleMenu=this.ToggleMenu.bind(this);
     this.state = {
       id: ''
     };

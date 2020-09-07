@@ -28,13 +28,15 @@ const Burgerline = styled.div`
 
 class BurgerIcon extends React.Component {
 
-  
 
+  ToggleMenu(){
+    alert("Hello!");
+  };
 
   render () {
     return (<>
     <Warpper>
-      <BurgerWarpper >
+      <BurgerWarpper onClick={this.ToggleMenu}>
         <Burgerline></Burgerline>
         <Burgerline></Burgerline>
         <Burgerline></Burgerline>
