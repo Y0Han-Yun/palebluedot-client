@@ -4,6 +4,7 @@ import Text from '../Text'
 import NewLink from '../NewLink';
 import { withRouter } from 'react-router-dom';
 import BurgerNavigation from './BurgerNavigation';
+import BurgerOpenButton from './BurgerOpenButton';
 
 const Warpper = styled.nav`
   width: 100%;
@@ -48,8 +49,24 @@ class Navigation extends React.Component {
 
   constructor(props){
     super(props)
-    this.bugerOpen = this.bugerOpen.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
+    this.handleMouseDown = this.handleMouseDown.bind(this);
+    this.state = {
+      visible: false
+    };
   };
+
+  handleMouseDown(e){
+    this.toggleMenu();
+    console.log("Clicked!");
+    e.stopPropagation();
+  };
+
+  toggleMenu(){
+    this.setState({
+      visible : !this.state.visible
+    });
+  }
 
   bugerOpen(){
    return alert('hello!');
@@ -63,6 +80,7 @@ class Navigation extends React.Component {
           </LogoLeftSection>
           <LogoRightSection/>
         </LogoWarpper>
+        <BurgerOpenButton onClick={this.handleMouseDown}>햄버거 네비 버튼</BurgerOpenButton>
         <LinkWarpper>
           <LinkLeftSection/>
           <LinkRightSection>  

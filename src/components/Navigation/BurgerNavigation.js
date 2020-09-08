@@ -8,43 +8,35 @@ const BurgerWarpper = styled.div`
   position: fixed;
   width: 399px;
   height: 790px;
-  transition: left .3s ease-in-out;
+  // transform: translate3d(-100vw, 0, 0);
+  transition: left 0.3s ease-in-out;
   margin-left: -399px;
   box-sizing: border-box;
-`;
+
+  .flyoutMenu.hide {
+    transform: translate3d(-100vw, 0, 0);
+  }
+   
+  .flyoutMenu.show {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+  }
+`
 
 class BurgerNavigation extends React.Component {
-
-  constructor(props) {
-    super(props)
-    this.handleMouseDown = this.handleMouseDown.bind(this);
-    this.toggleMenu = this.toggleMenu.bind(this);
-    this.state = {
-      visible: false,
-      id: ''
-    };
-  };
-
-
-  handleMouseDown(e){
-    this.toggleMenu();
-    console.log("clicked");
-    e.stopPropagation();
-    
-  };
-
-  toggleMenu(){
-    this.setState({
-      visible: this.state.visible
-    });
-  };
-
-
+  
   render () {
+    let visibility = 'hide';
+    if (this.props.menuVisibility) {
+      visibility = 'show';
+    }
+
     return (<>
       <BurgerWarpper>
-        <BurgerIcon onClick={this.handleMouseDown} />
-        <BurgerMenu onClick={this.handleMouseDown} menuVisible={this.state.visible}/>
+        <BurgerIcon
+          onMouseDown={this.props.handleMouseDown} 
+          className={visibility}/>
+        <BurgerMenu/>
       </BurgerWarpper>
     </>);
   }
