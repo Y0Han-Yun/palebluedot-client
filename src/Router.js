@@ -8,6 +8,7 @@ import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import CreateInvoicePage from './pages/CreateInvoicePage';
 import Customer from './pages/Customer';
 import Bin from './pages/Bin';
+import { Drawer } from './pages/Samples';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -42,6 +43,9 @@ class Router extends React.Component {
           </Route>
           <Route exact path="/forgot">
             <ForgotPassword />
+          </Route>
+          <Route exact path="/drawer-sample">
+            <Drawer />
           </Route>
         </Switch>
       </BrowserRouter>
