@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import Layer from './Layer';
 import OpenButton from './OpenButton';
 import Drawer from './Drawer';
 
-class DrawerPage extends React.Component{
+class DrawerPage extends React.Component {
 
-  constructor(props){
+  constructor (props) {
     super(props);
     this.state = {
       showingLayer: false
@@ -17,8 +17,18 @@ class DrawerPage extends React.Component{
       <Layer showing={this.state.showingLayer} onClick={() => {
         this.setState({
           showingLayer: false
-        })
-      }}/>
+        });
+      }} />
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
       <h1>Hello</h1>
       <h1>Hello</h1>
       <h1>Hello</h1>
@@ -43,14 +53,15 @@ class DrawerPage extends React.Component{
         this.setState({
           showingLayer: true
         });
-       }} />
-       <Drawer showing={this.state.showingLayer} onClose={() => {
-         this.setState({
-           showingLayer: false
-         });
-       }} />
+      }} />
+      <Drawer showing={this.state.showingLayer} onClose={() => {
+        this.setState({
+          showingLayer: false
+        });
+      }} />
     </>);
   }
+
 }
 
 export default DrawerPage;

@@ -48,7 +48,7 @@ class Router extends React.Component {
           <Route exact path="/drawer-sample">
             <Drawer />
           </Route>
-          <Route exact pathg="/drawer">
+          <Route exact path="/drawer">
             <DrawerPage />
           </Route>
         </Switch>

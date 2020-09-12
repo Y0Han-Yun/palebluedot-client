@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledComponent = styled.div`
@@ -12,66 +12,52 @@ const StyledComponent = styled.div`
   overflow-y: scroll;
   overflow-x: hidden;
   transition: all 0.3s;
-  .close-button-wrapper{
-    display: flex;
+  .close-button-wrapper {
     padding: 5px;
-    
+    display: flex;
     .first {
-        flex-grow: 1;
+      flex-grow: 1;
     }
   }
 `;
 
-class Drawer extends React.Component{
+class Drawer extends React.Component {
 
   render () {
     return (
-       <StyledComponent showing={this.props.showing}>
-         <div className="close-button-wrapper">
-           <div className="first"></div>
-           <div>
+      <StyledComponent showing={this.props.showing}>
+        <div className="close-button-wrapper">
+          <div className="first"></div>
+          <div>
             <button onClick={this.props.onClose}>close</button>
-           </div>
-         </div>
-         <div>
-           <h1>안녕sssdasdasddasdasdasdasdsdasdas</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-           <h1>안녕</h1>
-
-         </div>
-         </StyledComponent>
+          </div>
+        </div>
+        <div>
+          <h1>sadkjfhasdjkfhksadhfhklasdhklfhljkasdhfklhjasdklfhjklhsdklafhklas</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+          <h1>안녕</h1>
+        </div>
+      </StyledComponent>
     );
   }
+
 }
 
 export default Drawer;
