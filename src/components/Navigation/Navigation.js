@@ -91,7 +91,7 @@ class Navigation extends React.Component {
           </LinkRightSection>
         </LinkWarpper>
       </Warpper>
-      <BurgerNavigation />
+      <BurgerNavigation onClick={this.handleMouseDown} menuVisibility={this.state.visible}/>
     </>);
   }
 

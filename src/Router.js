@@ -9,6 +9,7 @@ import CreateInvoicePage from './pages/CreateInvoicePage';
 import Customer from './pages/Customer';
 import Bin from './pages/Bin';
 import { Drawer } from './pages/Samples';
+import DrawerPage from './pages/Drawer';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -46,6 +47,9 @@ class Router extends React.Component {
           </Route>
           <Route exact path="/drawer-sample">
             <Drawer />
+          </Route>
+          <Route exact pathg="/drawer">
+            <DrawerPage />
           </Route>
         </Switch>
       </BrowserRouter>
