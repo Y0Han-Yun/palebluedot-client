@@ -19,6 +19,9 @@ const StyledComponent = styled.div`
       flex-grow: 1;
     }
   }
+  .Menu-wrapper   {
+    padding: 5px;
+  }
 `;
 
 class Drawer extends React.Component {
@@ -32,27 +35,11 @@ class Drawer extends React.Component {
             <button onClick={this.props.onClose}>close</button>
           </div>
         </div>
-        <div>
-          <h1>sadkjfhasdjkfhksadhfhklasdhklfhljkasdhfklhjasdklfhjklhsdklafhklas</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
-          <h1>안녕</h1>
+        <div className="Menu-wrapper">
+          <p>sadkjfhasdjkfhksadhfhk</p>
+          <p>sadkjfhasdjkfhksadhfhk</p>
+          <p>sadkjfhasdjkfhksadhfhk</p>
+          <p>sadkjfhasdjkfhksadhfhk</p>
         </div>
       </StyledComponent>
     );
