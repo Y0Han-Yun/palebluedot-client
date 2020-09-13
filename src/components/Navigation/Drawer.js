@@ -14,7 +14,10 @@ const StyledComponent = styled.div`
   overflow-y: scroll;
   overflow-x: hidden;
   transition: all 0.3s;
-
+  border-radius:1px;
+  box-shadow:1px 2px 3px 1px }
+  
+}
   .close-button-wrapper{
     padding: 5px;
     display: flex;

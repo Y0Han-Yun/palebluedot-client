@@ -12,13 +12,13 @@ const StyledComponent = styled.button`
   padding: 10px;
 
   .BurgerWarpper{
-    width:50px;
-    height:35px;
+    width:40px;
+    height:25px;
   }
   .Burgerline{
     background-color: #ffffff;
     margin: 6px 0px 6px 0px;
-    width: 50px;
+    width 40px;
     height: 5px; 
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,.5);
