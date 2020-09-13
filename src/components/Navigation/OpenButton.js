@@ -9,6 +9,7 @@ const StyledComponent = styled.button`
   border: 0;
   background-color: #3a7bd5; 
   outline: none;
+  padding: 10px;
 
   .BurgerWarpper{
     width:50px;
