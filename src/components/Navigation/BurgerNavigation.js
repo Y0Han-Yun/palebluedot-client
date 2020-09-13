@@ -1,6 +1,5 @@
 import React from 'react';
-import BurgerIcon from './BurgerIcon';
-import BurgerMenu from './BurgerMenu';
+
 import styled from 'styled-components';
 
 const BurgerWarpper = styled.div`
@@ -26,17 +25,9 @@ const BurgerWarpper = styled.div`
 class BurgerNavigation extends React.Component {
   
   render () {
-    let visibility = 'hide';
-    if (this.props.menuVisibility) {
-      visibility = 'show';
-    }
-
     return (<>
       <BurgerWarpper>
-        <BurgerIcon
-          onMouseDown={this.props.handleMouseDown} 
-          className={visibility}/>
-        <BurgerMenu/>
+
       </BurgerWarpper>
     </>);
   }

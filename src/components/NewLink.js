@@ -3,7 +3,7 @@ import { Text } from './index';
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledComponent = styled.a`
+const StyledComponent = styled.p`
   cursor: pointer;  
 `;
 

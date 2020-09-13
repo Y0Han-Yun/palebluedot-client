@@ -32,7 +32,7 @@ class Drawer extends React.Component {
         <div className="close-button-wrapper">
           <div className="first"></div>
           <div>
-            <button onClick={this.props.onClose}>close</button>
+            <button onClick={this.props.onClose}>Close</button>
           </div>
         </div>
         <div className="Menu-wrapper">

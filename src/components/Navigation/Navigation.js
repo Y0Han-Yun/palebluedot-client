@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Text from '../Text'
 import NewLink from '../NewLink';
 import { withRouter } from 'react-router-dom';
-import BurgerNavigation from './BurgerNavigation';
-import BurgerOpenButton from './BurgerOpenButton';
+import DrawerNav from './index';
+
 
 const Warpper = styled.nav`
   width: 100%;
@@ -47,40 +47,16 @@ const LinkRightSection = styled.div`
 
 class Navigation extends React.Component {
 
-  constructor(props){
-    super(props)
-    this.toggleMenu = this.toggleMenu.bind(this);
-    this.handleMouseDown = this.handleMouseDown.bind(this);
-    this.state = {
-      visible: false
-    };
-  };
-
-  handleMouseDown(e){
-    this.toggleMenu();
-    console.log("Clicked!");
-    e.stopPropagation();
-  };
-
-  toggleMenu(){
-    this.setState({
-      visible : !this.state.visible
-    });
-  }
-
-  bugerOpen(){
-   return alert('hello!');
-  };
   render () {
     return (<>
       <Warpper>
         <LogoWarpper>
-          <LogoLeftSection onClick={this.bugerOpen}>
+          <DrawerNav />
+          <LogoLeftSection>
             <Text md white >Pale Blue Dot</Text>
           </LogoLeftSection>
           <LogoRightSection/>
         </LogoWarpper>
-        <BurgerOpenButton onClick={this.handleMouseDown}>햄버거 네비 버튼</BurgerOpenButton>
         <LinkWarpper>
           <LinkLeftSection/>
           <LinkRightSection>  
@@ -91,7 +67,6 @@ class Navigation extends React.Component {
           </LinkRightSection>
         </LinkWarpper>
       </Warpper>
-      <BurgerNavigation onClick={this.handleMouseDown} menuVisibility={this.state.visible}/>
     </>);
   }
 
