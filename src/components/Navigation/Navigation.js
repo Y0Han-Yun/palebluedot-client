@@ -15,24 +15,21 @@ const StyledComponent = styled.nav`
   background-color: #3a7bd5; 
   border-bottom: 2px solid #f1f1f1
 
-  @media (max-width: 500px) {
-    display: block;
-    float: right;
-    background-color: powderblue;
-  }
-
   .LogoWarpper{
-    width :50%;
-    justify-content: center;
+    width: 50%;
+    height: 100%;
     display: flex;
+    justify-content: center;
 
     .LogoLeftSection{
       width :50%;
-      justify-content: center;
-      display: flex;
+      height: 100%;
+      flex-grow : 1;
     }
     .LogoRightSection{
       width :50%;
+      height: 100%;
+      flex-grow : 1;
     }
   }
 
@@ -50,8 +47,13 @@ const StyledComponent = styled.nav`
       display: flex;
     }
   }
-`;
 
+  @media (max-width: 500px) {
+    
+    background-color: powderblue; 
+
+  }
+`;
 
 class Navigation extends React.Component {
 
@@ -59,11 +61,12 @@ class Navigation extends React.Component {
     return (<>
       <StyledComponent>
         <div className="LogoWarpper">
-          <DrawerNav />
           <div className="LogoLeftSection">
             <Text md white >Pale Blue Dot</Text>
           </div>
-          <div className="LogoRightSection"/>
+          <div className="LogoRightSection">
+            <Text md white >Pale Blue Dot</Text>
+          </div>
         </div>
         <div className="LinkWarpper">
           <div className="LinkLeftSection"/>
@@ -73,6 +76,7 @@ class Navigation extends React.Component {
             <NewLink to="creinvo"><Text sm white>Invoice</Text></NewLink>
             <NewLink to="bin"><Text sm white>Bin</Text></NewLink>
           </div>
+          <DrawerNav />
         </div>
       </StyledComponent>
     </>);
