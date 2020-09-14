@@ -8,7 +8,7 @@ import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import CreateInvoicePage from './pages/CreateInvoicePage';
 import Customer from './pages/Customer';
 import Bin from './pages/Bin';
-import { Drawer } from './pages/Samples';
+import { Drawer, NotificationSample, AppBarLayoutSample } from './pages/Samples';
 import DrawerPage from './pages/Drawer';
 
 const GlobalStyle = createGlobalStyle`
@@ -50,6 +50,12 @@ class Router extends React.Component {
           </Route>
           <Route exact path="/drawer">
             <DrawerPage />
+          </Route>
+          <Route exact path="/notification-sample">
+            <NotificationSample />
+          </Route>
+          <Route exact path="/appbarlayout-sample">
+            <AppBarLayoutSample />
           </Route>
         </Switch>
       </BrowserRouter>
