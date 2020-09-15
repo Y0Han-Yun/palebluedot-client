@@ -27,7 +27,6 @@ class BurgerNavigation extends React.Component {
   render () {
     return (<>
       <BurgerWarpper>
-
       </BurgerWarpper>
     </>);
   }
