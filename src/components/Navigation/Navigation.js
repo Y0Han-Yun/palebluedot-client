@@ -13,23 +13,25 @@ const StyledComponent = styled.nav`
   display: flex;
   align-items: center;
   background-color: #3a7bd5; 
-  border-bottom: 2px solid #f1f1f1
+  border-bottom: 2px solid #f1f1f1;
 
   .LogoWarpper{
-    width: 50%;
+    width: 720px;
     height: 100%;
     display: flex;
-    justify-content: center;
+   
 
     .LogoLeftSection{
+      justify-content: center;
+      align-items: center;
+      display: flex;
       width :50%;
       height: 100%;
-      flex-grow : 1;
     }
     .LogoRightSection{
+      display: flex;
       width :50%;
       height: 100%;
-      flex-grow : 1;
     }
   }
 
@@ -39,19 +41,32 @@ const StyledComponent = styled.nav`
     display: flex;
 
     .LinkLeftSection{
-      width :50%;
+      width :0%;
     }
     .LinkRightSection{
-      width :50%;
+      width :100%;
       justify-content: space-evenly;
       display: flex;
+      flex-shrink: 3;
     }
+  }
+
+  @media (max-width: 800px) {
+    
+    background-color: orange; 
+
   }
 
   @media (max-width: 500px) {
     
     background-color: powderblue; 
-
+    
+    .LogoLeftSection{
+      margin-right: 200px;
+      ${() => {
+       return <DrawerNav />
+      }}
+    }
   }
 `;
 
@@ -62,11 +77,9 @@ class Navigation extends React.Component {
       <StyledComponent>
         <div className="LogoWarpper">
           <div className="LogoLeftSection">
-            <Text md white >Pale Blue Dot</Text>
+           <Text md white >Pale Blue Dot</Text>
           </div>
-          <div className="LogoRightSection">
-            <Text md white >Pale Blue Dot</Text>
-          </div>
+          <div className="LogoRightSection" />
         </div>
         <div className="LinkWarpper">
           <div className="LinkLeftSection"/>
