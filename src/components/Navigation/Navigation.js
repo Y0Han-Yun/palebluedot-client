@@ -37,6 +37,7 @@ const StyledComponent = styled.nav`
 
   .LinkWarpper{
     width :50%;
+    height: 100%;
     justify-content: center;
     display: flex;
 

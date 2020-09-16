@@ -5,8 +5,11 @@ import styled from 'styled-components';
 import Logo from '../../components/Logo'
 
 const Wrapper = styled.div`
-  width: 1440px;
-  height: 790px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   margin: 0px;
   border: 0px;
   padding: 0px;
