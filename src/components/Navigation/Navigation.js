@@ -89,7 +89,9 @@ class Navigation extends React.Component {
             <NewLink to="regi"><Text sm white>Register</Text></NewLink>
             <NewLink to="creinvo"><Text sm white>Invoice</Text></NewLink>
             <NewLink to="bin"><Text sm white>Bin</Text></NewLink>
+            <i class="fas fa-times"></i>
           </div>
+          <i class="fas fa-bars"></i>
           <DrawerNav />
         </div>
       </StyledComponent>

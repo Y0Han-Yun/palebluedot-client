@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import Navigation from '../components/Navigation/Navigation';
 
 const Container = styled.div`
-  width: 1440px;
+  width: 100%;
   height: 790px;
   margin: 0px;
   border: 0px;
