@@ -5,6 +5,12 @@ import styled from 'styled-components';
 
 const StyledComponent = styled.p`
   cursor: pointer;  
+  padding: 20px 20px 20px 20px;
+  margin: 0px;
+
+  :hover{
+    background-color: #f6f6f6;
+  }
 `;
 
 class NewLink extends React.Component {

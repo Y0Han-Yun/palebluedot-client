@@ -47,15 +47,15 @@ const StyledComponent = styled.nav`
     .LinkRightSection{
       width :100%;
       justify-content: space-evenly;
+      align-items: center;
       display: flex;
       flex-shrink: 3;
+
     }
   }
 
-  @media (max-width: 800px) {
-    
-  
-
+  .BurgerWarpper{
+    display: none;
   }
 
   @media (max-width: 500px) {
@@ -63,12 +63,15 @@ const StyledComponent = styled.nav`
     .LinkWarpper{
       display: none;
     }
+    .BurgerWarpper{
+      display :inline;
+      padding: 10px 20px 10px 10px;
+    }
   }
 `;
 
  
 class Navigation extends React.Component {
-
   render () {
     return (<>
       <StyledComponent>
@@ -84,10 +87,12 @@ class Navigation extends React.Component {
             <NewLink to="regi"><Text sm white>SignOut</Text></NewLink>
             <NewLink to="regi"><Text sm white>Register</Text></NewLink>
             <NewLink to="creinvo"><Text sm white>Invoice</Text></NewLink>
-            <NewLink to="bin"><Text sm white>Bin</Text></NewLink>            
+            <NewLink to="bin"><Text sm white>Bin</Text></NewLink>      
           </div>
-          <DrawerNav />
         </div>
+        <div className="BurgerWarpper">
+          < DrawerNav />
+        </div>      
       </StyledComponent>
     </>);
   }

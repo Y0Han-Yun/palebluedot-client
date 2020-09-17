@@ -28,15 +28,9 @@ const StyledComponent = styled.div`
 
   .Menu-wrapper{
     padding: 10px;
-
-    .span{
-      padding: 20px;
-
-      :hover{
-        color: gray;
-      }
-    }
   }
+
+  
 `;
 
 const CancelButton = styled.div`
@@ -50,6 +44,7 @@ const CancelButton = styled.div`
 `;
 
 class Drawer extends React.Component{
+ 
   render() {
     return (
     <StyledComponent showing={this.props.showing}>
@@ -59,13 +54,13 @@ class Drawer extends React.Component{
           <i class="fas fa-times fa-2x" onClick={this.props.onClose}></i>
         </CancelButton>
       </div>
-      <div className="Menu-wrapper">  
-        <NewLink to="regi"><Text >SignOut</Text></NewLink>
-        <NewLink to="regi"><Text >Register</Text></NewLink>
-        <NewLink to="creinvo"><Text >Invoice</Text></NewLink>
-        <NewLink to="bin"><Text >Bin</Text></NewLink>
-        <NewLink to="bin"><Text >About us</Text></NewLink>
-        <NewLink to="bin"><Text >Contact us</Text></NewLink>
+      <div className="Menu-wrapper">
+          <NewLink to="regi"><Text >SignOut</Text><i class="fas fa-home"></i></NewLink>
+          <NewLink to="regi"><Text >Register</Text></NewLink>
+          <NewLink to="creinvo"><Text >Invoice</Text></NewLink>
+          <NewLink to="bin"><Text >Bin</Text></NewLink>
+          <NewLink to="bin"><Text >About us</Text></NewLink>
+          <NewLink to="bin"><Text >Contact us</Text></NewLink>
       </div>
     </StyledComponent>
     );
