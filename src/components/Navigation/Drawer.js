@@ -31,15 +31,21 @@ const StyledComponent = styled.div`
   }
 `;
 
+const CancelButton = styled.div`
+  color: white;
+  display: flex; 
+  align-items: center;
+`;
+
 class Drawer extends React.Component{
   render() {
     return (
     <StyledComponent showing={this.props.showing}>
       <div className="close-button-wrapper">
         <div className="first" />
-        <div>
-          <button onClick={this.props.onClose}>Close</button>
-        </div>
+        <CancelButton>
+          <i class="fas fa-times fa-2x" onClick={this.props.onClose}></i>
+        </CancelButton>
       </div>
       <div className="Menu-wrapper">
         <NewLink to="regi"><Text white>SignOut</Text></NewLink>

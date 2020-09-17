@@ -54,19 +54,14 @@ const StyledComponent = styled.nav`
 
   @media (max-width: 800px) {
     
-    background-color: orange; 
+  
 
   }
 
   @media (max-width: 500px) {
     
-    background-color: powderblue; 
-    
-    .LogoLeftSection{
-      margin-right: 200px;
-      ${() => {
-       return <DrawerNav />
-      }}
+    .LinkWarpper{
+      display: none;
     }
   }
 `;
@@ -88,10 +83,8 @@ class Navigation extends React.Component {
             <NewLink to="regi"><Text sm white>SignOut</Text></NewLink>
             <NewLink to="regi"><Text sm white>Register</Text></NewLink>
             <NewLink to="creinvo"><Text sm white>Invoice</Text></NewLink>
-            <NewLink to="bin"><Text sm white>Bin</Text></NewLink>
-            <i class="fas fa-times"></i>
+            <NewLink to="bin"><Text sm white>Bin</Text></NewLink>            
           </div>
-          <i class="fas fa-bars"></i>
           <DrawerNav />
         </div>
       </StyledComponent>
