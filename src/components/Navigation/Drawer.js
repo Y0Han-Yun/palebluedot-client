@@ -10,7 +10,7 @@ const StyledComponent = styled.div`
   width: ${props => props.showing ? '350' : '0'}px;
   opacity: ${props => props.showing ? '1' : '0'};
   height: 100%;
-  background: linear-gradient(to bottom, #3a7bd5, #3a6073);
+  background-color : white;
   overflow-y: scroll;
   overflow-x: hidden;
   transition: all 0.3s;
@@ -19,7 +19,7 @@ const StyledComponent = styled.div`
   
 }
   .close-button-wrapper{
-    padding: 5px;
+    padding: 10px;
     display: flex;
     .first{
       flex-grow: 1;
@@ -27,14 +27,26 @@ const StyledComponent = styled.div`
   }
 
   .Menu-wrapper{
-    padding: 5px;
+    padding: 10px;
+
+    .span{
+      padding: 20px;
+
+      :hover{
+        color: gray;
+      }
+    }
   }
 `;
 
 const CancelButton = styled.div`
-  color: white;
+  color: black;
   display: flex; 
   align-items: center;
+
+  :hover{
+    color: gray;
+  }
 `;
 
 class Drawer extends React.Component{
@@ -47,13 +59,13 @@ class Drawer extends React.Component{
           <i class="fas fa-times fa-2x" onClick={this.props.onClose}></i>
         </CancelButton>
       </div>
-      <div className="Menu-wrapper">
-        <NewLink to="regi"><Text white>SignOut</Text></NewLink>
-        <NewLink to="regi"><Text white>Register</Text></NewLink>
-        <NewLink to="creinvo"><Text white>Invoice</Text></NewLink>
-        <NewLink to="bin"><Text white>Bin</Text></NewLink>
-        <NewLink to="bin"><Text white>About us</Text></NewLink>
-        <NewLink to="bin"><Text white>Contact us</Text></NewLink>
+      <div className="Menu-wrapper">  
+        <NewLink to="regi"><Text >SignOut</Text></NewLink>
+        <NewLink to="regi"><Text >Register</Text></NewLink>
+        <NewLink to="creinvo"><Text >Invoice</Text></NewLink>
+        <NewLink to="bin"><Text >Bin</Text></NewLink>
+        <NewLink to="bin"><Text >About us</Text></NewLink>
+        <NewLink to="bin"><Text >Contact us</Text></NewLink>
       </div>
     </StyledComponent>
     );

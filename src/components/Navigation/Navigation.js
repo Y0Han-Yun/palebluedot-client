@@ -66,6 +66,7 @@ const StyledComponent = styled.nav`
   }
 `;
 
+ 
 class Navigation extends React.Component {
 
   render () {
