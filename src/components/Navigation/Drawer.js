@@ -30,7 +30,14 @@ const StyledComponent = styled.div`
     padding: 10px;
   }
 
-  
+  .LinkWrapper{
+    padding: 5px;
+    margin: 0px;
+
+    :hover{
+      background-color: #f6f6f6;
+    }
+  }
 `;
 
 const CancelButton = styled.div`
@@ -42,6 +49,11 @@ const CancelButton = styled.div`
     color: gray;
   }
 `;
+
+// const LinkWrapper = styled.div`
+//   padding: 20px 20px 20px 20px;
+//   margin: 0px;
+// `;
 
 class Drawer extends React.Component{
  
@@ -55,12 +67,24 @@ class Drawer extends React.Component{
         </CancelButton>
       </div>
       <div className="Menu-wrapper">
+        <div className="LinkWrapper">
           <NewLink to="regi"><Text >SignOut</Text><i class="fas fa-home"></i></NewLink>
+        </div>
+        <div className="LinkWrapper">  
           <NewLink to="regi"><Text >Register</Text></NewLink>
+        </div>
+        <div className="LinkWrapper">
           <NewLink to="creinvo"><Text >Invoice</Text></NewLink>
+        </div>
+        <div className="LinkWrapper">  
           <NewLink to="bin"><Text >Bin</Text></NewLink>
+        </div>
+        <div className="LinkWrapper">  
           <NewLink to="bin"><Text >About us</Text></NewLink>
+        </div>  
+        <div className="LinkWrapper">
           <NewLink to="bin"><Text >Contact us</Text></NewLink>
+        </div>  
       </div>
     </StyledComponent>
     );
