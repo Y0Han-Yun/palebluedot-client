@@ -30,6 +30,7 @@ const font = {
     normal: '1.8rem'
   },
   letterSpacing: {
+    none: '0rem',
     normal: '0.05rem'
   },
   wordSpacing: {

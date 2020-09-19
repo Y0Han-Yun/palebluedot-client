@@ -20,13 +20,14 @@ const textStyledTemplate = props => `
   color: ${color(props)};
   font-weight: ${font.weight.light};
   line-height: ${font.lineHeight.normal};
-  letter-spacing: ${font.letterSpacing.normal};
+  letter-spacing: ${font.letterSpacing.none};
   word-spacing: ${font.wordSpacing.normal};
 `;
 
 const StyledComponent = styled.span`
   ${props => textStyledTemplate(props)}
   width: 100%;
+  white-space: nowrap;
 `;
 
 class Text extends React.Component {

@@ -67,27 +67,27 @@ class Drawer extends React.Component{
       <div className="close-button-wrapper">
         <div className="first" />
         <CancelButton>
-          <i class="fas fa-times fa-2x" onClick={this.props.onClose}></i>
+          <i className="fas fa-times fa-2x" onClick={this.props.onClose}></i>
         </CancelButton>
       </div>
       <div className="Menu-wrapper">
         <div className="LinkWrapper">
-          <NewLink to="regi"><Text >SignOut</Text><i class="fas fa-home"></i></NewLink>
+          <NewLink to="regi"><Text >SignOut</Text><i className="fas fa-home"></i></NewLink>
         </div>
         <div className="LinkWrapper">  
-          <NewLink to="regi"><Text >Register</Text><i class="fas fa-home"></i></NewLink>
+          <NewLink to="regi"><Text >Register</Text><i className="fas fa-home"></i></NewLink>
         </div>
         <div className="LinkWrapper">
-          <NewLink to="creinvo"><Text >Invoice</Text><i class="fas fa-home"></i></NewLink>
+          <NewLink to="creinvo"><Text >Invoice</Text><i className="fas fa-home"></i></NewLink>
         </div>
         <div className="LinkWrapper">  
-          <NewLink to="bin"><Text >Bin</Text><i class="fas fa-home"></i></NewLink>
+          <NewLink to="bin"><Text >Bin</Text><i className="fas fa-home"></i></NewLink>
         </div>
         <div className="LinkWrapper">  
-          <NewLink to="bin"><Text >About us</Text><i class="fas fa-home"></i></NewLink>
+          <NewLink to="bin"><Text >About us</Text><i className="fas fa-home"></i></NewLink>
         </div>  
         <div className="LinkWrapper">
-          <NewLink to="bin"><Text >Contact us</Text><i class="fas fa-home"></i></NewLink>
+          <NewLink to="bin"><Text >Contact us</Text><i className="fas fa-home"></i></NewLink>
         </div>  
       </div>
     </StyledComponent>

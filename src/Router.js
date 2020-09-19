@@ -10,16 +10,15 @@ import Customer from './pages/Customer';
 import Bin from './pages/Bin';
 import { Drawer, NotificationSample, AppBarLayoutSample } from './pages/Samples';
 import DrawerPage from './pages/Drawer';
+import Context from './pages/Context';
 
 const GlobalStyle = createGlobalStyle`
   html {
     font-size: ${font.size.root};
   }
-  header{
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-  }
   body {
     margin: 0px;
+    overflow: hidden;
   }
 `;
 
@@ -59,6 +58,9 @@ class Router extends React.Component {
           </Route>
           <Route exact path="/appbarlayout-sample">
             <AppBarLayoutSample />
+          </Route>
+          <Route exact path="/context">
+            <Context />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -34,7 +34,7 @@ class NotificationSample extends React.Component {
         setShowing={value => this.setState({ showNotification: value })}
         success={this.state.success} error={this.state.error}
         timeout={2000}
-        top right>
+        bottom right>
         {this.state.message}
       </Notification>
       <Center>

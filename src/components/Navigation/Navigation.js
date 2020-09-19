@@ -13,13 +13,14 @@ const StyledComponent = styled.nav`
   display: flex;
   align-items: center;
   background-color: #3a7bd5; 
-  border-bottom: 2px solid #f1f1f1;
-
+  // border-bottom: 2px solid #f1f1f1;
+  padding: 0rem 1rem;
+  box-sizing: border-box;
   .LogoWarpper{
-    width: 720px;
+    // width: 720px;
     height: 100%;
     display: flex;
-   
+    flex-grow: 1;
 
     .LogoLeftSection{
       justify-content: center;
@@ -36,7 +37,7 @@ const StyledComponent = styled.nav`
   }
 
   .LinkWarpper{
-    width :50%;
+    // width :50%;
     height: 100%;
     justify-content: center;
     display: flex;
@@ -46,11 +47,13 @@ const StyledComponent = styled.nav`
     }
     .LinkRightSection{
       width :100%;
-      justify-content: space-evenly;
+      // justify-content: space-evenly;
       align-items: center;
       display: flex;
       flex-shrink: 3;
-
+      p {
+        margin-left: 1rem;
+      }
     }
   }
 
@@ -75,12 +78,14 @@ class Navigation extends React.Component {
   render () {
     return (<>
       <StyledComponent>
+
         <div className="LogoWarpper">
           <div className="LogoLeftSection">
            <Text md white >Pale Blue Dot</Text>
           </div>
           <div className="LogoRightSection" />
         </div>
+
         <div className="LinkWarpper">
           <div className="LinkLeftSection"/>
           <div className="LinkRightSection">  
@@ -90,9 +95,11 @@ class Navigation extends React.Component {
             <NewLink to="bin"><Text sm white>Bin</Text></NewLink>      
           </div>
         </div>
+
         <div className="BurgerWarpper">
           < DrawerNav />
-        </div>      
+        </div>  
+
       </StyledComponent>
     </>);
   }
