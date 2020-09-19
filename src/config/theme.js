@@ -12,7 +12,8 @@ const font = {
   },
   color: {
     lightMode: '#333333',
-    darkMode: '#EEEEEE'
+    darkMode: '#EEEEEE',
+    drawer: '#616C7F'
   },
   size: {
     root: '16px',

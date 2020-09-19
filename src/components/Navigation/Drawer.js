@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Text from '..//Text';
-import NewLink from '../NewLink';
+import Newlink from '../NewLink';
 
 const StyledComponent = styled.div`
   position: fixed;
@@ -15,28 +15,33 @@ const StyledComponent = styled.div`
   overflow-x: hidden;
   transition: all 0.3s;
   border-radius:1px;
-  box-shadow:1px 2px 3px 1px }
-  
-}
+  box-shadow:1px 2px 3px 1px;
+
+
   .close-button-wrapper{
     padding: 10px;
     display: flex;
     .first{
       flex-grow: 1;
+
     }
   }
 
   .Menu-wrapper{
     padding: 10px;
-    flex-grow: 2;
     heigth: 100%;
   }
 
   .LinkWrapper{
-    padding: 5px;
-    flex-grow: 1;
+    padding: 20px 5px 20px 5px;
     display: flex;
     justify-content: space-between;
+
+    .icon-color{
+      color: #C6D1E1;
+      font-size: 20px;
+      padding-top: 5px;
+    }
 
     :hover{
       background-color: #f6f6f6;
@@ -45,19 +50,15 @@ const StyledComponent = styled.div`
 `;
 
 const CancelButton = styled.div`
-  color: black;
   display: flex; 
   align-items: center;
 
-  :hover{
-    color: gray;
+  .button-color{
+    color: #616C7F;
+    font-size: 25px;
   }
 `;
 
-// const LinkWrapper = styled.div`
-//   padding: 20px 20px 20px 20px;
-//   margin: 0px;
-// `;
 
 class Drawer extends React.Component{
  
@@ -65,30 +66,42 @@ class Drawer extends React.Component{
     return (
     <StyledComponent showing={this.props.showing}>
       <div className="close-button-wrapper">
-        <div className="first" />
         <CancelButton>
-          <i className="fas fa-times fa-2x" onClick={this.props.onClose}></i>
+          <i className="fas fa-times fa-2x button-color" onClick={this.props.onClose}></i>
         </CancelButton>
+        <div className="first" />
       </div>
       <div className="Menu-wrapper">
-        <div className="LinkWrapper">
-          <NewLink to="regi"><Text >SignOut</Text><i className="fas fa-home"></i></NewLink>
-        </div>
-        <div className="LinkWrapper">  
-          <NewLink to="regi"><Text >Register</Text><i className="fas fa-home"></i></NewLink>
-        </div>
-        <div className="LinkWrapper">
-          <NewLink to="creinvo"><Text >Invoice</Text><i className="fas fa-home"></i></NewLink>
-        </div>
-        <div className="LinkWrapper">  
-          <NewLink to="bin"><Text >Bin</Text><i className="fas fa-home"></i></NewLink>
-        </div>
-        <div className="LinkWrapper">  
-          <NewLink to="bin"><Text >About us</Text><i className="fas fa-home"></i></NewLink>
-        </div>  
-        <div className="LinkWrapper">
-          <NewLink to="bin"><Text >Contact us</Text><i className="fas fa-home"></i></NewLink>
-        </div>  
+        <Newlink to="regi">
+          <div className="LinkWrapper">
+            <Text drawer>SignOut</Text><i className="fas fa-home icon-color" />
+          </div>
+        </Newlink>
+        <Newlink to="regi">
+          <div className="LinkWrapper">  
+            <Text drawer>Register</Text><i class="far fa-user icon-color" />
+          </div>
+        </Newlink>
+        <Newlink to="regi">
+          <div className="LinkWrapper">
+            <Text drawer>Invoice</Text><i class="far fa-sticky-note icon-color" />
+          </div>
+        </Newlink>
+        <Newlink to="regi">
+          <div className="LinkWrapper">  
+            <Text drawer>Bin</Text><i class="far fa-trash-alt icon-color" />
+          </div>
+        </Newlink>
+        <Newlink to="regi">
+          <div className="LinkWrapper">  
+            <Text drawer>About us</Text><i class="fas fa-users icon-color" />
+          </div>  
+        </Newlink>
+        <Newlink to="regi">
+          <div className="LinkWrapper">
+            <Text drawer>Contact us</Text><i class="far fa-envelope icon-color" />
+          </div>  
+        </Newlink>
       </div>
     </StyledComponent>
     );

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { font } from '../config/theme';
 
+
 const fontSize = props => {
   if (props.styledProps.sm) return font.size.sm;
   else if (props.styledProps.md) return font.size.md;
@@ -11,6 +12,7 @@ const fontSize = props => {
 
 const color = props => {
   if (props.styledProps.white) return font.color.darkMode;
+  if (props.styledProps.drawer) return font.color.drawer;
   else return font.color.lightMode;
 };
 
@@ -35,6 +37,7 @@ class Text extends React.Component {
   render () {
     const styledProps = {
       white: this.props.white,
+      drawer: this.props.drawer,
       sm: this.props.sm,
       md: this.props.md,
       lg: this.props.lg

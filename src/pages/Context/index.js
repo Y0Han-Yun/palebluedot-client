@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import backgroundImage from '../../assets/images/bg2.jpg';
+import backgroundImage from '../../assets/images/bg3.jpg';
 import Navigation from '../../components/Navigation/Navigation';
 
 const BackgroundImage = styled.img`
@@ -10,9 +10,9 @@ const BackgroundImage = styled.img`
   width: 100%;
   height: 100%;
   z-index: auto;
-  opacity: 0.6;
+  opacity: 1;
   object-fit: cover;
-  object-position: 50% 100%;
+  object-position: 100% 10%;
 `;
 
 const PageWrapper = styled.div`
@@ -26,9 +26,7 @@ const PageWrapper = styled.div`
   z-index: 1;
 `;
 
-const Content = styled.div`
-  
-`;
+const Content = styled.div``;
 
 class Context extends React.Component {
 
@@ -39,14 +37,6 @@ class Context extends React.Component {
         <Content>
           <Navigation />
           <h1>Start</h1>
-          <h1>*</h1>
-          <h1>*</h1>
-          <h1>*</h1>
-          <h1>*</h1>
-          <h1>*</h1>
-          <h1>*</h1>
-          <h1>*</h1>
-          <h1>*</h1>
           <h1>*</h1>
           <h1>*</h1>
           <h1>*</h1>
