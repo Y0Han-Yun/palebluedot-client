@@ -28,11 +28,15 @@ const StyledComponent = styled.div`
 
   .Menu-wrapper{
     padding: 10px;
+    flex-grow: 2;
+    heigth: 100%;
   }
 
   .LinkWrapper{
     padding: 5px;
-    margin: 0px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
 
     :hover{
       background-color: #f6f6f6;
@@ -71,19 +75,19 @@ class Drawer extends React.Component{
           <NewLink to="regi"><Text >SignOut</Text><i class="fas fa-home"></i></NewLink>
         </div>
         <div className="LinkWrapper">  
-          <NewLink to="regi"><Text >Register</Text></NewLink>
+          <NewLink to="regi"><Text >Register</Text><i class="fas fa-home"></i></NewLink>
         </div>
         <div className="LinkWrapper">
-          <NewLink to="creinvo"><Text >Invoice</Text></NewLink>
+          <NewLink to="creinvo"><Text >Invoice</Text><i class="fas fa-home"></i></NewLink>
         </div>
         <div className="LinkWrapper">  
-          <NewLink to="bin"><Text >Bin</Text></NewLink>
+          <NewLink to="bin"><Text >Bin</Text><i class="fas fa-home"></i></NewLink>
         </div>
         <div className="LinkWrapper">  
-          <NewLink to="bin"><Text >About us</Text></NewLink>
+          <NewLink to="bin"><Text >About us</Text><i class="fas fa-home"></i></NewLink>
         </div>  
         <div className="LinkWrapper">
-          <NewLink to="bin"><Text >Contact us</Text></NewLink>
+          <NewLink to="bin"><Text >Contact us</Text><i class="fas fa-home"></i></NewLink>
         </div>  
       </div>
     </StyledComponent>

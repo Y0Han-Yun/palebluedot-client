@@ -5,7 +5,8 @@ import styled from 'styled-components';
 
 const StyledComponent = styled.p`
   cursor: pointer;  
-
+  width: 100%;
+  margin: 0px;
   :hover{
     color: #f6f6f6;
   }

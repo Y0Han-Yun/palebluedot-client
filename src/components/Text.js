@@ -26,6 +26,7 @@ const textStyledTemplate = props => `
 
 const StyledComponent = styled.span`
   ${props => textStyledTemplate(props)}
+  width: 100%;
 `;
 
 class Text extends React.Component {
