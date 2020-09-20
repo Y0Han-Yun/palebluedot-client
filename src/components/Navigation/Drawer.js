@@ -23,7 +23,6 @@ const StyledComponent = styled.div`
     display: flex;
     .first{
       flex-grow: 1;
-
     }
   }
 
