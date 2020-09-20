@@ -96,6 +96,7 @@ const IntroductionWrapper = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px 0 0 20px;
+
 `;
 const Introduction = styled.div`
   width: 80%;
@@ -103,6 +104,7 @@ const Introduction = styled.div`
   margin: 0px;
   border: 0px;
   padding: 0px;
+  
   
   div {
     display: flex;
@@ -120,10 +122,10 @@ class LoginForm extends React.Component {
           <IntroductionWrapper>         
             <Introduction>
               <div>
-                <Logo />
+                <Logo/>
               </div>
               <div>
-              <Text lg normal>Pale Blue Dot</Text><br/>
+                <Text lg normal>Pale Blue Dot</Text><br/>
               </div>
               <div>
                 <Text sm >The paperless invoice</Text>                     

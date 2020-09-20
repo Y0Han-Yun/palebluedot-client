@@ -66,10 +66,10 @@ class Drawer extends React.Component{
     return (
     <StyledComponent showing={this.props.showing}>
       <div className="close-button-wrapper">
+        <div className="first" />
         <CancelButton>
           <i className="fas fa-times fa-2x button-color" onClick={this.props.onClose}></i>
         </CancelButton>
-        <div className="first" />
       </div>
       <div className="Menu-wrapper">
         <Newlink to="regi">

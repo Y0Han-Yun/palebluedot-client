@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { font } from '../config/theme';
 
-
 const fontSize = props => {
   if (props.styledProps.sm) return font.size.sm;
   else if (props.styledProps.md) return font.size.md;
@@ -28,7 +27,7 @@ const textStyledTemplate = props => `
 
 const StyledComponent = styled.span`
   ${props => textStyledTemplate(props)}
-  width: 100%;
+  
   white-space: nowrap;
 `;
 

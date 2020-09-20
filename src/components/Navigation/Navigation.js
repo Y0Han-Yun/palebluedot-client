@@ -13,7 +13,6 @@ const StyledComponent = styled.nav`
   display: flex;
   align-items: center;
   background-color: #3a7bd5; 
-  // border-bottom: 2px solid #f1f1f1;
   padding: 0rem 1rem;
   box-sizing: border-box;
   .LogoWarpper{
