@@ -5,23 +5,20 @@ import styled from 'styled-components';
 import Logo from '../../components/Logo'
 
 const Wrapper = styled.div`
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  border: 0px;
-  padding: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
-  
-  // span {
-  //   display: block;
-  // }
-  * {
-    margin-bottom: ${spacing['2']};
-  }
+position: fixed;
+width: 100%;
+height: 100%;
+margin: 0px;
+border: 0px;
+padding: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+
+* {
+  margin-bottom: ${spacing['2']};
+}
 `;
 
 const RegisterBox = styled.div`

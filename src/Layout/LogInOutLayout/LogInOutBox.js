@@ -9,15 +9,16 @@ const StyledComponent = styled.div`
   box-shadow: 4px 6px 13px 1px rgba(0,0,0,0.42);
   border-radius: 20px;
 `;
-
-class LogInOutLayout extends React.Component {
+class LogInOutBox extends React.Component {
 
   render () {
     return (<>
-      <StyledComponent />
+      <StyledComponent>
+        {this.props.children}
+      </StyledComponent>
     </>);
   }
 
 }
 
-export default LogInOutLayout;
+export default LogInOutBox;
