@@ -1,5 +1,6 @@
 import React from 'react';
 import { FcGlobe } from 'react-icons/fc';
+import { IconContext } from "react-icons";
 // import { font, logo } from '../config/theme';
 
 // const LogoSize = props => {
@@ -18,7 +19,15 @@ class Logo extends React.Component {
     //   burger: this.props.burger
     // };
 
-    return <FcGlobe />;
+    return (
+      <IconContext.Provider
+        value={{
+          size: this.props.size,
+          color: this.props.color
+        }}>
+        <FcGlobe />
+      </IconContext.Provider>
+    );
   }
 
 }

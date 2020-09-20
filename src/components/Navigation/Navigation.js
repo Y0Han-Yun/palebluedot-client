@@ -4,7 +4,7 @@ import Text from '../Text'
 import NewLink from '../NewLink';
 import { withRouter } from 'react-router-dom';
 import DrawerNav from './index';
-
+import Logo from '../Logo';
 
 
 const StyledComponent = styled.nav`
@@ -16,22 +16,17 @@ const StyledComponent = styled.nav`
   padding: 0rem 1rem;
   box-sizing: border-box;
   .LogoWarpper{
-    // width: 720px;
     height: 100%;
     display: flex;
     flex-grow: 1;
-
     .LogoLeftSection{
       justify-content: center;
       align-items: center;
       display: flex;
-      width :50%;
       height: 100%;
-    }
-    .LogoRightSection{
-      display: flex;
-      width :50%;
-      height: 100%;
+      .space {
+        margin-right: 0.5rem;
+      }
     }
   }
 
@@ -50,7 +45,7 @@ const StyledComponent = styled.nav`
       align-items: center;
       display: flex;
       flex-shrink: 3;
-      p {
+      .link-item {
         margin-left: 1rem;
       }
     }
@@ -80,9 +75,10 @@ class Navigation extends React.Component {
 
         <div className="LogoWarpper">
           <div className="LogoLeftSection">
-           <Text md white >Pale Blue Dot</Text>
+            <Logo size="3rem" />
+            <div className="space"></div>
+            <Text md white >Pale Blue Dot</Text>
           </div>
-          <div className="LogoRightSection" />
         </div>
 
         <div className="LinkWarpper">
@@ -91,7 +87,7 @@ class Navigation extends React.Component {
             <NewLink to="regi"><Text sm white>SignOut</Text></NewLink>
             <NewLink to="regi"><Text sm white>Register</Text></NewLink>
             <NewLink to="creinvo"><Text sm white>Invoice</Text></NewLink>
-            <NewLink to="bin"><Text sm white>Bin</Text></NewLink>      
+            <NewLink to="bin"><Text sm white>Bin</Text></NewLink>
           </div>
         </div>
 

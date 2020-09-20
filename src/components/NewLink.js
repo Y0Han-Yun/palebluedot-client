@@ -3,7 +3,7 @@ import { Text } from './index';
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledComponent = styled.p`
+const StyledComponent = styled.div`
   cursor: pointer;  
   width: 100%;
   margin: 0px;
@@ -14,8 +14,8 @@ const StyledComponent = styled.p`
 
 class NewLink extends React.Component {
 
-  constructor (props) {
-    super(props);
+  constructor () {
+    super();
     this.handleLinkClick = this.handleLinkClick.bind(this);
   }
 
@@ -26,7 +26,7 @@ class NewLink extends React.Component {
 
   render () {
     return (
-      <StyledComponent onClick={this.handleLinkClick}>
+      <StyledComponent className="link-item" onClick={this.handleLinkClick}>
         <Text sm>
           {this.props.children}
         </Text>

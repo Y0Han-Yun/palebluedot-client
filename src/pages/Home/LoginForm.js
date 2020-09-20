@@ -122,7 +122,7 @@ class LoginForm extends React.Component {
           <IntroductionWrapper>         
             <Introduction>
               <div>
-                <Logo/>
+                <Logo size="10rem"/>
               </div>
               <div>
                 <Text lg normal>Pale Blue Dot</Text><br/>

@@ -78,27 +78,27 @@ class Drawer extends React.Component{
         </Newlink>
         <Newlink to="regi">
           <div className="LinkWrapper">  
-            <Text drawer>Register</Text><i class="far fa-user icon-color" />
+            <Text drawer>Register</Text><i className="far fa-user icon-color" />
           </div>
         </Newlink>
         <Newlink to="regi">
           <div className="LinkWrapper">
-            <Text drawer>Invoice</Text><i class="far fa-sticky-note icon-color" />
+            <Text drawer>Invoice</Text><i className="far fa-sticky-note icon-color" />
           </div>
         </Newlink>
         <Newlink to="regi">
           <div className="LinkWrapper">  
-            <Text drawer>Bin</Text><i class="far fa-trash-alt icon-color" />
+            <Text drawer>Bin</Text><i className="far fa-trash-alt icon-color" />
           </div>
         </Newlink>
         <Newlink to="regi">
           <div className="LinkWrapper">  
-            <Text drawer>About us</Text><i class="fas fa-users icon-color" />
+            <Text drawer>About us</Text><i className="fas fa-users icon-color" />
           </div>  
         </Newlink>
         <Newlink to="regi">
           <div className="LinkWrapper">
-            <Text drawer>Contact us</Text><i class="far fa-envelope icon-color" />
+            <Text drawer>Contact us</Text><i className="far fa-envelope icon-color" />
           </div>  
         </Newlink>
       </div>
