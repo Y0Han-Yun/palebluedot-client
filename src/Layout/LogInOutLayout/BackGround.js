@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { spacing } from '../../config/theme';
 
 const StyledComponent = styled.div`
   position: fixed;
