@@ -66,7 +66,7 @@ class Register extends React.Component {
             <NewLink to="/forgot"><Text white>Forgot Password</Text></NewLink>
           </div>
           <div className='RegiLinkWarpper'>
-            <NewLink to='/'><Text white>Sign In</Text></NewLink>
+            <NewLink to='/'><Text white>Log In</Text></NewLink>
           </div>
         </div>
         <div className='ButtonWrapper'>

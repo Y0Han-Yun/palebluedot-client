@@ -22,7 +22,7 @@ class LogoSection extends React.Component {
     return (<>
       <StyledComponent>
         <div>
-          <Logo />
+          <Logo size="130px"/>
         </div>
         <div>
           <Text lg normal>Pale Blue Dot</Text><br/>

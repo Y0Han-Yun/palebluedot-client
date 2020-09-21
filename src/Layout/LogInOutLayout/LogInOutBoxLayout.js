@@ -17,18 +17,29 @@ const StyledComponent = styled.div`
   * {
     margin-bottom: ${spacing['2']};
   }
+
+  .LogInOutBox{
+    width: 85%;
+    height: 90%;
+    display: flex;
+    margin: 0px;
+    box-shadow: 4px 6px 13px 1px rgba(0,0,0,0.42);
+    border-radius: 20px;
+  }
 `;
 
-class BackGround extends React.Component {
+class LogInOutBoxLayout extends React.Component {
 
   render () {
     return (<>
       <StyledComponent>
-        {this.props.children}
+        <div className='LogInOutBox'>
+          {this.props.children}
+        </div>
       </StyledComponent>
     </>);
   }
 
 }
 
-export default BackGround;
+export default LogInOutBoxLayout;
