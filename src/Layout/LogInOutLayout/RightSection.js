@@ -10,6 +10,11 @@ const StyledComponent = styled.div`
   align-items: center;
   background-color: #1D242B;
   border-radius: 0 20px 20px 0;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    border-radius: 0px;
+  }
 `;
 
 class RightSection extends React.Component {

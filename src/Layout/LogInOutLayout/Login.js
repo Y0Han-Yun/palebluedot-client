@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Text, Input, Button, NewLink } from '../../components';
 import { spacing } from '../../config/theme';
+import Logo from '../../components/Logo';
 
 const StyledComponent = styled.div`
   width: 80%;
@@ -9,6 +10,16 @@ const StyledComponent = styled.div`
   margin: 0px;
   border: 0px;
   padding: 0px;
+
+  .LogoWarpper{
+    display: none;
+  
+    .LogoSection{
+      display: felx;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
   .NameOfPageWarpper{
     margin-bottom: 40px;
@@ -48,12 +59,41 @@ const StyledComponent = styled.div`
     }
     padding-top: 100px;
   }
+  @media (max-width: 500px) {
+    width: 80%;
+    height: 80%;
+
+    .LogoWarpper{
+      display :inline;
+    }
+
+    .NameOfPageWarpper{
+      margin-bottom: 10px;
+    }
+
+    // .ButtonWrapper{
+    //   display: flex;
+    //   justify-content: center;
+    //   width: 100%;
+    //   padding-top: 100px;
+    // }
+}
 `;
 
 class Login extends React.Component {
   render () {
     return (<>
       <StyledComponent>
+        <div className="LogoWarpper">
+          <div className="LogoSection">
+            <div>
+              <Logo size="4rem" />
+            </div>
+            <div>
+              <Text md white >Pale Blue Dot</Text>
+            </div>
+          </div>
+        </div>
         <div className='NameOfPageWarpper'>
           <Text lg white>Login</Text>
         </div>

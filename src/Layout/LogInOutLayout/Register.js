@@ -46,7 +46,7 @@ const StyledComponent = styled.div`
     span {
       margin-bottom: ${spacing['0']};
     }
-    padding-top: 100px;
+    padding-top: 44px;
   }
 `;
 

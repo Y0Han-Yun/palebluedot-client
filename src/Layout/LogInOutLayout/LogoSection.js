@@ -15,6 +15,11 @@ const StyledComponent = styled.div`
     justify-content: center;
     align-items: center;
   }
+  
+  @media (max-width: 500px) {
+    display: none;
+  }
+
 `;
 
 class LogoSection extends React.Component {

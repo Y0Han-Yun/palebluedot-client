@@ -10,6 +10,10 @@ const StyledComponent = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px 0px 0px 20px;
+  
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 class LeftSection extends React.Component {

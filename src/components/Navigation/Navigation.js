@@ -15,15 +15,18 @@ const StyledComponent = styled.nav`
   background-color: #3a7bd5; 
   padding: 0rem 1rem;
   box-sizing: border-box;
+
   .LogoWarpper{
     height: 100%;
     display: flex;
     flex-grow: 1;
+
     .LogoLeftSection{
       justify-content: center;
       align-items: center;
       display: flex;
       height: 100%;
+
       .space {
         margin-right: 0.5rem;
       }
