@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Text} from '../../components';
-import Logo from '../../components/Logo';
+import {Text} from '../../../components';
+import Logo from '../../../components/Logo';
 
 const StyledComponent = styled.div`
   width: 80%;
@@ -15,9 +15,6 @@ const StyledComponent = styled.div`
     justify-content: center;
     align-items: center;
   }
-  
-  
-
 `;
 
 class LogoSection extends React.Component {
@@ -37,5 +34,4 @@ class LogoSection extends React.Component {
     </>);
   }
 }
-
 export default LogoSection;

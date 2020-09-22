@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text, Input, Button, NewLink } from '../../components';
-import { spacing } from '../../config/theme';
-import Logo from '../../components/Logo';
-import MobileLayout from '../../Layout/LogInOutLayout/MobileLayout';
+import { Text, Input, Button, NewLink } from '../../../components';
+import { spacing } from '../../../config/theme';
+import MobileLogin from '../Mobile/MobileLogin';
 
 const StyledComponent = styled.div`
   width: 80%;
@@ -11,16 +10,6 @@ const StyledComponent = styled.div`
   margin: 0px;
   border: 0px;
   padding: 0px;
-
-  .LogoWarpper{
-    display: none;
-  
-    .LogoSection{
-      display: felx;
-      justify-content: center;
-      align-items: center;
-    }
-  }
 
   .NameOfPageWarpper{
     margin-bottom: 40px;
@@ -51,6 +40,7 @@ const StyledComponent = styled.div`
     }
     
   }
+
   .ButtonWrapper{
     display: flex;
     width: 100%;
@@ -60,23 +50,11 @@ const StyledComponent = styled.div`
     }
     padding-top: 100px;
   }
+
   @media (max-width: 500px) {
     .WebLayout{
       display :none;
     }
-    // width: 80%;
-    // height: 80%;
-    // display :none;
-
-    // .LogoWarpper{
-    //   display :inline;
-    // }
-
-    // .NameOfPageWarpper{
-    //   display :none;
-    // }
-
-  
 }
 `;
 
@@ -84,16 +62,7 @@ class Login extends React.Component {
   render () {
     return (<>
       <StyledComponent>
-        <MobileLayout>
-          <div className="LogoSection">
-            <div>
-              <Logo size="4rem" />
-            </div>
-            <div>
-              <Text md white >Pale Blue Dot</Text>
-            </div>
-          </div>
-        </MobileLayout>
+        <MobileLogin />
         <div className='WebLayout'>
           <div className='NameOfPageWarpper'>
             <Text lg white>Login</Text>

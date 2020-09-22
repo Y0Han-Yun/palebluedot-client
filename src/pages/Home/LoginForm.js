@@ -1,10 +1,10 @@
 import React from 'react';
-import LogInOutBoxLayout from '../../Layout/LogInOutLayout/LogInOutBoxLayout';
-import LeftSection from '../../Layout/LogInOutLayout/LeftSection';
-import RightSection from '../../Layout/LogInOutLayout/RightSection';
-import LogoSection from '../../Layout/LogInOutLayout/LogoSection';
-import Login from '../../Layout/LogInOutLayout/Login';
-import MobileLayout from '../../Layout/LogInOutLayout/MobileLayout';
+import LogInOutBoxLayout from '../../Layout/LogInOutLayout/Web/LogInOutBoxLayout';
+import LeftSection from '../../Layout/LogInOutLayout/Web/LeftSection';
+import RightSection from '../../Layout/LogInOutLayout/Web/RightSection';
+import LogoSection from '../../Layout/LogInOutLayout/Web/LogoSection';
+import Login from '../../Layout/LogInOutLayout/Web/Login';
+import MobileLogin from '../../Layout/LogInOutLayout/Mobile/MobileLogin';
 
 
 
@@ -20,7 +20,7 @@ class RegisterForm extends React.Component {
         <Login/>
       </RightSection>
     </LogInOutBoxLayout>
-    <MobileLayout />
+    <MobileLogin />
     </>);
   }
 }

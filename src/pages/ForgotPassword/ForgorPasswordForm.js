@@ -1,9 +1,9 @@
 import React from 'react';
-import LogInOutBoxLayout from '../../Layout/LogInOutLayout/LogInOutBoxLayout';
-import LeftSection from '../../Layout/LogInOutLayout/LeftSection';
-import RightSection from '../../Layout/LogInOutLayout/RightSection';
-import LogoSection from '../../Layout/LogInOutLayout/LogoSection';
-import ForgotPass from '../../Layout/LogInOutLayout/ForgotPass';
+import LogInOutBoxLayout from '../../Layout/LogInOutLayout/Web/LogInOutBoxLayout';
+import LeftSection from '../../Layout/LogInOutLayout/Web/LeftSection';
+import RightSection from '../../Layout/LogInOutLayout/Web/RightSection';
+import LogoSection from '../../Layout/LogInOutLayout/Web/LogoSection';
+import ForgotPass from '../../Layout/LogInOutLayout/Web/ForgotPass';
 
 
 class RegisterForm extends React.Component {
