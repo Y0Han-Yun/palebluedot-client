@@ -16,9 +16,7 @@ const StyledComponent = styled.div`
     align-items: center;
   }
   
-  @media (max-width: 500px) {
-    display: none;
-  }
+  
 
 `;
 

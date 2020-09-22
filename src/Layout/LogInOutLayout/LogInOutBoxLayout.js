@@ -28,11 +28,7 @@ const StyledComponent = styled.div`
   }
   
   @media (max-width: 500px) {
-    .LogInOutBox{
-      width: 100%;
-      height: 100%;
-      display: flex;
-      margin: 0px;
+    display: none;
   }
 
 `;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Text, Input, Button, NewLink } from '../../components';
 import { spacing } from '../../config/theme';
 import Logo from '../../components/Logo';
+import MobileLayout from '../../Layout/LogInOutLayout/MobileLayout';
 
 const StyledComponent = styled.div`
   width: 80%;
@@ -60,23 +61,22 @@ const StyledComponent = styled.div`
     padding-top: 100px;
   }
   @media (max-width: 500px) {
-    width: 80%;
-    height: 80%;
-
-    .LogoWarpper{
-      display :inline;
+    .WebLayout{
+      display :none;
     }
+    // width: 80%;
+    // height: 80%;
+    // display :none;
 
-    .NameOfPageWarpper{
-      margin-bottom: 10px;
-    }
-
-    // .ButtonWrapper{
-    //   display: flex;
-    //   justify-content: center;
-    //   width: 100%;
-    //   padding-top: 100px;
+    // .LogoWarpper{
+    //   display :inline;
     // }
+
+    // .NameOfPageWarpper{
+    //   display :none;
+    // }
+
+  
 }
 `;
 
@@ -84,7 +84,7 @@ class Login extends React.Component {
   render () {
     return (<>
       <StyledComponent>
-        <div className="LogoWarpper">
+        <MobileLayout>
           <div className="LogoSection">
             <div>
               <Logo size="4rem" />
@@ -93,27 +93,29 @@ class Login extends React.Component {
               <Text md white >Pale Blue Dot</Text>
             </div>
           </div>
-        </div>
-        <div className='NameOfPageWarpper'>
-          <Text lg white>Login</Text>
-        </div>
-          <Input type="text" placeholder="Email" />
-          <Input type="password" placeholder="Password" />
-        <div className='LinkWarpper'>
-          <div className='CheckboxWapper'>
-            <Input type="checkbox" />
-            <Text white>Remember me</Text>
+        </MobileLayout>
+        <div className='WebLayout'>
+          <div className='NameOfPageWarpper'>
+            <Text lg white>Login</Text>
           </div>
-          <div className='ForgotPasswordWarpper'>
-            <NewLink to="/forgot"><Text white>Forgot Password</Text></NewLink>
+            <Input type="text" placeholder="Email" />
+            <Input type="password" placeholder="Password" />
+          <div className='LinkWarpper'>
+            <div className='CheckboxWapper'>
+              <Input type="checkbox" />
+              <Text white>Remember me</Text>
+            </div>
+            <div className='ForgotPasswordWarpper'>
+              <NewLink to="/forgot"><Text white>Forgot Password</Text></NewLink>
+            </div>
+            <div className='RegiLinkWarpper'>
+              <NewLink to='/regi'><Text white>Register</Text></NewLink>
+            </div>
           </div>
-          <div className='RegiLinkWarpper'>
-            <NewLink to='/regi'><Text white>Register</Text></NewLink>
+          <div className='ButtonWrapper'>
+            <Button>Login</Button>
           </div>
-        </div>
-        <div className='ButtonWrapper'>
-          <Button>Login</Button>
-        </div>
+        </div>  
       </StyledComponent>
     </>);
   }

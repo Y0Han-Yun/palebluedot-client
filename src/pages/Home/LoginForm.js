@@ -4,6 +4,8 @@ import LeftSection from '../../Layout/LogInOutLayout/LeftSection';
 import RightSection from '../../Layout/LogInOutLayout/RightSection';
 import LogoSection from '../../Layout/LogInOutLayout/LogoSection';
 import Login from '../../Layout/LogInOutLayout/Login';
+import MobileLayout from '../../Layout/LogInOutLayout/MobileLayout';
+
 
 
 class RegisterForm extends React.Component {
@@ -18,6 +20,7 @@ class RegisterForm extends React.Component {
         <Login/>
       </RightSection>
     </LogInOutBoxLayout>
+    <MobileLayout />
     </>);
   }
 }
