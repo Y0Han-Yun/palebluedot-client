@@ -82,7 +82,7 @@ class Login extends React.Component {
             </div>
           </div>
           <div className='ButtonWrapper'>
-            <Button>Login</Button>
+            <Button>Login</Button>  
           </div>
         </div>  
       </StyledComponent>
