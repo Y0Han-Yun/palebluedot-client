@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from '../../../components/Logo';
 import { Text, Input, Button, NewLink } from '../../../components';
-
+import { spacing } from '../../../config/theme';
 
 
 const StyledComponent = styled.div`
@@ -10,6 +10,8 @@ const StyledComponent = styled.div`
   width: 100%;
   height: 100%;
   display: none;
+  background-color: #313131; 
+  
 
   .Flex{
     width: 100%;
@@ -17,41 +19,46 @@ const StyledComponent = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
+    .Warpper{
+      width: 85%;
+      height: 85%;
+
+      .LogoWarpper{
+        display: flex;
+        align-items: center;
+        padding-bottom: 100px;
+      }
+    
+      .LinkWarpper{
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 20px;
+      }
+    
+      .ButtonWarpper{
+        display: flex;
+        
+        padding-top: 40px;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        span {
+          margin-bottom: ${spacing['0']};
+    }
+      }
+    
+      .LinkSection{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+      }
+    }
   }
   
-  .Warpper{
-    width: 85%;
-    height: 80%;
-  }
-
-  .LogoWarpper{
-    display: flex;
-    align-items: center;
-    padding-bottom: 100px;
-  }
-
-  .LinkWarpper{
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 10px;
-  }
-
-  .ButtonWarpper{
-    display: flex;
-    width: 100%;
-    padding-top: 40px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .LinkSection{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-
-  }
+  
 
   @media (max-width: 500px) {
     display :inline;
@@ -68,7 +75,7 @@ class MobileLogin extends React.Component {
           <div className='Warpper'>
             <div className='LogoWarpper'>
               <Logo size="3rem"/>
-              <Text lg normal>Pale Blue Dot</Text><br/>
+              <Text lg normal white>Pale Blue Dot</Text><br/>
             </div>
             <div>
               <Input type="text" placeholder="Email" />
@@ -77,18 +84,21 @@ class MobileLogin extends React.Component {
             <div className="LinkWarpper">
               <div>
                 <Input type="checkbox" />
-                <Text >Remember me</Text>
+                <Text white>Remember me</Text>
               </div>
             </div>
             <div className="ButtonWarpper">
               <Button tertiary>Login</Button>
             </div>
             <div className="LinkSection">
-              <NewLink to="/forgot"><Text >Forgot Password</Text></NewLink>
-              <NewLink to='/regi'><Text >Register</Text></NewLink>
+              <div>
+                <NewLink to="/forgot"><Text white>Forgot Password</Text></NewLink>
+              </div>
+              <div>
+                <NewLink to='/regi'><Text white>Register</Text></NewLink>
+              </div>
             </div>
-          
-         </div> 
+          </div> 
         </div>     
       </StyledComponent>
     </>);
