@@ -29,6 +29,10 @@ const StyledComponent = styled.div`
         display: flex;
         align-items: center;
         padding-bottom: 100px;
+
+        .space {
+          margin-right: 0.5rem;
+        }
       }
     
       .LinkWarpper{
@@ -75,6 +79,7 @@ class MobileLogin extends React.Component {
           <div className='Warpper'>
             <div className='LogoWarpper'>
               <Logo size="3rem"/>
+              <div className="space"></div>
               <Text lg normal white>Pale Blue Dot</Text><br/>
             </div>
             <div>

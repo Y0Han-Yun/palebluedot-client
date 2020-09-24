@@ -29,6 +29,10 @@ const StyledComponent = styled.div`
         display: flex;
         align-items: center;
         padding-bottom: 60px;
+        
+        .space {
+          margin-right: 0.5rem;
+        }
       }
     
       .ButtonWarpper{
@@ -67,6 +71,7 @@ class MobileRegister extends React.Component {
           <div className='Warpper'>
             <div className='LogoWarpper'>
               <Logo size="3rem"/>
+              <div className="space"></div>
               <Text lg normal white>Pale Blue Dot</Text><br/>
             </div>
             <div>

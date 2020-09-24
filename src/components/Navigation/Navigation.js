@@ -75,7 +75,6 @@ class Navigation extends React.Component {
   render () {
     return (<>
       <StyledComponent>
-
         <div className="LogoWarpper">
           <div className="LogoLeftSection">
             <Logo size="3rem" />
@@ -83,7 +82,6 @@ class Navigation extends React.Component {
             <Text md white >Pale Blue Dot</Text>
           </div>
         </div>
-
         <div className="LinkWarpper">
           <div className="LinkLeftSection"/>
           <div className="LinkRightSection">  
@@ -93,11 +91,9 @@ class Navigation extends React.Component {
             <NewLink to="bin"><Text sm white>Bin</Text></NewLink>
           </div>
         </div>
-
         <div className="BurgerWarpper">
           < DrawerNav />
         </div>  
-
       </StyledComponent>
     </>);
   }
