@@ -55,7 +55,7 @@ const StyledComponent = styled.div`
     .WebLayout{
       display :none;
     }
-}
+  }
 `;
 
 class Login extends React.Component {

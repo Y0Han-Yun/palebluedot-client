@@ -10,7 +10,7 @@ const StyledComponent = styled.div`
   width: 100%;
   height: 100%;
   display: none;
-  background-color: #313131; 
+  background-color: #1D242B;
   
 
   .Flex{

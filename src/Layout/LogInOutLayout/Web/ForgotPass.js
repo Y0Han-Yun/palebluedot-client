@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Text, Input, Button, NewLink } from '../../../components';
 import { spacing } from '../../../config/theme';
+import MobileForgotPass from '../Mobile/MobileForgotPass';
 
 const StyledComponent = styled.div`
   width: 80%;
@@ -54,29 +55,39 @@ const StyledComponent = styled.div`
     }
     padding-top: 100px;
   }
+  
+  @media (max-width: 500px) {
+    .WebLayout{
+      display :none;
+    }
+  }
+
 `;
 
 class ForgotPass extends React.Component {
   render () {
     return (<>
       <StyledComponent>
-        <div className='NameOfPageWarpper'>
-          <Text lg white>Forgot your password?</Text>
-        </div>
-        <div className='DescriptionWarpper'>
-          <Text sm white>We just need your registered email addess</Text>
-        </div>
-        <div className='DescriptionWarpper'>
-          <Text sm white>to send you password reset</Text>
-        </div>
-        <Input type="text" placeholder="Email address" />
-        <div className='LinkWarpper'>
-          <div className='RegiLinkWarpper'>
-          <NewLink to='/regi'><Text white>Register</Text></NewLink>
+        <MobileForgotPass />
+        <div className='WebLayout'>
+          <div className='NameOfPageWarpper'>
+            <Text lg white>Forgot your password?</Text>
           </div>
-        </div>
-        <div className='ButtonWrapper'>
-          <Button >Reset Password</Button>
+          <div className='DescriptionWarpper'>
+            <Text sm white>We just need your registered email addess</Text>
+          </div>
+          <div className='DescriptionWarpper'>
+            <Text sm white>to send you password reset</Text>
+          </div>
+          <Input type="text" placeholder="Email address" />
+          <div className='LinkWarpper'>
+            <div className='RegiLinkWarpper'>
+            <NewLink to='/regi'><Text white>Register</Text></NewLink>
+            </div>
+          </div>
+          <div className='ButtonWrapper'>
+            <Button >Reset Password</Button>
+          </div>
         </div>
       </StyledComponent>
     </>);

@@ -4,9 +4,9 @@ import LeftSection from '../../Layout/LogInOutLayout/Web/LeftSection';
 import RightSection from '../../Layout/LogInOutLayout/Web/RightSection';
 import LogoSection from '../../Layout/LogInOutLayout/Web/LogoSection';
 import ForgotPass from '../../Layout/LogInOutLayout/Web/ForgotPass';
+import MobileForgotPass from '../../Layout/LogInOutLayout/Mobile/MobileForgotPass';
 
-
-class RegisterForm extends React.Component {
+class ForgorPasswordForm extends React.Component {
 
   render () {
     return (<>       
@@ -18,11 +18,12 @@ class RegisterForm extends React.Component {
         <ForgotPass/>
       </RightSection>
     </LogInOutBoxLayout>
+    <MobileForgotPass />
     </>);
   }
 }
 
-export default RegisterForm;
+export default ForgorPasswordForm;
 
 
 
