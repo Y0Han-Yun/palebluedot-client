@@ -7,7 +7,7 @@ const media = {
 
 const font = {
   family: {
-    sans: "'Open Sans', sans-serif",
+    sans: "'Dancing Script', cursive",
     serif: ''
   },
   color: {

@@ -1,3 +1,4 @@
+import withTheme from '../../hocs/withTheme';
 import React from 'react';
 import styled from 'styled-components';
 import Text from '../Text'
@@ -10,7 +11,7 @@ const StyledComponent = styled.nav`
   height: 65px;
   display: flex;
   align-items: center;
-  background-color: #3a7bd5; 
+  background-color: ${props => props.theme.mainColor};
   padding: 0rem 1rem;
   box-sizing: border-box;
 
@@ -72,7 +73,7 @@ const StyledComponent = styled.nav`
 class Navigation extends React.Component {
   render () {
     return (<>
-      <StyledComponent>
+      <StyledComponent theme={this.props.theme}>
         <div className="LogoWarpper">
           <div className="LogoLeftSection">
             <Logo size="3rem" />
@@ -90,12 +91,12 @@ class Navigation extends React.Component {
           </div>
         </div>
         <div className="BurgerWarpper">
-          < DrawerNav />
-        </div>  
+          <DrawerNav />
+        </div>
       </StyledComponent>
     </>);
   }
 
 }
 
-export default Navigation;
+export default withTheme(Navigation);
