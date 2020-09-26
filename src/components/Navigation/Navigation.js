@@ -2,10 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Text from '../Text'
 import NewLink from '../NewLink';
-import { withRouter } from 'react-router-dom';
 import DrawerNav from './index';
 import Logo from '../Logo';
-
 
 const StyledComponent = styled.nav`
   width: 100%;
@@ -100,4 +98,4 @@ class Navigation extends React.Component {
 
 }
 
-export default withRouter(Navigation);
+export default Navigation;

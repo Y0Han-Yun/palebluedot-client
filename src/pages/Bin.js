@@ -1,27 +1,19 @@
-import { withRouter } from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
 import Navigation from '../components/Navigation/Navigation';
 
-const Container = styled.div`
-  width: 100%;
-  // height: 790px;
-  margin: 0px;
-  border: 0px;
-  padding: 0px;
-  display: flex;
-`;
+const Container = styled.div``;
 
 class Bin extends React.Component {
 
   render () {
-    return (<>
+    return (
       <Container>
         <Navigation/>
       </Container>
-    </>);
+    );
   }
 
 }
 
-export default withRouter(Bin);
+export default Bin;
