@@ -24,7 +24,7 @@ class AuthProvider extends React.Component {
     return (
       <Provider value={{
         userEmail: this.state.userEmail,
-        setUserEmail: this.setUserEmail}}>
+        setUserEmail: this.setUserEmail }}>
         {this.props.children}
       </Provider>
     );
@@ -32,7 +32,7 @@ class AuthProvider extends React.Component {
 
 }
 
-export { 
+export {
   AuthProvider,
-  Consumer as AuthConsumer 
+  Consumer as AuthConsumer
 };
