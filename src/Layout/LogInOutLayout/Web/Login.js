@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { Text, Input, Button, NewLink } from '../../../components';
 import { spacing } from '../../../config/theme';
 import MobileLogin from '../Mobile/MobileLogin';
+import { withRouter } from 'react-router-dom';
+import { AuthConsumer } from '../../../contexts/AuthContext';
 
 const StyledComponent = styled.div`
   width: 80%;
@@ -82,7 +84,17 @@ class Login extends React.Component {
             </div>
           </div>
           <div className='ButtonWrapper'>
-            <Button>Login</Button>  
+          <AuthConsumer>
+            {value => (
+              <Button
+                onClick={() => {
+                  value.setUserEmail('ohhobs@gmail.com')
+                  this.props.history.push('/bin');
+                }}>
+                Login
+              </Button>
+            )}
+          </AuthConsumer>
           </div>
         </div>  
       </StyledComponent>
@@ -90,4 +102,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);

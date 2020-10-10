@@ -17,7 +17,7 @@ class RegisterForm extends React.Component {
         <LogoSection/>
       </LeftSection>
       <RightSection>
-        <Login/>
+        <Login setUserEmail={this.props.setUserEmail}/>
       </RightSection>
     </LogInOutBoxLayout>
     <MobileLogin />

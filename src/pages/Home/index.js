@@ -25,7 +25,7 @@ class Home extends React.Component {
   render () {
     return (<>
      <PageLoading target={this.state.pageLoading}>
-        <LoginForm/>
+        <LoginForm setUserEmail={this.props.setUserEmail}/>
      </PageLoading>
     </>);
   }

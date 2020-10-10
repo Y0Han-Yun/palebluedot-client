@@ -31,7 +31,7 @@ class Button extends React.Component {
       tertiary: this.props.tertiary
     };
     return (
-      <StyledComponent styledProps={styledProps}>
+      <StyledComponent onClick={this.props.onClick} styledProps={styledProps}>
         <Text white={this.props.primary}>
           {this.props.children}
         </Text>
