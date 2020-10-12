@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 class Router extends React.Component {
+
   render () {
     return (<>
       <GlobalStyle />
@@ -42,5 +43,6 @@ class Router extends React.Component {
       </BrowserRouter>
     </>);
   }
+
 }
 export default Router;

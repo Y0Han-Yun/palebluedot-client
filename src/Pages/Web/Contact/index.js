@@ -3,12 +3,14 @@ import styled from 'styled-components';
 
 const StyledComponent = styled.div``;
 
-class Home extends React.Component {
+class Contact extends React.Component {
+
   render () {
     return (
-      <StyledComponent>Main</StyledComponent>
+      <StyledComponent>Contact page</StyledComponent>
     );
   }
+
 }
 
-export default Home;
+export default Contact;

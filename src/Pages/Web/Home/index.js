@@ -3,12 +3,14 @@ import styled from 'styled-components';
 
 const StyledComponent = styled.div``;
 
-class Portfolio extends React.Component {
+class Home extends React.Component {
+
   render () {
     return (
-      <StyledComponent>Portfolio page</StyledComponent>
+      <StyledComponent>Main</StyledComponent>
     );
   }
+
 }
 
-export default Portfolio;
+export default Home;
