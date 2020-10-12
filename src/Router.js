@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
-import Home from './Web/Home';
-import Skills from './Web/Skills';
-import Contact from './Web/Contact';
-import About from './Web/About';
-import Portfolio from './Web/Portfolio';
+import Home from './Pages/Web/Home';
+import Skills from './Pages/Web/Skills';
+import Contact from './Pages/Web/Contact';
+import About from './Pages/Web/About';
+import Portfolio from './Pages/Web/Portfolio';
 
 const GlobalStyle = createGlobalStyle`
   html {
