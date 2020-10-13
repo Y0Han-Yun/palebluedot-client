@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import BackGround from '/Users/yoonyohan/Desktop/project/palebluedot-client/src/Images/BackGround.jpg';
-
+import BackGround from "/Users/yoonyohan/Desktop/project/palebluedot-client/src/Images/BackGroundImage.jpg";
 const StyledComponent = styled.div``;
 
 const BackGroudImage = styled.img`
