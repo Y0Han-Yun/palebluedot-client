@@ -32,9 +32,9 @@ class BackGround extends React.Component {
     return (<>
       <StyledComponent >
         <Image src={BackGroundImage} alt="BackGouund" />
-          <Zindex1>
-            {this.props.children}
-          </Zindex1>
+        <Zindex1>
+          {this.props.children}
+        </Zindex1>
       </StyledComponent>
     </>);
   }
