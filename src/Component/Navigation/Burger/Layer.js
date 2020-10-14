@@ -15,7 +15,7 @@ const StyledComponent = styled.div`
 
 class Layer extends React.Component {
   render () {
-    return <StyledComponent ShowLayOut={this.props.ShowLayOut} onClick={this.props.onClick}/>;
+    return <StyledComponent ShowLayOut={this.props.ShowLayOut} onClick={this.props.onClick} />;
   }
 }
 

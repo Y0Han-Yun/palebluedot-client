@@ -62,22 +62,19 @@ class Drawer extends React.Component {
       </div>
       <div className="Menu-wrapper">
           <div className="LinkWrapper">
-            <div drawer>SignOut</div><i className="fas fa-home icon-color" />
+            <div drawer>Home</div><i className="fas fa-home icon-color" />
           </div>
           <div className="LinkWrapper">  
-            <div drawer>Register</div><i className="far fa-user icon-color" />
+            <div drawer>Skills</div><i class="fas fa-laptop-code icon-color" />
           </div>
           <div className="LinkWrapper">
-            <div drawer>Invoice</div><i className="far fa-sticky-note icon-color" />
+            <div drawer>Portfolio</div><i class="fas fa-code icon-color" />
           </div>
           <div className="LinkWrapper">  
-            <div drawer>Bin</div><i className="far fa-trash-alt icon-color" />
-          </div>
-          <div className="LinkWrapper">  
-            <div drawer>About us</div><i className="fas fa-users icon-color" />
+            <div drawer>About</div><i className="fas fa-users icon-color" />
           </div>  
           <div className="LinkWrapper">
-            <div drawer>Contact us</div><i className="far fa-envelope icon-color" />
+            <div drawer>Contact</div><i className="far fa-envelope icon-color" />
           </div>  
       </div>
     </StyledComponent>
