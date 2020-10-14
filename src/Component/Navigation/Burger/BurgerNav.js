@@ -1,10 +1,9 @@
 import React from 'react';
 import Layer from './Layer';
 import OpenButton from './OpenButton';
+import Drawer from './Drawer';
 
-const StyleComponent = styled.div``;
-
-class DrawerNav extends React.Component {
+class BurgerNav extends React.Component {
 
   constructor (props){
     super(props)
@@ -14,22 +13,26 @@ class DrawerNav extends React.Component {
   }
 
   render () {
-    return (
-      <StyleComponent> 
-        <Layer ShowLayOut={this.props.ShowLayOut} onClick={() => {
-          this.setState({
-            ShowLayOut: false
-          });
-        }} />
-        <OpenButton ShowLayOut={this.props.ShowLayOut} onClick={() => {
-          this.setState({
-            ShowLayOut: true
-          });
-        }} />
-        
-      </StyleComponent>
-    );
+    return (<>
+      <Layer ShowLayOut={this.state.ShowLayOut} onClick={() => {
+        this.setState({
+          ShowLayOut: false
+        });
+      }} />
+
+      <OpenButton onClick={() => {
+        this.setState({
+          ShowLayOut: true
+        });
+      }} />
+
+      <Drawer ShowLayOut={this.state.ShowLayOut} onClose={() => {
+        this.setState ({
+          ShowLayOut: false
+        });
+      }}/> 
+    </>);
   }
 }
 
-export default DrawerNav;
+export default BurgerNav;

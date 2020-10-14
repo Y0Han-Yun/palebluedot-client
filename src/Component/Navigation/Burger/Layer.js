@@ -7,7 +7,7 @@ const StyledComponent = styled.div`
   transition: opacity 0.3s;
   position fixed;
   top: 0;
-  ;eft: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: #000000;
@@ -15,7 +15,7 @@ const StyledComponent = styled.div`
 
 class Layer extends React.Component {
   render () {
-    return <StyledComponent ShowLayOut={this.porps.ShowLayOut} onClick={this.props.onClick}/>;
+    return <StyledComponent ShowLayOut={this.props.ShowLayOut} onClick={this.props.onClick}/>;
   }
 }
 
