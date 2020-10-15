@@ -5,14 +5,14 @@ import Navigation from '../../../Component/Navigation/Bar';
 import PictureSection from '../../../Component/PictureSection';
 
 const StyledComponent = styled.div`
-a.{
-  width: 100%;
-  heigth: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
+  .ProfileSection { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    // align-items: center;
+  }
 `;
 
 class Home extends React.Component {
@@ -22,7 +22,7 @@ class Home extends React.Component {
       <StyledComponent>
         <BackGround>
           <Navigation/>
-          <div className='a'>
+          <div className='ProfileSection'>
             <PictureSection />
           </div>
         </BackGround>

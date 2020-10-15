@@ -5,26 +5,46 @@ const StyledComponent = styled.div`
   width: 100%;
   height: 400px;
   background-color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  .Picture{
-    background-color: yellow;
+  .PictureWrapper{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Picture{
+      background-color: yellow;
+    }
   }
-  .Message{
-    background-color: red;
+  
+  .MessageWrapper{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Message{
+      background-color: red;
+    }
   }
 `;
 
 class PictureSection extends React.Component {
+
   render () {
     return (
       <StyledComponent>
-        <div className='Picture'>picture</div>
-        <div className='Message'>message</div>
+        <div className='PictureWrapper'>
+          <div className="Message">message</div>
+        </div>
+        <div className='MessageWrapper'>
+          <h1 className="Message">message</h1>
+        </div>
       </StyledComponent>
     );
   }
+
 }
 export default PictureSection;
