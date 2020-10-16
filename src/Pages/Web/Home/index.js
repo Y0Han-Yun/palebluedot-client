@@ -7,11 +7,14 @@ import PictureSection from '../../../Component/PictureSection';
 const StyledComponent = styled.div`
   .ProfileSection { 
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 80px;
-    // align-items: center;
+    margin-top: 120px;
+  }
+  @media (max-width: 550px) {
+    .ProfileSection{
+      margin-top: 60px;
+    }
   }
 `;
 
