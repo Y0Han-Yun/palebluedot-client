@@ -1,3 +1,4 @@
+import { withRouter } from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -52,6 +53,7 @@ const CancelButton = styled.div`
 
 class Drawer extends React.Component {
   render () {
+    console.log('props', this.props);
     return (
       <StyledComponent ShowLayOut={this.props.ShowLayOut}>
       <div className="close-button-wrapper">
@@ -61,25 +63,15 @@ class Drawer extends React.Component {
         </CancelButton>
       </div>
       <div className="Menu-wrapper">
-          <div className="LinkWrapper">
-            <div drawer>Home</div><i className="fas fa-home icon-color" />
+        {this.props.menuList.map(menu => (
+          <div key={menu.id} className="LinkWrapper" onClick={() => this.props.history.push(menu.path)}>
+            <div>{menu.displayName}</div><i className={`${menu.icon} icon-color`} />
           </div>
-          <div className="LinkWrapper">  
-            <div drawer>Skills</div><i class="fas fa-laptop-code icon-color" />
-          </div>
-          <div className="LinkWrapper">
-            <div drawer>Portfolio</div><i class="fas fa-code icon-color" />
-          </div>
-          <div className="LinkWrapper">  
-            <div drawer>About</div><i className="fas fa-users icon-color" />
-          </div>  
-          <div className="LinkWrapper">
-            <div drawer>Contact</div><i className="far fa-envelope icon-color" />
-          </div>  
+        ))}
       </div>
     </StyledComponent>
     );
   }
 }
 
-export default Drawer;
+export default withRouter(Drawer);

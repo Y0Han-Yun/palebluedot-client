@@ -11,7 +11,7 @@ class OpenButton extends React.Component {
   render() {
     return (
       <StyledComponent>
-        <i class="fas fa-bars fa-2x" onClick={this.props.onClick} />
+        <i className="fas fa-bars fa-2x" onClick={this.props.onClick} />
       </StyledComponent>
     );
   }

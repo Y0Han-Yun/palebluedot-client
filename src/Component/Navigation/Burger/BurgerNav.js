@@ -26,7 +26,7 @@ class BurgerNav extends React.Component {
         });
       }} />
 
-      <Drawer ShowLayOut={this.state.ShowLayOut} onClose={() => {
+      <Drawer menuList={this.props.menuList} ShowLayOut={this.state.ShowLayOut} onClose={() => {
         this.setState ({
           ShowLayOut: false
         });

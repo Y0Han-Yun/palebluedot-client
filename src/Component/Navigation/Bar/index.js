@@ -1,6 +1,8 @@
+import { withRouter } from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
-import BurgerNav from '../Burger/BurgerNav';
+import BurgerNav from 'src/Component/Navigation/Burger/BurgerNav';
+import { v4 } from 'uuid';
 
 const StyledComponent = styled.nav`
   width: 100%;
@@ -47,6 +49,13 @@ const StyledComponent = styled.nav`
   }
 `;
 
+const menuList = [
+  { id: v4(), displayName: 'Contact', path: '/contact', icon: 'far fa-envelope' },
+  { id: v4(), displayName: 'Portfolio', path: '/portfolio', icon: 'fas fa-code' },
+  { id: v4(), displayName: 'Skills', path: '/skills', icon: 'fas fa-laptop-code' },
+  { id: v4(), displayName: 'About', path: '/about', icon: 'fas fa-users' },
+  { id: v4(), displayName: 'Home', path: '/', icon: 'fas fa-home' }
+];
 
 class Navigation extends React.Component {
   render () {
@@ -56,18 +65,14 @@ class Navigation extends React.Component {
           <div className='PaddingLeft'>YoHan Yun</div>
         </div>
         <div className='MenuSetion'>
-          <div className='MarginLeft'>Contact</div>
-          <div className='MarginLeft'>Portfolio</div>
-          <div className='MarginLeft'>Skills</div>
-          <div className='MarginLeft'>About</div>
-          <div className='MarginLeft'>Home</div>
+          {menuList.map(menu => <div key={menu.id} className='MarginLeft' onClick={() => this.props.history.push(menu.path)}>{menu.displayName}</div>)}
         </div>
         <div className='BurgerWrapper'>
-          <BurgerNav />
+          <BurgerNav menuList={menuList} />
         </div>
       </StyledComponent>
     );
   }
 }
 
-export default Navigation;
+export default withRouter(Navigation);
