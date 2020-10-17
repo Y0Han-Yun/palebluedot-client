@@ -10,7 +10,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   z-index: auto;
-  opacity: 0.6;
+  opacity: 0.9;
   object-fit: cover;
   object-position: 50% 60%;
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import BackGround from '../../../Component/BackGround';
-import Navigation from '../../../Component/Navigation/Bar';
+import BackGround from 'src/Component/Image/BackGround';
+import Navigation from 'src/Component/Navigation/Bar';
 
 const StyledComponent = styled.div``;
 

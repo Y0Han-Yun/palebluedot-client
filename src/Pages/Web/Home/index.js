@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import BackGround from '../../../Component/BackGround';
-import Navigation from '../../../Component/Navigation/Bar';
-import PictureSection from '../../../Component/PictureSection';
+import BackGround from 'src/Component/Image/BackGround';
+import Navigation from 'src/Component/Navigation/Bar';
+import PictureSection from 'src/Component/PictureSection';
 
 const StyledComponent = styled.div`
   .ProfileSection { 
