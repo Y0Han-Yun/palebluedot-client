@@ -3,17 +3,16 @@ import styled from 'styled-components';
 import FacePicture from 'src/Images/FacePicture.jpg';
 
 const StyledComponent = styled.div`
-  position: fixed;
   width: 150px;
   height: 150px;
   border-radius: 70%;
   overflow: hidden;
-  z-index: auto;
 `;
 const Image = styled.img`
   object-fit: cover;
+  width: 100%;
+  height: 100%;
   object-position: 60% 50%;
-  z-index: 1;
 `;
 
 class Faceimage extends React.Component {

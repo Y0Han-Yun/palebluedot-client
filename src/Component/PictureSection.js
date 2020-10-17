@@ -51,7 +51,6 @@ const StyledComponent = styled.div`
       .Hello{
         padding-left: 20px;
       }
-      
   }
 `;
 
@@ -65,10 +64,10 @@ class PictureSection extends React.Component {
         </div>
         <div className="MessageWrapper">
           <span className="Hello">Hello,</span>
-          <div className='spacing'>
-            <span className='Name'>I am <span className='YellowColor'>John Yun</span></span>
+          <div className="spacing">
+            <span className="Name">I am <span className="YellowColor">John Yun</span></span>
             <br />
-            <span className='Developer'><span className='YellowColor'>and</span> Web Developer</span>
+            <span className="Developer"><span className="YellowColor">and</span> Web Developer</span>
           </div>
         </div>
       </StyledComponent>
