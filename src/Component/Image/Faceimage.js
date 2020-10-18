@@ -12,7 +12,6 @@ const Image = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
-  object-position: 60% 50%;
 `;
 
 class Faceimage extends React.Component {

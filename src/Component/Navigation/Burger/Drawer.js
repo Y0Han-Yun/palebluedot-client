@@ -6,7 +6,7 @@ const StyledComponent = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  width: ${props => props.ShowLayOut ? '350' : '0'}px;
+  width: ${props => props.ShowLayOut ? '300' : '0'}px;
   opacity: ${props => props.ShowLayOut ? '1' : '0'};
   height: 100%;
   background-color : white;
