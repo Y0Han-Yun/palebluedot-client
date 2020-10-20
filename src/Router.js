@@ -6,6 +6,7 @@ import Skills from 'src/Pages/Web/Skills';
 import Contact from 'src/Pages/Web/Contact';
 import About from 'src/Pages/Web/About';
 import Portfolio from 'src/Pages/Web/Portfolio';
+import Memo from 'src/Pages/Web/Memo';
 import { ContactProvider } from 'src/Context/ContactContext';
 
 const GlobalStyle = createGlobalStyle`
@@ -37,6 +38,9 @@ class Router extends React.Component {
             </Route>
             <Route exact path="/portfolio">
               <Portfolio />
+            </Route>
+            <Route exact path="/memo">
+              <Memo />
             </Route>
             <Route path="*">
               404_PAGE_NOT_FOUND

@@ -28,6 +28,7 @@ class ContactProvider extends React.Component {
           fullName: 'Hyun Ho Oh',
           phone: '0418590976',
           now: this.state.now,
+          address: 'Northryde',
           syncNow: this.syncNow
         }}>
         {this.props.children}

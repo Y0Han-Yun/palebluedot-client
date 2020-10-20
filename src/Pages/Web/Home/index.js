@@ -19,7 +19,7 @@ const StyledComponent = styled.div`
 `;
 
 class Home extends React.Component {
-
+ 
   render () {
     return (
       <StyledComponent>

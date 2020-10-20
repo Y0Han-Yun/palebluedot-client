@@ -53,23 +53,22 @@ const CancelButton = styled.div`
 
 class Drawer extends React.Component {
   render () {
-    console.log('props', this.props);
     return (
       <StyledComponent ShowLayOut={this.props.ShowLayOut}>
-      <div className="close-button-wrapper">
-        <div className="first" />
-        <CancelButton>
-          <i className="fas fa-times fa-2x button-color" onClick={this.props.onClose}></i>
-        </CancelButton>
-      </div>
-      <div className="Menu-wrapper">
-        {this.props.menuList.map(menu => (
-          <div key={menu.id} className="LinkWrapper" onClick={() => this.props.history.push(menu.path)}>
-            <div>{menu.displayName}</div><i className={`${menu.icon} icon-color`} />
-          </div>
-        ))}
-      </div>
-    </StyledComponent>
+        <div className="close-button-wrapper">
+          <div className="first" />
+          <CancelButton>
+            <i className="fas fa-times fa-2x button-color" onClick={this.props.onClose}></i>
+          </CancelButton>
+        </div>
+        <div className="Menu-wrapper">
+          {this.props.menuList.map(menu => (
+            <div key={menu.id} className="LinkWrapper" onClick={() => this.props.history.push(menu.path)}>
+              <div>{menu.displayName}</div><i className={`${menu.icon} icon-color`} />
+            </div>
+          ))}
+        </div>
+     </StyledComponent>
     );
   }
 }

@@ -5,6 +5,7 @@ import Navigation from 'src/Component/Navigation/Bar';
 import withRandom from 'src/Hoc/withRandom';
 import { ContactConsumer } from 'src/Context/ContactContext';
 
+
 const StyledComponent = styled.div``;
 
 class About extends React.Component {
@@ -32,12 +33,13 @@ class About extends React.Component {
           <div>About Page</div>
           <h1>생성된 랜던 숫자: {this.state.randomNumber}</h1>
           <ContactConsumer>
-            {contactValue => (<>
-              <div>Email: {contactValue.email}</div>
-              <div>Full name: {contactValue.fullName}</div>
-              <div>Phone: {contactValue.phone}</div>
-              <div>Now: {contactValue.now}</div>
-              <button onClick={contactValue.syncNow}>update time</button>
+            {Value => (<>
+              <div>Email: {Value.email}</div>
+              <div>Full name: {Value.fullName}</div>
+              <div>Phone: {Value.phone}</div>
+              <div>Now: {Value.now}</div>
+              <div>address: {Value.address}</div>
+              <button onClick={Value.syncNow}>update time</button>
             </>)}
           </ContactConsumer>
         </BackGround>
