@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button1 from 'src/Component/Example/Button1';
 
 const StyledComponent = styled.div`
-  background-color: red;
-  width: 100px;
-  height: 100px;
+  // background-color: red;
+  display: flex;
+  width: 100%;
+  height: 100%;
 `;
 
 class Button extends React.Component {
   render () {
     return (
       <StyledComponent>
-        <p>{this.props.Age}</p>
-        <p>{this.props.Age}</p>
-        <p>{this.props.Sex}</p>
+       <Button1 Title= "Yohan" Sub="Second"/>
       </StyledComponent>
     );
   }

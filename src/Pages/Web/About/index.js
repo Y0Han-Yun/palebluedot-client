@@ -5,7 +5,7 @@ import Navigation from 'src/Component/Navigation/Bar';
 import withRandom from 'src/Hoc/withRandom';
 import { ContactConsumer } from 'src/Context/ContactContext';
 import MousePosition from 'src/Component/MousePosition';
-
+import Button1 from 'src/Component/Example/Button1';
 const StyledComponent = styled.div``;
 
 class About extends React.Component {
@@ -50,6 +50,7 @@ class About extends React.Component {
             )}
           </MousePosition>
 
+          <Button1>Click here</Button1>    
         </BackGround>
       </StyledComponent>
     );
