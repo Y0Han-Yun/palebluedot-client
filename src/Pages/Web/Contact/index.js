@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import BackGround from 'src/Component/Image/BackGround';
 import Navigation from 'src/Component/Navigation/Bar';
+import MousePosition from 'src/Component/MousePosition';
 
 const StyledComponent = styled.div`
   .ContactWrapper{
@@ -54,6 +55,11 @@ class Contact extends React.Component {
         <BackGround>
           <Navigation />
           <div className='ContactWrapper'>
+            <MousePosition>
+              {position => (
+                <h1>x: {position.x}, y: {position.y}</h1>
+              )}
+            </MousePosition>
             <div className='Contact'>
               <div className='SubSection'>
                 <span className='Font'>Contact</span><br/>

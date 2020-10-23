@@ -4,7 +4,7 @@ import BackGround from 'src/Component/Image/BackGround';
 import Navigation from 'src/Component/Navigation/Bar';
 import withRandom from 'src/Hoc/withRandom';
 import { ContactConsumer } from 'src/Context/ContactContext';
-
+import MousePosition from 'src/Component/MousePosition';
 
 const StyledComponent = styled.div``;
 
@@ -32,6 +32,7 @@ class About extends React.Component {
           <Navigation />
           <div>About Page</div>
           <h1>생성된 랜던 숫자: {this.state.randomNumber}</h1>
+
           <ContactConsumer>
             {Value => (<>
               <div>Email: {Value.email}</div>
@@ -42,6 +43,13 @@ class About extends React.Component {
               <button onClick={Value.syncNow}>update time</button>
             </>)}
           </ContactConsumer>
+
+          <MousePosition>
+            {position => (
+              <div>x: {position.x}, y: {position.y}</div>
+            )}
+          </MousePosition>
+
         </BackGround>
       </StyledComponent>
     );
