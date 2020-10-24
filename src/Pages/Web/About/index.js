@@ -50,7 +50,7 @@ class About extends React.Component {
             )}
           </MousePosition>
 
-          <Button1>Click here</Button1>    
+          <Button1 />
         </BackGround>
       </StyledComponent>
     );
