@@ -25,7 +25,6 @@ const StyledComponent = styled.div`
   }
   .Menu-wrapper{
     padding: 10px;
-    heigth: 100%;
   }
   .LinkWrapper{
     padding: 20px 5px 20px 5px;

@@ -6,7 +6,12 @@ import withRandom from 'src/Hoc/withRandom';
 import { ContactConsumer } from 'src/Context/ContactContext';
 import MousePosition from 'src/Component/MousePosition';
 import Button1 from 'src/Component/Example/Button1';
-const StyledComponent = styled.div``;
+import DropDown from 'src/Component/DropDown/DropDown';
+const StyledComponent = styled.div`
+  .Dropnav{
+    display:flex;
+  }
+`;
 
 class About extends React.Component {
 
@@ -31,7 +36,7 @@ class About extends React.Component {
         <BackGround>
           <Navigation />
           <div>About Page</div>
-          <h1>생성된 랜던 숫자: {this.state.randomNumber}</h1>
+          {/* <h1>생성된 랜던 숫자: {this.state.randomNumber}</h1> */}
 
           <ContactConsumer>
             {Value => (<>
@@ -49,7 +54,11 @@ class About extends React.Component {
               <div>x: {position.x}, y: {position.y}</div>
             )}
           </MousePosition>
-
+          <div className='Dropnav'>
+            <DropDown />
+            <DropDown />
+            <DropDown />
+          </div>
           <Button1 />
         </BackGround>
       </StyledComponent>
