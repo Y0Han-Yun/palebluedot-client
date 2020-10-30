@@ -2,9 +2,13 @@ import { withRouter } from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
 import BurgerNav from 'src/Component/Navigation/Burger/BurgerNav';
+import Text from 'src/Component/Text';
+import LineEffect from 'src/Component/LineEffect';
+import FontEffect from 'src/Component/FontEffect';
 import { v4 } from 'uuid';
 
 const StyledComponent = styled.nav`
+  position: absolute;
   width: 100%;
   height: 65px;
   display: flex;
@@ -62,10 +66,10 @@ class Navigation extends React.Component {
     return (
       <StyledComponent>
         <div className='NameSection'>
-          <div className='PaddingLeft'>YoHan Yun</div>
+          <div className='PaddingLeft'><LineEffect><Text white>YoHan Yun</Text></LineEffect></div>
         </div>
         <div className='MenuSetion'>
-          {menuList.map(menu => <div key={menu.id} className='MarginLeft' onClick={() => this.props.history.push(menu.path)}>{menu.displayName}</div>)}
+          {menuList.map(menu => <div key={menu.id} className='MarginLeft' onClick={() => this.props.history.push(menu.path)}><FontEffect><Text white>{menu.displayName}</Text></FontEffect></div>)}
         </div>
         <div className='BurgerWrapper'>
           <BurgerNav menuList={menuList} />

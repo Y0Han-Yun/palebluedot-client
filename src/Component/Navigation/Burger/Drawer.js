@@ -1,6 +1,7 @@
 import { withRouter } from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
+import Text from 'src/Component/Text';
 
 const StyledComponent = styled.div`
   position: fixed;
@@ -63,7 +64,7 @@ class Drawer extends React.Component {
         <div className="Menu-wrapper">
           {this.props.menuList.map(menu => (
             <div key={menu.id} className="LinkWrapper" onClick={() => this.props.history.push(menu.path)}>
-              <div>{menu.displayName}</div><i className={`${menu.icon} icon-color`} />
+              <div><Text>{menu.displayName}</Text></div><i className={`${menu.icon} icon-color`} />
             </div>
           ))}
         </div>

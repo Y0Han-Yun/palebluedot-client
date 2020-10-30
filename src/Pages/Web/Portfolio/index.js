@@ -2,15 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import BackGround from 'src/Component/Image/BackGround';
 import Navigation from 'src/Component/Navigation/Bar';
+import Text from 'src/Component/Text';
 
 const StyledComponent = styled.div`
   .PortfolioWrapper{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
    
     .Portfolio{
       width: 930px;
+      height: 500px;
       margin: 50px 0px 20px 0px;
       
       .SubSection{
@@ -19,11 +23,6 @@ const StyledComponent = styled.div`
         align-items: center;
         width: 100%; 
         padding-bottom: 20px;
-
-        .Font{
-          font-size: 40px;
-          color: black;
-        }
       }
     }
 
@@ -66,7 +65,7 @@ class Portfolio extends React.Component {
             <div className='PortfolioWrapper'>
               <div className='Portfolio'>
                 <div className='SubSection'>
-                  <span className='Font'>My Work</span><br/>
+                  <Text home40 white>My Work</Text><br/>
                 </div>
                 <div className='BoxSection'>
                   <div className='BoxDesign'><i className="fas fa-gamepad fa-5x" /></div>

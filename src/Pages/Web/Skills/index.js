@@ -6,9 +6,12 @@ import JavascriptImage from 'src/Images/JavascriptImage.jpg';
 import HtmlImage from 'src/Images/HtmlImage.jpg'; 
 import CssImage from 'src/Images/CssImage.jpg';
 import ReactImage from 'src/Images/ReactImage.jpg';
+import Text from 'src/Component/Text';
 
 const StyledComponent = styled.div`
   .SkillsWrapper{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,11 +27,6 @@ const StyledComponent = styled.div`
         align-items: center;
         width: 100%;
         height: 10%;
-
-        .Font{
-          font-size: 40px;
-            color: black;
-        }
       }
     }
   }
@@ -75,7 +73,7 @@ class Skills extends React.Component {
             <div className='SkillsWrapper'>
               <div className='Skills'>
                 <div className='SubSection'>
-                  <span className='Font'>Skills</span><br/>
+                 <Text home40 white>Skills</Text><br/>
                 </div>
                 <div className='BoxSection'>
                   <div className='BoxDesign'><Image src={JavascriptImage} alt='Javascript' /></div>

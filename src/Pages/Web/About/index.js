@@ -5,7 +5,6 @@ import Navigation from 'src/Component/Navigation/Bar';
 import withRandom from 'src/Hoc/withRandom';
 import { ContactConsumer } from 'src/Context/ContactContext';
 import MousePosition from 'src/Component/MousePosition';
-import Button1 from 'src/Component/Example/Button1';
 import DropDown from 'src/Component/DropDown/DropDown';
 const StyledComponent = styled.div`
   .Dropnav{
@@ -56,10 +55,8 @@ class About extends React.Component {
           </MousePosition>
           <div className='Dropnav'>
             <DropDown />
-            <DropDown />
-            <DropDown />
+            
           </div>
-          <Button1 />
         </BackGround>
       </StyledComponent>
     );

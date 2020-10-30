@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CloseLayer from 'src/Component/DropDown/CloseLayer';
 
 
 const StyleComponent = styled.div`
@@ -8,7 +9,8 @@ const StyleComponent = styled.div`
     background-color: white;
     colo- balck;
     width: 120px;
-    height: 20px;
+    height: 30px;
+    border-radius: 3px;
   }
 
   .BoxDesign{ 
@@ -21,29 +23,33 @@ const StyleComponent = styled.div`
 
   .ButtonDesign{
     color: black;
-    width:30px;
+    width: 0px;
     display:flex;
     align-items: center;
     justify-content: center;
-
   }
 
   .DropWarpper{
     margin-top: 2px;
-   
+    position: absolute;
+    background-color: white;
+    width: 135px;
+    height: 20%;
+    border-radius: 3px;
   }
+
   .DropDesign{
     display: flex;
-    background-color: white;
     colo- balck;
-    width: 120px;
+    width: 135px;
     height: 20px;
+    margin-top: 5px;
+    padding : 5px 0px 5px 0px;
 
     :hover{
       background-color: #e7e7e7; 
       color: black;
-    }
-   
+    } 
   }
 `;
 
@@ -52,33 +58,29 @@ class DropDown extends React.Component {
   constructor(){
     super();
     this.OpenBox = this.OpenBox.bind(this);
-    // this.ChangeIcon = this.ChangeIcon.bind(this);
+    this.ChangeIcon = this.ChangeIcon.bind(this);
     this.state = {
-      Value : false
+      Value : 'off'
     }
   };
 
   OpenBox(){
-    if(this.state.Value === false) {
-      this.setState({
-       Value : true
-      })
-    } else if(this.state.Value === true){
-      this.setState({
-        Value: false
-      })
-    }
-  };
+    this.setState(prevState => {
+      if(prevState.Value === 'off') 
+        return  {Value : 'on'}
+        return {Value: 'off'}
+    });
+  }
 
   ChangeIcon(){
-    if (this.state.Value === false){
+    if (this.state.Value === 'off'){
       return (
         <div><i className="fas fa-angle-down"></i></div>
       );
-    } else if (this.state.Value === true) {
+    } else if (this.state.Value === 'on') {
       return (
         <i className="fas fa-angle-up"></i>
-      );
+      );  
     }
   };
 
@@ -89,20 +91,23 @@ class DropDown extends React.Component {
           <div className='BoxDesign'>asdasfasf</div>
           <div className='ButtonDesign'onClick={this.OpenBox}>{this.ChangeIcon()}</div>
         </div>
-        {this.state.Value === true
+        {this.state.Value === 'on'
         ? (
-          <div className='DropWarpper'>
-            <div className='DropDesign'>
-              <div>Tittle</div>   
-            </div>
-            <div className='DropDesign'>
-              <div>Tittle</div>
-            </div>
-            <div className='DropDesign'>
-              <div>Tittle</div>
-            </div>
-            <div className='DropDesign'>
-              <div>Tittle</div>
+          <div>
+            <CloseLayer Value={this.state.Value} onClick={this.OpenBox}/>
+            <div className='DropWarpper'>
+              <div className='DropDesign'>
+                <div>Tittle</div>   
+              </div>
+              <div className='DropDesign'>
+                <div>Tittle</div>
+              </div>
+              <div className='DropDesign'>
+                <div>Tittle</div>
+              </div>
+              <div className='DropDesign'>
+                <div>Tittle</div>
+              </div>
             </div>
           </div>
         ) : null}

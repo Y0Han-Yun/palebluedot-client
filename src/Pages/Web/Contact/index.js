@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import BackGround from 'src/Component/Image/BackGround';
 import Navigation from 'src/Component/Navigation/Bar';
-import MousePosition from 'src/Component/MousePosition';
+import Text from 'src/Component/Text';
 
 const StyledComponent = styled.div`
   .ContactWrapper{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,11 +23,6 @@ const StyledComponent = styled.div`
         align-items: center;
         width: 100%;
         height: 10%;
-
-        .Font{
-          font-size: 40px;
-            color: black;
-        }
       }
     }
   }
@@ -55,14 +52,9 @@ class Contact extends React.Component {
         <BackGround>
           <Navigation />
           <div className='ContactWrapper'>
-            <MousePosition>
-              {position => (
-                <h1>x: {position.x}, y: {position.y}</h1>
-              )}
-            </MousePosition>
             <div className='Contact'>
               <div className='SubSection'>
-                <span className='Font'>Contact</span><br/>
+               <Text home40 white>Contact</Text><br/>
               </div>
               <div className='BoxSection'>
                 <i className="fab fa-linkedin fa-5x" />                

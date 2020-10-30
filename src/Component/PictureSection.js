@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import Faceimage from 'src/Component/Image/Faceimage';
+import Text from 'src/Component/Text';
 
 const StyledComponent = styled.div`
   width: 100%;
   height: 400px;
-  
 
   .PictureWrapper{
     width: 100%;
@@ -63,11 +63,11 @@ class PictureSection extends React.Component {
           <Faceimage />
         </div>
         <div className="MessageWrapper">
-          <span className="Hello">Hello,</span>
+          <span className="Hello"><Text home100 yellow>Hello,</Text></span>
           <div className="spacing">
-            <span className="Name">I am <span className="YellowColor">John Yun</span></span>
+            <span className="Name"><Text home40 white>I am</Text></span><span><Text home40 yellow >John Yun</Text></span>
             <br />
-            <span className="Developer"><span className="YellowColor">and</span> Web Developer</span>
+            <span className="Developer"><span><Text home40 yellow>and</Text></span><Text home40 white>Web Developer</Text></span>
           </div>
         </div>
       </StyledComponent>

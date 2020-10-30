@@ -10,18 +10,25 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   z-index: auto;
-  opacity: 0.9;
   object-fit: cover;
   object-position: 50% 60%;
+  
 `;
-
+const BlackBackGound = styled.div`
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+`;
 const Zindex1 = styled.div`
   position: fixed;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: scroll;
-  -webkit-overflow-scrolling: touch;
   z-index: 1;
 `;
 
@@ -31,8 +38,9 @@ class BackGround extends React.Component {
     return (<>
       <StyledComponent >
         <Image src={BackGroundImage} alt="BackGouund" />
+        <BlackBackGound/>
         <Zindex1>
-          {this.props.children}
+            {this.props.children}
         </Zindex1>
       </StyledComponent>
     </>);
