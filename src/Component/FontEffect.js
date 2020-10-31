@@ -12,14 +12,12 @@ const StyledComponent = styled.div`
 
 `;
 
-
-
 class FontEffect extends React.Component {
 
   render () {
     return (
       <StyledComponent>
-            {this.props.children}
+        {this.props.children}
       </StyledComponent>
     );
   }
