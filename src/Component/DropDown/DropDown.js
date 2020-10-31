@@ -4,6 +4,9 @@ import CloseLayer from 'src/Component/DropDown/CloseLayer';
 
 
 const StyleComponent = styled.div`
+
+  position: relative;
+
   .ButtonWarpper{
     display:flex;
     background-color: white;
@@ -32,6 +35,7 @@ const StyleComponent = styled.div`
   .DropWarpper{
     margin-top: 2px;
     position: absolute;
+    top: -30px;
     background-color: white;
     width: 135px;
     height: 20%;
@@ -57,12 +61,27 @@ class DropDown extends React.Component {
 
   constructor(){
     super();
+    this.dropdownButton = React.createRef();
     this.OpenBox = this.OpenBox.bind(this);
     this.ChangeIcon = this.ChangeIcon.bind(this);
     this.state = {
-      Value : 'off'
+      Value : 'off',
+      buttonTop: 0,
+      buttonBottom: 0
     }
   };
+
+  componentDidMount () {
+    this.setState({
+      buttonTop: this.dropdownButton.current.offsetTop,
+      buttonBottom: this.dropdownButton.current.offsetBottm,
+    }, () => console.log(this.state.buttonBottom));
+    window.addEventListener('scroll', () => {
+      this.setState({
+        buttonTop: this.dropdownButton.current.offsetTop
+      }, () => console.log(this.state.buttonTop));
+    });
+  }
 
   OpenBox(){
     this.setState(prevState => {
@@ -87,7 +106,7 @@ class DropDown extends React.Component {
   render () {
     return (
       <StyleComponent>
-        <div className='ButtonWarpper'>
+        <div ref={this.dropdownButton} className='ButtonWarpper'>
           <div className='BoxDesign'>asdasfasf</div>
           <div className='ButtonDesign'onClick={this.OpenBox}>{this.ChangeIcon()}</div>
         </div>

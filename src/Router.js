@@ -12,7 +12,7 @@ import { ContactProvider } from 'src/Context/ContactContext';
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0px;
-    overflow: hidden;
+    // overflow: hidden;
   }
 `;
 
