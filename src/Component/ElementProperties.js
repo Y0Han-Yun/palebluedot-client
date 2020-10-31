@@ -2,14 +2,14 @@ import React from 'react';
 
 /**
  * 이 컴포넌트는 테스트가 완료된 컴포넌트입니다.
- * 
+ *
  * 이 컴포넌트는 (직접)자녀의 화면상 위치속성에 대하여 알고싶을 때 사용한다.
- * 
+ *
  * 주의사항) 이 컴포넌트는 정확히 하나의 (직접)자녀를 가져야 한다.
  *         직접자녀의 자녀들 같은 경우는 자유롭게 만들어 주어도 된다.
- * 
+ *
  * 사용방법 예시
- * 
+ *
  * <ElementProperties
  *   onMount={properties => console.log(properties)}
  *   onUpdate={properties => console.log(properties)}>
