@@ -5,6 +5,7 @@ import BurgerNav from 'src/Component/Navigation/Burger/BurgerNav';
 import Text from 'src/Component/Text';
 import LineEffect from 'src/Component/LineEffect';
 import FontEffect from 'src/Component/FontEffect';
+import LinkedInButton from 'src/Component/ContactButton/LinkedInButton';
 import { v4 } from 'uuid';
 
 const StyledComponent = styled.nav`
@@ -16,7 +17,7 @@ const StyledComponent = styled.nav`
   box-sizing: border-box;
   
   .NameSection{
-    width: 50%;
+    width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -26,8 +27,16 @@ const StyledComponent = styled.nav`
       padding-left: 50px;
     }
   }
+
+  .contact-section{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
   .MenuSetion{
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -67,6 +76,9 @@ class Navigation extends React.Component {
       <StyledComponent>
         <div className='NameSection'>
           <div className='PaddingLeft'><LineEffect><Text white>YoHan Yun</Text></LineEffect></div>
+        </div>
+        <div className='contact-section'>
+          <LinkedInButton />
         </div>
         <div className='MenuSetion'>
           {menuList.map(menu => <div key={menu.id} className='MarginLeft' onClick={() => this.props.history.push(menu.path)}><FontEffect><Text white>{menu.displayName}</Text></FontEffect></div>)}
