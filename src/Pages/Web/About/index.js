@@ -6,7 +6,6 @@ import withRandom from 'src/Hoc/withRandom';
 import { ContactConsumer } from 'src/Context/ContactContext';
 import MousePosition from 'src/Component/MousePosition';
 import DropDown from 'src/Component/DropDown/DropDown';
-import LinkedInButton from 'src/Component/ContactButton/LinkedInButton';
 const StyledComponent = styled.div`
   .Dropnav{
     display:flex;
@@ -54,7 +53,6 @@ class About extends React.Component {
               <div>x: {position.x}, y: {position.y}</div>
             )}
           </MousePosition>
-          <LinkedInButton />
           <h1>qwe</h1>
           <h1>qwe</h1>
           <h1>qwe</h1>

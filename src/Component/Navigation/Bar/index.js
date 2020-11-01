@@ -5,7 +5,6 @@ import BurgerNav from 'src/Component/Navigation/Burger/BurgerNav';
 import Text from 'src/Component/Text';
 import LineEffect from 'src/Component/LineEffect';
 import FontEffect from 'src/Component/FontEffect';
-import LinkedInButton from 'src/Component/ContactButton/LinkedInButton';
 import { v4 } from 'uuid';
 
 const StyledComponent = styled.nav`
@@ -63,7 +62,6 @@ const StyledComponent = styled.nav`
 `;
 
 const menuList = [
-  { id: v4(), displayName: 'Contact', path: '/contact', icon: 'far fa-envelope' },
   { id: v4(), displayName: 'Portfolio', path: '/portfolio', icon: 'fas fa-code' },
   { id: v4(), displayName: 'Skills', path: '/skills', icon: 'fas fa-laptop-code' },
   { id: v4(), displayName: 'About', path: '/about', icon: 'fas fa-users' },
@@ -76,9 +74,6 @@ class Navigation extends React.Component {
       <StyledComponent>
         <div className='NameSection'>
           <div className='PaddingLeft'><LineEffect><Text white>YoHan Yun</Text></LineEffect></div>
-        </div>
-        <div className='contact-section'>
-          <LinkedInButton />
         </div>
         <div className='MenuSetion'>
           {menuList.map(menu => <div key={menu.id} className='MarginLeft' onClick={() => this.props.history.push(menu.path)}><FontEffect><Text white>{menu.displayName}</Text></FontEffect></div>)}
