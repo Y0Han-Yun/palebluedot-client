@@ -26,12 +26,18 @@ class ElementProperties extends React.Component {
   }
 
   componentDidMount () {
-    window.addEventListener('scroll', this.handleScrollEvent);
+    const elements = document.body.getElementsByTagName('*');
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].addEventListener('scroll', this.handleScrollEvent);
+    }
     this.props.onMount(this.calculateProperties());
   }
 
   componentWillUnmount () {
-    window.removeEventListener('scroll', this.handleScrollEvent);
+    const elements = document.body.getElementsByTagName('*');
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].removeEventListener('scroll', this.handleScrollEvent);
+    }
   }
 
   handleScrollEvent () {
