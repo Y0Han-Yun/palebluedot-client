@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 import Home from 'src/Pages/Web/Home';
 import Skills from 'src/Pages/Web/Skills';
-import Contact from 'src/Pages/Web/Contact';
 import About from 'src/Pages/Web/About';
 import Portfolio from 'src/Pages/Web/Portfolio';
 import Memo from 'src/Pages/Web/Memo';
@@ -29,9 +28,6 @@ class Router extends React.Component {
             </Route>
             <Route exact path="/skills">
               <Skills />
-            </Route>
-            <Route exact path="/contact">
-              <Contact />
             </Route>
             <Route exact path="/about">
               <About />

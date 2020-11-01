@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Faceimage from 'src/Component/Image/Faceimage';
 import Text from 'src/Component/Text';
+import SnsButton from 'src/Component/SnsButton';
 
 const StyledComponent = styled.div`
   width: 100%;
@@ -9,15 +10,23 @@ const StyledComponent = styled.div`
 
   .PictureWrapper{
     width: 100%;
-    height: 50%;
+    height: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
+  .sns-section{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .MessageWrapper{
     width: 100%;
-    height: 50%;
+    height: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +78,9 @@ class PictureSection extends React.Component {
             <br />
             <span className="Developer"><span><Text home40 yellow>and</Text></span><Text home40 white>Web Developer</Text></span>
           </div>
+        </div>
+        <div className='sns-section'>
+          <SnsButton />
         </div>
       </StyledComponent>
     );
