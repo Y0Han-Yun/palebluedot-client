@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Text from 'src/Component/Text';
 
-
 const StyledComponent = styled.div`
   display:flex;
 
@@ -119,36 +118,38 @@ const StyledComponent = styled.div`
 `;
 
 class SnsButton extends React.Component {
+
   render () {
     return (
-      <StyledComponent>          
-        <div className='linkedin-background'>
-          <span className='icon-box'>
+      <StyledComponent>
+        <div className="linkedin-background">
+          <span className="icon-box">
             <i className="fab fa-linkedin fa-2x" />
-          </span>  
-          <div className='address'>
+          </span>
+          <div className="address">
             <Text white>Click Me</Text>
           </div>
-        </div>  
-        <div className='github-background'>
-          <span className='icon-box'>
+        </div>
+        <div className="github-background">
+          <span className="icon-box">
             <i className="fab fa-github-square fa-2x" />
-          </span>  
-          <div className='address'>
+          </span>
+          <div className="address">
             <Text white>Click Me</Text>
           </div>
-        </div>  
-        <div className='email-background'>
-          <span className='icon-box'>
+        </div>
+        <div className="email-background">
+          <span className="icon-box">
             <i className="fas fa-envelope-square fa-2x" />
-          </span>  
-          <div className='address'>
+          </span>
+          <div className="address">
             <Text white>Copy it</Text>
           </div>
-        </div>  
+        </div>
       </StyledComponent>
     );
   }
+
 }
 
 export default SnsButton;

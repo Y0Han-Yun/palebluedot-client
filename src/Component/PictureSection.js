@@ -79,7 +79,7 @@ class PictureSection extends React.Component {
             <span className="Developer"><span><Text home40 yellow>and</Text></span><Text home40 white>Web Developer</Text></span>
           </div>
         </div>
-        <div className='sns-section'>
+        <div className="sns-section">
           <SnsButton />
         </div>
       </StyledComponent>
