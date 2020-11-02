@@ -35,6 +35,7 @@ const StyledComponent = styled.div`
     border-radius: 6px;
     padding-right: 100px;
     height: 45px;  
+    cursor: pointer;
     
 
     .address{
@@ -72,6 +73,7 @@ const StyledComponent = styled.div`
     border-radius: 6px;
     padding-right: 100px;
     height: 45px;  
+    cursor: pointer;
     
     .address{
       transition: all.45s;
@@ -108,6 +110,7 @@ const StyledComponent = styled.div`
     border-radius: 6px;
     padding-right: 100px;
     height: 45px;  
+    cursor: pointer;
     
     .address{
       transition: all.45s;
@@ -132,7 +135,9 @@ class SnsButton extends React.Component {
     window.open('https://github.com/Y0Han-Yun');
   }
   CopyEmail () {
-
+    // const copyemail = 'yyh1283@gmail.com'
+    // return (copyemail);
+    // alert('Email address');
   }
 
   render () {

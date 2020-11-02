@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import BackGround from 'src/Component/Image/BackGround';
 import Navigation from 'src/Component/Navigation/Bar';
 import PictureSection from 'src/Component/PictureSection';
-// import ElementProperties from 'src/Component/ElementProperties';
 
 const StyledComponent = styled.div`
   .ProfileSection { 
@@ -25,12 +24,6 @@ class Home extends React.Component {
             <div className='ProfileSection'>
               <PictureSection />
             </div>
-            {/* <h1>***********</h1>
-            <ElementProperties
-              onMount={properties => console.log(properties)}
-              onUpdate={properties => console.log(properties)}>
-              <h1>***********</h1>
-            </ElementProperties> */}
         </BackGround>
       </StyledComponent>
     );
