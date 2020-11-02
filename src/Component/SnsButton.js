@@ -146,6 +146,7 @@ class SnsButton extends React.Component {
             <Text white>Click Me</Text>
           </div>
         </div>
+
         <div className="github-background" onClick={this.GotoGithub}>
           <span className="icon-box">
             <i className="fab fa-github-square fa-2x" />
