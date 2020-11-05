@@ -3,12 +3,56 @@ import styled from 'styled-components';
 import BackGround from 'src/Component/Image/BackGround';
 import Navigation from 'src/Component/Navigation/Bar';
 import withRandom from 'src/Hoc/withRandom';
-import { ContactConsumer } from 'src/Context/ContactContext';
-import MousePosition from 'src/Component/MousePosition';
-import DropDown from 'src/Component/DropDown/DropDown';
+import Text from 'src/Component/Text';
+import AboutExplanation from 'src/Component/AboutExplanation';
+import AboutPageImage from 'src/Component/Image/AboutPageImage';
+
 const StyledComponent = styled.div`
-  .Dropnav{
-    display:flex;
+  .about-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about{
+      width: 1400px;
+      height: 500px;
+      margin: 30px 0px 20px 0px;
+
+      .sub-section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+      }
+      .box-section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        
+
+        .left-section{
+          width: 100%;
+          height: 100%;
+          margin: 10px;
+          box-shadow: 0 8px 6px -6px black;
+        }
+        .right-section{
+          width: 100%;
+          height: 100%;
+          margin: 5px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1028px) {
+    
+    .box-section{
+      flex-wrap: wrap; 
+    }
   }
 `;
 
@@ -34,50 +78,20 @@ class About extends React.Component {
       <StyledComponent>
         <BackGround>
           <Navigation />
-          <div>About Page</div>
-          {/* <h1>생성된 랜던 숫자: {this.state.randomNumber}</h1> */}
-
-          <ContactConsumer>
-            {Value => (<>
-              <div>Email: {Value.email}</div>
-              <div>Full name: {Value.fullName}</div>
-              <div>Phone: {Value.phone}</div>
-              <div>Now: {Value.now}</div>
-              <div>address: {Value.address}</div>
-              <button onClick={Value.syncNow}>update time</button>
-            </>)}
-          </ContactConsumer>
-
-          <MousePosition>
-            {position => (
-              <div>x: {position.x}, y: {position.y}</div>
-            )}
-          </MousePosition>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <h1>qwe</h1>
-          <div className='Dropnav'>
-            <DropDown />
-            
+          <div className='about-wrapper'>
+            <div className='about'>
+              <div className='sub-section'>
+                <Text home40 white>About Me</Text><br/>
+              </div>
+              <div className='box-section'>
+                <div className='left-section'>
+                  <AboutPageImage />
+                </div>
+                <div className='right-section'>
+                  <AboutExplanation />
+                </div>
+              </div>
+            </div> 
           </div>
         </BackGround>
       </StyledComponent>

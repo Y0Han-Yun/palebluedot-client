@@ -43,7 +43,7 @@ class Text extends React.Component {
       md: this.props.md,
       lg: this.props.lg,
       home100: this.props.home100,
-      home40: this.props.home40,
+      home40: this.props.home40
     };
 
     return (
