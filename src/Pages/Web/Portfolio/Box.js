@@ -10,7 +10,7 @@ const StyledComponent = styled.div`
   border-radius: 5px;
   position: relative;
   overflow : hidden;
-
+}
   .icon-wrapper{
     width: 100%;
     height: 100%;

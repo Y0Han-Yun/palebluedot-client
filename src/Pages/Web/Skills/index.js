@@ -2,10 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import BackGround from 'src/Component/Image/BackGround';
 import Navigation from 'src/Component/Navigation/Bar';
-import JavascriptImage from 'src/Images/JavascriptImage.jpg';
-import HtmlImage from 'src/Images/HtmlImage.jpg'; 
-import CssImage from 'src/Images/CssImage.jpg';
-import ReactImage from 'src/Images/ReactImage.jpg';
+import Box from 'src/Pages/Web/Skills/Box';
 import Text from 'src/Component/Text';
 
 const StyledComponent = styled.div`
@@ -39,29 +36,10 @@ const StyledComponent = styled.div`
     flex-wrap: wrap;
     width: 100%;
     height: 90%;
-
-    .BoxDesign{
-      background-color: white;
-      border-radius: 70%;
-      margin : 20px;
-      width: 200px;
-      height: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-      :hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    }
   }
+ 
 `;
 
-const Image = styled.img`
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-`;
 
 class Skills extends React.Component {
 
@@ -73,13 +51,21 @@ class Skills extends React.Component {
             <div className='SkillsWrapper'>
               <div className='Skills'>
                 <div className='SubSection'>
-                 <Text home40 white>Skills</Text><br/>
+                 <Text home40 white>Skills</Text>
                 </div>
                 <div className='BoxSection'>
-                  <div className='BoxDesign'><Image src={JavascriptImage} alt='Javascript' /></div>
-                  <div className='BoxDesign'><Image src={HtmlImage} alt='Html' /></div>
-                  <div className='BoxDesign'><Image src={CssImage} alt='Css' /></div>
-                  <div className='BoxDesign'><Image src={ReactImage} alt='React' /></div>
+                  <Box>
+                    <i class="fab fa-js fa-4x" />
+                  </Box>
+                  <Box className='BoxDesign'>
+                    <i class="fab fa-html5 fa-4x" />
+                  </Box>
+                  <Box className='BoxDesign'>
+                    <i class="fab fa-css3-alt fa-4x" />
+                  </Box>
+                  <Box className='BoxDesign'>
+                    <i class="fab fa-react fa-4x" />
+                  </Box>
                 </div>
               </div>
             </div>

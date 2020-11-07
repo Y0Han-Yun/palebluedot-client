@@ -18,13 +18,14 @@ const color = props => {
   return font.color.lightMode;
 };
 
+
 const textStyledTemplate = props => `
   font-family: ${font.family.sans};
   font-size: ${fontSize(props)};
   color: ${color(props)};
   font-weight: ${font.weight.light};
   line-height: ${font.lineHeight.normal};
-  letter-spacing: ${font.letterSpacing.none};
+  letter-spacing: ${font.letterSpacing.normal};
   word-spacing: ${font.wordSpacing.normal};
 `;
 
