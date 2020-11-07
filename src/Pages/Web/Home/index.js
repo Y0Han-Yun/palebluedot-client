@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import BackGround from 'src/Component/Image/BackGround';
 import Navigation from 'src/Component/Navigation/Bar';
-import PictureSection from 'src/Component/PictureSection';
+import PictureSection from 'src/Pages/Web/Home/PictureSection';
 
 const StyledComponent = styled.div`
   .ProfileSection { 

@@ -4,7 +4,7 @@ import BackGround from 'src/Component/Image/BackGround';
 import Navigation from 'src/Component/Navigation/Bar';
 import withRandom from 'src/Hoc/withRandom';
 import Text from 'src/Component/Text';
-import AboutExplanation from 'src/Component/AboutExplanation';
+import AboutExplanation from 'src/Pages/Web/About/AboutExplanation';
 import AboutPageImage from 'src/Component/Image/AboutPageImage';
 
 const StyledComponent = styled.div`

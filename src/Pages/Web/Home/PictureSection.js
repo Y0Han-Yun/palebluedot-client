@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Faceimage from 'src/Component/Image/Faceimage';
 import Text from 'src/Component/Text';
-import SnsButton from 'src/Component/SnsButton';
+import SnsButton from 'src/Pages/Web/Home/SnsButton';
 
 const StyledComponent = styled.div`
   width: 100%;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import BackGround from 'src/Component/Image/BackGround';
 import Navigation from 'src/Component/Navigation/Bar';
 import Text from 'src/Component/Text';
+import Box from 'src/Pages/Web/Portfolio/Box';
 
 const StyledComponent = styled.div`
   .PortfolioWrapper{
@@ -30,30 +31,11 @@ const StyledComponent = styled.div`
       display: flex;
       justify-content: space-around;
       padding: 20px 10px 10px 10px;
-      flex-wrap: wrap;
-
-      .BoxDesign{
-        background-color: white;
-        margin : 10px;
-        width: 200px;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-       
-        :hover {
-          .BoxSection{
-            padding: 0;
-          }
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-            width: 210px;
-            height: 210px;
-            transition: width 0.1s, height 0.1;
-      }
+      flex-wrap: wrap; 
     }
   }
 `;
+
 
 class Portfolio extends React.Component {
 
@@ -68,14 +50,14 @@ class Portfolio extends React.Component {
                   <Text home40 white>My Work</Text><br/>
                 </div>
                 <div className='BoxSection'>
-                  <div className='BoxDesign'><i className="fas fa-gamepad fa-5x" /></div>
-                  <div className='BoxDesign'><i className="fas fa-gamepad fa-5x" /></div>
-                  <div className='BoxDesign'><i className="fas fa-gamepad fa-5x" /></div>
-                  <div className='BoxDesign'><i className="fas fa-gamepad fa-5x" /></div>
-                  <div className='BoxDesign'><i className="fas fa-gamepad fa-5x" /></div>
-                  <div className='BoxDesign'><i className="fas fa-gamepad fa-5x" /></div>
-                  <div className='BoxDesign'><i className="fas fa-gamepad fa-5x" /></div>
-                  <div className='BoxDesign'><i className="fas fa-gamepad fa-5x" /></div>
+                  <Box><i className="fas fa-gamepad fa-4x" /></Box>
+                  <Box><i className="fas fa-gamepad fa-4x" /></Box>
+                  <Box><i className="fas fa-gamepad fa-4x" /></Box>
+                  <Box><i className="fas fa-gamepad fa-4x" /></Box>
+                  <Box><i className="fas fa-gamepad fa-4x" /></Box>
+                  <Box><i className="fas fa-gamepad fa-4x" /></Box>
+                  <Box><i className="fas fa-gamepad fa-4x" /></Box>
+                  <Box><i className="fas fa-gamepad fa-4x" /></Box>
                 </div>
               </div>
             </div>

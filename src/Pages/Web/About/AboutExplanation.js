@@ -9,7 +9,7 @@ const StyledComponent = styled.div`
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
-`; 
+`;
 
 const Box = styled.div`
 width: 48%;
@@ -51,8 +51,6 @@ margin:5px;
   height: 50%;
 }
 `;
-   
-
 
 class AboutExplanation extends React.Component {
 
@@ -82,7 +80,7 @@ class AboutExplanation extends React.Component {
             </div>
           </div>
           <div className="box-bottom-section">
-            <Text white>Subtitle-SectionSubtitle-SectionSubtitle-SectionSubtitle-SectionSubtitle-SectionSubtitle-Section</Text>  
+            <Text white>Subtitle-SectionSubtitle-SectionSubtitle-SectionSubtitle-SectionSubtitle-SectionSubtitle-Section</Text>
           </div>
         </Box>
         <Box>
