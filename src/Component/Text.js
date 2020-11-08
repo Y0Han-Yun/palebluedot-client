@@ -18,7 +18,6 @@ const color = props => {
   return font.color.lightMode;
 };
 
-
 const textStyledTemplate = props => `
   font-family: ${font.family.sans};
   font-size: ${fontSize(props)};

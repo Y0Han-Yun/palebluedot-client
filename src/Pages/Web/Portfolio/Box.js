@@ -42,7 +42,7 @@ const StyledComponent = styled.div`
       width: 190px;
       height: 111px;
       transition: 1s;
-      bttom: 0px;
+      bttom: 0px;d
     }
 `;
 
@@ -50,7 +50,6 @@ const Button = styled.button`
   background-color: white;
   color: black;
   border: 1px solid black;
-  // width: 100%;
   width: 190px;
   cursor: pointer;
   outline: none;

@@ -76,7 +76,11 @@ class Navigation extends React.Component {
           <div className='PaddingLeft'><LineEffect><Text white>YoHan Yun</Text></LineEffect></div>
         </div>
         <div className='MenuSetion'>
-          {menuList.map(menu => <div key={menu.id} className='MarginLeft' onClick={() => this.props.history.push(menu.path)}><FontEffect><Text white>{menu.displayName}</Text></FontEffect></div>)}
+          {menuList.map(menu => 
+          <div key={menu.id} className='MarginLeft' onClick={() => this.props.history.push(menu.path)}>
+            <FontEffect><Text white>{menu.displayName}</Text></FontEffect>
+          </div>
+          )}
         </div>
         <div className='BurgerWrapper'>
           <BurgerNav menuList={menuList} />
