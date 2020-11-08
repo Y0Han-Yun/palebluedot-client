@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import BackGroundImage from 'src/Images/BackGroundImage.jpg';
+import backGroundImage from 'src/Images/BackGroundImage.jpg';
 
-const StyledComponent = styled.div``;
+const StyledComponent = styled.div`
+  .hidden { display: none; }
+`;
+
 const Image = styled.img`
   position: fixed;
   top: 0;
@@ -34,14 +37,23 @@ const Zindex1 = styled.div`
 
 class BackGround extends React.Component {
 
+  constructor () {
+    super();
+    this.state = {
+      loading: true
+    };
+  }
+
   render () {
     return (<>
-      <StyledComponent >
-        <Image src={BackGroundImage} alt="BackGouund" />
-        <BlackBackGound/>
-        <Zindex1>
-            {this.props.children}
-        </Zindex1>
+      <StyledComponent>
+        {this.state.loading ? <Image className="hidden" onLoad={() => this.setState({ loading: false })} src={backGroundImage} alt="BackGouund" /> : (<>
+          <Image onLoad={() => this.setState({ loading: false })} src={backGroundImage} alt="BackGouund" />
+          <BlackBackGound/>
+          <Zindex1>
+              {this.props.children}
+          </Zindex1>
+        </>)}
       </StyledComponent>
     </>);
   }

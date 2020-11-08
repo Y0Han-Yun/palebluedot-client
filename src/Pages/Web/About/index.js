@@ -58,21 +58,6 @@ const StyledComponent = styled.div`
 
 class About extends React.Component {
 
-  constructor () {
-    super();
-    this.state = {
-      randomNumber: 0
-    };
-  }
-
-  componentDidMount () {
-    setInterval(() => {
-      this.setState({
-        randomNumber: this.props.generate()
-      });
-    }, 100);
-  }
-
   render () {
     return (
       <StyledComponent>

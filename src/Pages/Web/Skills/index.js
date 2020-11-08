@@ -44,15 +44,6 @@ const StyledComponent = styled.div`
       margin : 20px;
       width: 200px;
       height: 200px;
-
-      .icon-section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50%;
-        color: #5ED4F4;
-      }
       .title-section{
         display: flex;
         justify-content: center;
@@ -64,6 +55,16 @@ const StyledComponent = styled.div`
   }
  
 `;
+
+const IconSection = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  color: ${props => props.color};
+`;
+
 const LanguageList = [
   { id: v4(), iconName: 'Javascript', icon: 'fab fa-js fa-4x', color: '#F7DF1D' },
   { id: v4(), iconName: 'HTML', icon: 'fab fa-html5 fa-4x', color: '#E44C26' },
@@ -77,21 +78,21 @@ class Skills extends React.Component {
       <StyledComponent>
         <BackGround>
           <Navigation />
-            <div className='SkillsWrapper'>
-              <div className='Skills'>
-                <div className='SubSection'>
-                 <Text home40 white>Skills</Text>
-                </div>
-                <div className='skills-section'>
-                  {LanguageList.map(list =>
-                    <div className='box-wrapper'>
-                        <div key={list.id} className='icon-section'><i className={`${list.icon}`} /></div>
-                        <div key={list.id} className='title-section'><Text white>{list.iconName}</Text></div>
-                    </div>
-                  )}
-                </div>
+          <div className='SkillsWrapper'>
+            <div className='Skills'>
+              <div className='SubSection'>
+                <Text home40 white>Skills</Text>
+              </div>
+              <div className='skills-section'>
+                {LanguageList.map(list =>
+                  <div key={list.id} className='box-wrapper'>
+                    <IconSection color={list.color} className='icon-section'><i className={`${list.icon}`} /></IconSection>
+                    <div className='title-section'><Text white>{list.iconName}</Text></div>
+                  </div>
+                )}
               </div>
             </div>
+          </div>
         </BackGround>
       </StyledComponent>
     );

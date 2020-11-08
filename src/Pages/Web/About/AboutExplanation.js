@@ -60,7 +60,7 @@ class AboutExplanation extends React.Component {
         <Box>
           <div className="box-top-section">
             <div className="box-icon-section">
-              <i class="fas fa-dumbbell fa-3x" />
+              <i className="fas fa-dumbbell fa-3x" />
             </div>
             <div className="box-Text-section">
               <Text white>운동</Text>
@@ -73,7 +73,7 @@ class AboutExplanation extends React.Component {
         <Box>
           <div className="box-top-section">
             <div className="box-icon-section">
-              <i class="fab fa-think-peaks fa-3x" />
+              <i className="fab fa-think-peaks fa-3x" />
             </div>
             <div className="box-Text-section">
               <Text white>생각</Text>
@@ -86,7 +86,7 @@ class AboutExplanation extends React.Component {
         <Box>
           <div className="box-top-section">
             <div className="box-icon-section">
-              <i class="fas fa-map-pin fa-3x" />
+              <i className="fas fa-map-pin fa-3x" />
             </div>
             <div className="box-Text-section">
               <Text white>목표지향</Text>
@@ -99,7 +99,7 @@ class AboutExplanation extends React.Component {
         <Box>
           <div className="box-top-section">
             <div className="box-icon-section">
-              <i class="fas fa-clock fa-3x" />
+              <i className="fas fa-clock fa-3x" />
             </div>
             <div className="box-Text-section">
               <Text white>규칙적, 반복적</Text>

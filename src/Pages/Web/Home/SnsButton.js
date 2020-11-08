@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Text from 'src/Component/Text';
+import { ContactConsumer } from 'src/Context/ContactContext';
 
 const StyledComponent = styled.div`
   display:flex;
@@ -120,10 +121,16 @@ const StyledComponent = styled.div`
 }
 `;
 
+const InvisibleInput = styled.input`
+  position: absolute;
+  top: -99999px;
+`;
+
 class SnsButton extends React.Component {
 
   constructor () {
     super();
+    this.invisibleInputRef = React.createRef();
     this.GotoLinkedin = this.GotoLinkedin.bind(this);
     this.GotoGithub = this.GotoGithub.bind(this);
     this.CopyEmail = this.CopyEmail.bind(this);
@@ -164,9 +171,19 @@ class SnsButton extends React.Component {
           <span className="icon-box">
             <i className="fas fa-envelope-square fa-2x" />
           </span>
-          <div className="address">
-            <Text white>Copy it</Text>
-          </div>
+          <ContactConsumer>
+            {contactContext => (
+              <div
+                onClick={() => {
+                  this.invisibleInputRef.current.select();
+                  document.execCommand('copy');
+                }}
+                className="address">
+                <InvisibleInput readOnly ref={this.invisibleInputRef} value={contactContext.email} type="text" />
+                <Text white>Copy it</Text>
+              </div>
+            )}
+          </ContactConsumer>
         </div>
       </StyledComponent>
     );
