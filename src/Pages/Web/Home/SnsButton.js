@@ -133,18 +133,12 @@ class SnsButton extends React.Component {
     this.invisibleInputRef = React.createRef();
     this.GotoLinkedin = this.GotoLinkedin.bind(this);
     this.GotoGithub = this.GotoGithub.bind(this);
-    this.CopyEmail = this.CopyEmail.bind(this);
   }
   GotoLinkedin () {
     window.open('https://www.linkedin.com/in/yohan-yun-0439031aa/');
   }
   GotoGithub () {
     window.open('https://github.com/Y0Han-Yun');
-  }
-  CopyEmail () {
-    // const copyemail = 'yyh1283@gmail.com'
-    // return (copyemail);
-    // alert('Email address');
   }
 
   render () {
@@ -167,7 +161,7 @@ class SnsButton extends React.Component {
             <Text white>Click Me</Text>
           </div>
         </div>
-        <div className="email-background" onClick={this.CopyEmail}>
+        <div className="email-background">
           <span className="icon-box">
             <i className="fas fa-envelope-square fa-2x" />
           </span>
@@ -177,10 +171,11 @@ class SnsButton extends React.Component {
                 onClick={() => {
                   this.invisibleInputRef.current.select();
                   document.execCommand('copy');
+                  alert('Email address is copied')
                 }}
                 className="address">
                 <InvisibleInput readOnly ref={this.invisibleInputRef} value={contactContext.email} type="text" />
-                <Text white>Copy it</Text>
+                <Text white>Copy email</Text>
               </div>
             )}
           </ContactConsumer>

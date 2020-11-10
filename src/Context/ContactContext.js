@@ -26,7 +26,7 @@ class ContactProvider extends React.Component {
         value={{
           email: 'yyh1283@gmail.com',
           fullName: 'John Yoon',
-          phone: '',
+          phone: '0421727114',
           now: this.state.now,
           address: 'Northryde',
           syncNow: this.syncNow

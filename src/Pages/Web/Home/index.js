@@ -28,7 +28,5 @@ class Home extends React.Component {
       </StyledComponent>
     );
   }
-
 }
-
 export default Home;
