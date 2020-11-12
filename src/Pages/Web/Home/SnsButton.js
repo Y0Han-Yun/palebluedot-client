@@ -118,6 +118,12 @@ const StyledComponent = styled.div`
       top: 8px;
     }
   }
+ 
+  @media (max-width: 550px) {
+    margin-top: 100px;
+
+    
+  }
 }
 `;
 
